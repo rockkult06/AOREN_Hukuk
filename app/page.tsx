@@ -1,9 +1,10 @@
+"use client";
+import React, { useEffect } from "react";
 import Head from "next/head"
 import Header from "@/components/header"
 import HeroSection from "@/components/HeroSection"
 import Footer from "@/components/Footer"
 import BackgroundVideo from "@/components/BackgroundVideo"
-import { useEffect } from "react"
 import { useRouter } from "next/navigation"
 
 export default function Home() {
