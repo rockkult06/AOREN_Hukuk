@@ -62,6 +62,12 @@ export default function Header() {
       if (careerSection) {
         careerSection.scrollIntoView({ behavior: 'smooth' })
       }
+    } else if (href === '/dijital-hizmetler') {
+      // Ana sayfadaki dijital hizmetler bölümüne scroll yap
+      const digitalSection = document.getElementById('digital-services')
+      if (digitalSection) {
+        digitalSection.scrollIntoView({ behavior: 'smooth' })
+      }
     } else {
       // Diğer sayfalar için normal navigasyon
       window.location.href = href

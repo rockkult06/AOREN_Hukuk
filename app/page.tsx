@@ -6,7 +6,7 @@ import HeroSection from "@/components/HeroSection"
 import Footer from "@/components/Footer"
 import BackgroundVideo from "@/components/BackgroundVideo"
 import styled from "styled-components"
-import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop, MapPin, MapPinned, Phone, GraduationCap, Scale, Leaf, Target, Briefcase, Upload, Send } from "lucide-react"
+import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop, MapPin, MapPinned, Phone, GraduationCap, Scale, Leaf, Target, Briefcase, Upload, Send, LayoutDashboard, CheckCircle, FileSignature, MessageSquare, GitBranch } from "lucide-react"
 
 const TeamSection = styled.section`
   padding: 80px 20px;
@@ -880,6 +880,137 @@ export default function Home() {
                 </button>
               </form>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AOREN Dijital Hizmetleri Bölümü */}
+      <section id="digital-services" className="min-h-screen relative py-20">
+        {/* Arkaplan Görseli */}
+        <div 
+          className="absolute inset-0 z-0" 
+          style={{
+            backgroundImage: 'url(/digital.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(8px) brightness(0.3)',
+          }}
+        />
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6">AOREN Dijital Hizmetleri</h2>
+            <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic">
+              Teknoloji, bizim için sadece bir araç değil, hizmetimizin ayrılmaz bir parçasıdır.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            {/* Müvekkil Portalı */}
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <LayoutDashboard className="w-12 h-12 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Müvekkil Portalı</h3>
+              </div>
+              <p className="text-gray-200 leading-relaxed">
+                Dosyalarınıza 7/24 erişim imkanı sağlayan özel portalımız ile tüm hukuki süreçlerinizi tek bir platformdan takip edebilirsiniz.
+              </p>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  Anlık dosya durumu takibi
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  Belge arşivine kolay erişim
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  Duruşma takvimi entegrasyonu
+                </li>
+              </ul>
+            </div>
+
+            {/* Dijital İmza ve Belge Takibi */}
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <FileSignature className="w-12 h-12 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Dijital İmza ve Belge Takibi</h3>
+              </div>
+              <p className="text-gray-200 leading-relaxed">
+                Güvenli elektronik imza sistemi ile belge onay süreçlerinizi hızlandırın, kağıt israfını önleyin.
+              </p>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  E-imza entegrasyonu
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  Otomatik versiyon kontrolü
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  Gelişmiş belge güvenliği
+                </li>
+              </ul>
+            </div>
+
+            {/* Güvenli Mesajlaşma Sistemi */}
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <MessageSquare className="w-12 h-12 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Güvenli Mesajlaşma Sistemi</h3>
+              </div>
+              <p className="text-gray-200 leading-relaxed">
+                Uçtan uca şifrelenmiş mesajlaşma sistemi ile güvenli iletişim sağlayın.
+              </p>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  Anlık bildirimler
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  Dosya paylaşımı
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  Görüntülü görüşme desteği
+                </li>
+              </ul>
+            </div>
+
+            {/* Proaktif Süreç Yönetimi */}
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <GitBranch className="w-12 h-12 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Proaktif Süreç Yönetimi</h3>
+              </div>
+              <p className="text-gray-200 leading-relaxed">
+                Yapay zeka destekli süreç yönetimi ile olası riskleri önceden tespit edin.
+              </p>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  Otomatik risk analizi
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  Vade takip sistemi
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                  Akıllı hatırlatmalar
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed italic">
+              Hukuki süreçlerinizi dijitalleştirirken, insan dokunuşundan ödün vermiyoruz.
+            </p>
           </div>
         </div>
       </section>
