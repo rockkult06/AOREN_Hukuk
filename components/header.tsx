@@ -50,7 +50,7 @@ export default function Header() {
       if (officesSection) {
         officesSection.scrollIntoView({ behavior: 'smooth' })
       }
-    } else if (href === '/kurumsal-sosyal') {
+    } else if (href === '/sosyal-sorumluluk') {
       // Ana sayfadaki kurumsal sosyal sorumluluk bölümüne scroll yap
       const socialSection = document.getElementById('social-responsibility')
       if (socialSection) {
