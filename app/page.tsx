@@ -503,7 +503,7 @@ export default function Home() {
       </section>
 
       {/* Uzmanlık Alanlarımız Bölümü */}
-      <section id="expertise" className="min-h-screen bg-[#F6F4F0] py-20">
+      <section id="expertise" className="min-h-screen bg-[#949393] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-[#2F2F31] mb-6">Uzmanlık Alanlarımız</h2>
