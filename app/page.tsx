@@ -7,7 +7,7 @@ import Footer from "@/components/Footer"
 import BackgroundVideo from "@/components/BackgroundVideo"
 import styled from "styled-components"
 import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop, MapPin, MapPinned, Phone, GraduationCap, Scale, Leaf, Target, Briefcase, Upload, Send, LayoutDashboard, CheckCircle, FileSignature, MessageSquare, GitBranch, Clock } from "lucide-react"
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { getTranslation } from '@/lib/i18n';
 import MainContent from '@/components/MainContent';
 
@@ -407,7 +407,7 @@ const expertiseData = [
 
 export default function Home() {
   const router = useRouter();
-  const t = getTranslation(router.locale as 'tr' | 'en' | 'de');
+  const t = getTranslation('tr'); // Default to Turkish, will be updated by client-side language switcher
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
