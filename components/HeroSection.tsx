@@ -104,16 +104,16 @@ const HeroSection: React.FC = () => {
     <HeroContainer>
       <BoxContainer>
         <InfoBox>
-          <h2>TÜRKİYE'NİN ÖNDE GELEN HUKUK BÜROLARINDAN BİRİ</h2>
-          <p>Tüm ekibi görün</p>
+          <h2>YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN</h2>
+          <p>"Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım"</p>
         </InfoBox>
         <InfoBox>
-          <h2>MÜVEKKİLLERİMİZE TÜM OFİSLERİMİZDE HİZMET VERİYORUZ</h2>
-          <p>Ofislerimizi görün</p>
+          <h2>BÖLGESEL DEĞİL, ULUSLARARASI DÜZEYDE HİZMET SUNUYORUZ</h2>
+          <p>"Aynı Değerler, Farklı Şehirlerde"</p>
         </InfoBox>
         <InfoBox>
-          <h2>TÜM HUKUKİ UZMANLIK ALANLARINDA HİZMET VERİYORUZ</h2>
-          <p>Uzmanlık alanlarımızı görün</p>
+          <h2>KAPSAMLI HUKUKİ ÇÖZÜM ALANLARIMIZI İNCELEYİN</h2>
+          <p>"Hukukun Tüm Alanlarında Yetkin Kadro, Bütünleşik Yaklaşım"</p>
         </InfoBox>
       </BoxContainer>
     </HeroContainer>

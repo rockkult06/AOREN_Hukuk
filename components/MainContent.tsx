@@ -181,7 +181,7 @@ const MainContent: React.FC = () => {
     <MainContentContainer>
       <AboutSection>
         <p>
-          AOREN, Türkiye'nin önde gelen hukuk bürolarından biri olarak 220'den fazla çalışanı ile hizmet vermektedir.
+          AOREN, yüksek etki yaratan hukuk kadrosuyla 220'den fazla çalışanı ile hizmet vermektedir.
         </p>
         <button>Daha fazla bilgi</button>
       </AboutSection>

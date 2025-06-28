@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Aoren - Türkiye'nin Önde Gelen Hukuk Bürosu</title>
+        <title>Aoren - Yüksek Etki Yaratan Hukuk Bürosu</title>
         <meta name="description" content="Aoren Hukuk Bürosu" />
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />

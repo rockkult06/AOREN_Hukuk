@@ -11,7 +11,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Aoren - Türkiye'nin Önde Gelen Hukuk Bürosu",
+  title: "Aoren - Yüksek Etki Yaratan Hukuk Bürosu",
   description: "Aoren Hukuk Bürosu - Hukuki danışmanlık, arabuluculuk ve yasal destek hizmetleri",
     generator: 'v0.dev'
 }

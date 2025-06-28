@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
         <FooterSection>
           <h3>AOREN Hukuk Bürosu</h3>
           <p>
-            Türkiye'nin önde gelen hukuk bürolarından biri olarak, müvekkillerimize en kaliteli hukuki hizmeti sunmayı
+            Yüksek etki yaratan hukuk kadromuzla, müvekkillerimize en kaliteli hukuki hizmeti sunmayı
             hedefliyoruz.
           </p>
           <p>
