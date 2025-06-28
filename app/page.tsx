@@ -617,95 +617,95 @@ export default function Home() {
       </section>
 
       {/* Ofislerimiz Bölümü */}
-      <section id="offices" className="min-h-screen bg-[#F6F4F0] py-20">
+      <section id="offices" className="min-h-screen bg-[#2F2F31] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-[#2F2F31] mb-6">Ofislerimiz</h2>
-            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <h2 className="text-5xl font-bold text-white mb-6">Ofislerimiz</h2>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               AOREN Legal Services olarak, Almanya ve Türkiye'deki üç stratejik merkez ofisimizle, müvekkillerimize yerel yakınlıkla birlikte küresel standartlarda hizmet sunuyoruz.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Stuttgart Ofisi */}
-            <div className="bg-white/70 backdrop-blur-[10px] rounded-[20px] border border-white/60 p-8 hover:bg-white/80 transition-all duration-300 shadow-lg">
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300 shadow-lg">
               <div className="flex items-center mb-6">
                 <MapPin className="w-8 h-8 text-blue-600 mr-4" />
-                <h3 className="text-2xl font-semibold text-gray-800">Stuttgart</h3>
+                <h3 className="text-2xl font-semibold text-white">Stuttgart</h3>
               </div>
               <div className="mb-4">
-                <h4 className="text-lg font-semibold text-blue-600 mb-3">Avrupa Operasyon Merkezi</h4>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <h4 className="text-lg font-semibold text-blue-400 mb-3">Avrupa Operasyon Merkezi</h4>
+                <p className="text-gray-300 leading-relaxed mb-6">
                   Stratejik konumu sayesinde, sınır ötesi ticari işlemlerinizde güçlü bir üs niteliğindedir. Almanya'daki Türk girişimciler, Avrupa'ya açılmak isteyen şirketler ve diaspora toplulukları için özel çözümler geliştiriyoruz.
                 </p>
               </div>
-              <div className="space-y-2 text-gray-700">
+              <div className="space-y-2 text-gray-300">
                 <div className="flex items-start">
-                  <MapPinned className="w-5 h-5 text-blue-600 mr-2 mt-1 flex-shrink-0" />
+                  <MapPinned className="w-5 h-5 text-blue-400 mr-2 mt-1 flex-shrink-0" />
                   <p>Neckarstraße 155, 70190 Stuttgart, Almanya</p>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-blue-600 mr-2" />
+                  <Phone className="w-5 h-5 text-blue-400 mr-2" />
                   <p>+49 (0)711 123 45 67</p>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="w-5 h-5 text-blue-600 mr-2" />
+                  <Mail className="w-5 h-5 text-blue-400 mr-2" />
                   <p>stuttgart@aorenlegal.com</p>
                 </div>
               </div>
             </div>
 
             {/* İstanbul Ofisi */}
-            <div className="bg-white/70 backdrop-blur-[10px] rounded-[20px] border border-white/60 p-8 hover:bg-white/80 transition-all duration-300 shadow-lg">
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300 shadow-lg">
               <div className="flex items-center mb-6">
                 <MapPin className="w-8 h-8 text-blue-600 mr-4" />
-                <h3 className="text-2xl font-semibold text-gray-800">İstanbul</h3>
+                <h3 className="text-2xl font-semibold text-white">İstanbul</h3>
               </div>
               <div className="mb-4">
-                <h4 className="text-lg font-semibold text-blue-600 mb-3">Ticaret ve Finans Merkezi</h4>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <h4 className="text-lg font-semibold text-blue-400 mb-3">Ticaret ve Finans Merkezi</h4>
+                <p className="text-gray-300 leading-relaxed mb-6">
                   Türkiye'nin ekonomik merkezinde yer alan İstanbul ofisimiz, yatırım, finans ve gayrimenkul işlemleriniz için uzman kadrosuyla hizmet verir. Anadolu ve Avrupa yakalarında ayrı danışman ekipleri ile hızlı ve kapsamlı çözümler sunar.
                 </p>
               </div>
-              <div className="space-y-2 text-gray-700">
+              <div className="space-y-2 text-gray-300">
                 <div className="flex items-start">
-                  <MapPinned className="w-5 h-5 text-blue-600 mr-2 mt-1 flex-shrink-0" />
+                  <MapPinned className="w-5 h-5 text-blue-400 mr-2 mt-1 flex-shrink-0" />
                   <p>Büyükdere Caddesi No:233, Nurol Plaza, Kat:11, Levent, 34394 Şişli / İstanbul</p>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-blue-600 mr-2" />
+                  <Phone className="w-5 h-5 text-blue-400 mr-2" />
                   <p>+90 (212) 345 67 89</p>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="w-5 h-5 text-blue-600 mr-2" />
+                  <Mail className="w-5 h-5 text-blue-400 mr-2" />
                   <p>istanbul@aorenlegal.com</p>
                 </div>
               </div>
             </div>
 
             {/* Ankara Ofisi */}
-            <div className="bg-white/70 backdrop-blur-[10px] rounded-[20px] border border-white/60 p-8 hover:bg-white/80 transition-all duration-300 shadow-lg">
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300 shadow-lg">
               <div className="flex items-center mb-6">
                 <MapPin className="w-8 h-8 text-blue-600 mr-4" />
-                <h3 className="text-2xl font-semibold text-gray-800">Ankara</h3>
+                <h3 className="text-2xl font-semibold text-white">Ankara</h3>
               </div>
               <div className="mb-4">
-                <h4 className="text-lg font-semibold text-blue-600 mb-3">Koordinasyon ve Kamu İlişkileri Merkezi</h4>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <h4 className="text-lg font-semibold text-blue-400 mb-3">Koordinasyon ve Kamu İlişkileri Merkezi</h4>
+                <p className="text-gray-300 leading-relaxed mb-6">
                   Başkentteki ofisimiz, kamu kurumlarıyla etkili iletişim gerektiren dosyalar ve ülke çapındaki operasyonlarımızın koordinasyonu için özel bir merkezdir. Ayrıca, akademik iş birlikleri ve mevzuat takibi konusunda da destek sağlamaktadır.
                 </p>
               </div>
-              <div className="space-y-2 text-gray-700">
+              <div className="space-y-2 text-gray-300">
                 <div className="flex items-start">
-                  <MapPinned className="w-5 h-5 text-blue-600 mr-2 mt-1 flex-shrink-0" />
+                  <MapPinned className="w-5 h-5 text-blue-400 mr-2 mt-1 flex-shrink-0" />
                   <p>Mustafa Kemal Mah. 2151. Cad. No:15, Kat:4, Çankaya / Ankara</p>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-blue-600 mr-2" />
+                  <Phone className="w-5 h-5 text-blue-400 mr-2" />
                   <p>+90 (312) 456 78 90</p>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="w-5 h-5 text-blue-600 mr-2" />
+                  <Mail className="w-5 h-5 text-blue-400 mr-2" />
                   <p>ankara@aorenlegal.com</p>
                 </div>
               </div>

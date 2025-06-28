@@ -155,6 +155,12 @@ const HeroSection: React.FC = () => {
       if (expertiseSection) {
         expertiseSection.scrollIntoView({ behavior: 'smooth' })
       }
+    } else if (path === '/ofislerimiz') {
+      // Ana sayfadaki ofislerimiz bölümüne scroll yap
+      const officesSection = document.getElementById('offices')
+      if (officesSection) {
+        officesSection.scrollIntoView({ behavior: 'smooth' })
+      }
     } else {
       router.push(path)
     }
