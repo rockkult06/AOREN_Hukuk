@@ -316,8 +316,79 @@ const employeesData = [
   },
 ]
 
+// Uzmanlık alanları verileri
+const expertiseData = [
+  {
+    title: "Aile Hukuku & Uluslararası Miras",
+    subtitle: "Her aile biriciktir; hukuki ihtiyaçları da öyle.",
+    description: "AOREN, karmaşık ailevi yapılar ve çok uluslu miras işlemlerinde, duygusal hassasiyetleri gözeterek etkili ve sürdürülebilir çözümler sunar. Boşanma, mal paylaşımı, evlilik sözleşmeleri, velayet düzenlemeleri gibi konularda yalnızca hukuki değil, stratejik danışmanlık da sağlarız.\n\nUluslararası miras planlamasında, farklı hukuk sistemleri ve vatandaşlık durumlarını göz önünde bulundurarak, varlıklarınızın nesiller arası aktarımını hukuki güvence altına alırız.",
+    services: [
+      "Mal rejimi ve boşanma protokolleri",
+      "Varlık planlaması ve vasiyet düzenlemeleri", 
+      "Uluslararası miras davaları",
+      "Aile şirketi geçiş süreçleri"
+    ]
+  },
+  {
+    title: "Ticaret ve Şirketler Hukuku",
+    subtitle: "Modern iş dünyasında hukuki alt yapı, stratejik başarı için temel unsurdur.",
+    description: "AOREN, her ölçekten şirketin ticari yaşam döngüsüne eşlik eder. Kuruluş süreçlerinden birleşme ve devralmalara, pay sahipliği sözleşmelerinden yönetişim yapılarının yeniden tasarlanmasına kadar tüm aşamalarda yanınızdayız.\n\nYerli ve yabancı yatırımların hukuki yapılandırmalarında, sözleşme tasarımlarından rekabet hukukuna kadar geniş bir yelpazede destek sunarız.",
+    services: [
+      "Şirket kuruluşu ve genel kurul süreçleri",
+      "Ortaklık sözleşmeleri ve hissedar yapıları",
+      "Birleşme, bölünme ve devralmalar",
+      "Ticaret sözleşmeleri ve uluslararası işlemler"
+    ]
+  },
+  {
+    title: "Gayrimenkul ve Yatırım Hukuku", 
+    subtitle: "Yatırımlarınızın değeri, sağlam bir hukuki zemine dayanır.",
+    description: "AOREN, prestijli gayrimenkul projeleri ve büyük ölçekli arsa yatırımları için kapsamlı hukuki destek sunar. Arsa geliştirme, tapu işlemleri, kentsel dönüşüm projeleri ve yatırım portföylerinin hukuki yönetimi konusunda uzmanız.\n\nPropTech alanındaki girişimlerden karma kullanım projelerine kadar, gayrimenkul alanında dijitalleşme ve sürdürülebilirlik eksenli çözümler geliştiriyoruz.",
+    services: [
+      "Alım-satım, kira ve tapu işlemleri",
+      "İmar hukuku ve proje geliştirme danışmanlığı",
+      "Arsa ortaklık sözleşmeleri",
+      "Gayrimenkul yatırım fonları"
+    ]
+  },
+  {
+    title: "Ceza Hukuku ve Dijital Güvenlik",
+    subtitle: "Savunmanız sadece hukuki değil, stratejik da olmalı.",
+    description: "AOREN, ceza hukukunun en karmaşık alanlarında, özellikle beyaz yaka suçları, vergi kaçakçılığı, kara para aklama ve siber suçlar gibi konularda güçlü ve proaktif savunma stratejileri geliştirir.\n\nDijital güvenlik konularında, kişisel verilerin korunması, siber saldırı sonrası yasal müdahaleler ve itibar yönetimi süreçlerinde uzman desteği sağlıyoruz.",
+    services: [
+      "Ekonomik ve mali suçlar",
+      "Siber suçlar ve veri güvenliği",
+      "Basın ve sosyal medya hukuku",
+      "Kişisel güvenlik ve tehdit yönetimi"
+    ]
+  },
+  {
+    title: "Uyum ve Risk Yönetimi",
+    subtitle: "Yasal uyum, yalnızca bir zorunluluk değil; rekabet avantajıdır.",
+    description: "AOREN, kurumsal yapılar için etik uyum politikaları, iç denetim sistemleri, KVKK ve GDPR süreçleri, harici bildirim mekanizmaları ve yolsuzlukla mücadele protokollerini içeren bütüncül çözümler geliştirir.\n\nRiskleri önceden tespit edip önleyici hukuki çerçeve sunarak, şirketinizin sürdürülebilirliğini destekliyoruz.",
+    services: [
+      "KVKK ve GDPR uyum denetimleri",
+      "Etik politika ve işyeri iç tüzükleri",
+      "Harici bildirim/whistleblower sistemleri",
+      "Regülasyon takibi ve kriz yönetimi"
+    ]
+  },
+  {
+    title: "Kurumsal Finansman ve Girişim Sermayesi",
+    subtitle: "Finansal kararların hukuki boyutu, yatırımınızın geleceğini belirler.",
+    description: "AOREN, özel sermaye yatırımları, girişim sermayesi fonları, halka arzlar ve uluslararası yatırım süreçlerinde kapsamlı hukuki danışmanlık sunar.\n\nYatırımcı sözleşmelerinden ortaklık yapılandırmalarına, banka teminat sistemlerinden sermaye piyasası regülasyonlarına kadar tüm süreçleri iş stratejinizle uyumlu hale getiririz.",
+    services: [
+      "Girişim sermayesi ve yatırım turu danışmanlığı",
+      "Bankacılık sözleşmeleri ve teminat yapıları",
+      "Halka arz ve Borsa İstanbul işlemleri",
+      "Finansal yeniden yapılandırma"
+    ]
+  }
+]
+
 export default function Home() {
   const [selectedMember, setSelectedMember] = useState<number | null>(null)
+  const [selectedExpertise, setSelectedExpertise] = useState<number | null>(null)
 
   // Scroll event handler
   useEffect(() => {
@@ -325,21 +396,8 @@ export default function Home() {
       const scrollPosition = window.scrollY
       const windowHeight = window.innerHeight
       
-      // Ekibimiz bölümüne scroll
-      if (scrollPosition > windowHeight * 0.8 && scrollPosition < windowHeight * 1.8) {
-        const teamSection = document.getElementById('team')
-        if (teamSection) {
-          teamSection.scrollIntoView({ behavior: 'smooth' })
-        }
-      }
-      
-      // Uzmanlık alanları bölümüne scroll
-      if (scrollPosition > windowHeight * 1.8) {
-        const expertiseSection = document.getElementById('expertise')
-        if (expertiseSection) {
-          expertiseSection.scrollIntoView({ behavior: 'smooth' })
-        }
-      }
+      // Bu scroll event'i kaldırıyoruz çünkü otomatik scroll istemiyoruz
+      // Kullanıcı manuel olarak scroll yapabilir
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -458,29 +516,52 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {[
-              "Aile Hukuku & Uluslararası Miras",
-              "Ticaret ve Şirketler Hukuku", 
-              "Gayrimenkul ve Yatırım Hukuku",
-              "Ceza Hukuku ve Dijital Güvenlik",
-              "Uyum ve Risk Yönetimi",
-              "Kurumsal Finansman, Girişim Sermayesi",
-              "Uyuşmazlık Çözümü & Uluslararası Tahkim"
-            ].map((expertise, index) => (
+            {expertiseData.map((expertise, index) => (
               <div 
                 key={index}
-                className="bg-white/80 backdrop-blur-sm rounded-[20px] border border-gray-200/50 shadow-lg p-6 hover:shadow-xl hover:bg-white/90 transition-all duration-300 hover:scale-105"
+                className="bg-white/80 backdrop-blur-sm rounded-[20px] border border-gray-200/50 shadow-lg p-8 hover:shadow-xl hover:bg-white/90 transition-all duration-300 hover:scale-105 cursor-pointer min-h-[220px] flex flex-col justify-between"
+                onClick={() => setSelectedExpertise(index)}
               >
-                <h3 className="text-lg font-semibold text-[#2F2F31] text-center leading-relaxed">
-                  {expertise}
-                </h3>
+                <div>
+                  <h3 className="text-xl font-bold text-[#2F2F31] mb-4 text-center leading-tight">
+                    {expertise.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm text-center leading-relaxed font-medium italic">
+                    {expertise.subtitle}
+                  </p>
+                </div>
+                <div className="mt-6 text-center">
+                  <button className="bg-gradient-to-r from-[#2F2F31] to-gray-600 text-white px-6 py-2 rounded-[12px] font-semibold text-sm hover:from-gray-600 hover:to-[#2F2F31] transition-all duration-300 hover:scale-105">
+                    Detayları Görün
+                  </button>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Modal */}
+      {/* Uzmanlık Alanları Modal */}
+      {selectedExpertise !== null && (
+        <ModalOverlay onClick={() => setSelectedExpertise(null)}>
+          <ModalContent onClick={e => e.stopPropagation()}>
+            <ModalClose onClick={() => setSelectedExpertise(null)}><X size={28} /></ModalClose>
+            <div className="w-full">
+              <ModalTitle>{expertiseData[selectedExpertise].title}</ModalTitle>
+              <ModalSubtitle>{expertiseData[selectedExpertise].subtitle}</ModalSubtitle>
+              <ModalText style={{whiteSpace:'pre-line'}}>{expertiseData[selectedExpertise].description}</ModalText>
+              <ModalLabel>Hizmet Başlıklarımız:</ModalLabel>
+              <ModalList>
+                {expertiseData[selectedExpertise].services.map((service, i) => (
+                  <li key={i}>{service}</li>
+                ))}
+              </ModalList>
+            </div>
+          </ModalContent>
+        </ModalOverlay>
+      )}
+
+      {/* Ekibimiz Modal */}
       {selectedMember !== null && (
         <ModalOverlay onClick={() => setSelectedMember(null)}>
           <ModalContent onClick={e => e.stopPropagation()}>
