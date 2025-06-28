@@ -185,7 +185,7 @@ export default function Header() {
               <Search className={`absolute left-3 h-4 w-4 ${isScrolled ? 'text-gray-400' : 'text-white/60'}`} />
               <Input
                 type="search"
-                placeholder="Search for lawyers, articles, practice areas ..."
+                placeholder="Site içi arama..."
                 className={`pl-10 w-64 ${
                   isScrolled 
                     ? 'bg-white border-gray-200 text-gray-900 placeholder:text-gray-500' 
