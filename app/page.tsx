@@ -6,7 +6,7 @@ import HeroSection from "@/components/HeroSection"
 import Footer from "@/components/Footer"
 import BackgroundVideo from "@/components/BackgroundVideo"
 import styled from "styled-components"
-import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop, MapPin, MapPinned, Phone, GraduationCap, Scale, Leaf, Target } from "lucide-react"
+import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop, MapPin, MapPinned, Phone, GraduationCap, Scale, Leaf, Target, Briefcase, Upload, Send } from "lucide-react"
 
 const TeamSection = styled.section`
   padding: 80px 20px;
@@ -771,6 +771,114 @@ export default function Home() {
               <p className="text-2xl font-semibold text-white mt-6 italic">
                 Toplum için, hukukla dönüşüm.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AOREN'de Kariyer Bölümü */}
+      <section id="career" className="min-h-screen bg-[#2F2F31] py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6">AOREN'de Kariyer</h2>
+            <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic mb-4">
+              Kariyerinizde sıradan değil, stratejik bir adım atmak ister misiniz?
+            </p>
+            <p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed mb-2">
+              AOREN, sadece çalışılacak bir yer değil; gelişilecek, katkı sağlanacak ve birlikte üretilecek bir ekosistemdir.
+            </p>
+            <p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              Stajyerden ortaklığa giden bu yolda sizi destekleyecek bir kariyer modeli sunuyoruz.
+            </p>
+          </div>
+
+          {/* Kariyer Başvuru Formu */}
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8">
+              <div className="flex items-center mb-8">
+                <Briefcase className="w-8 h-8 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Kariyer Başvuru Formu</h3>
+              </div>
+              
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-white text-sm font-medium">Ad</label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="Adınız"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-white text-sm font-medium">Soyad</label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="Soyadınız"
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-white text-sm font-medium">E-posta</label>
+                  <input
+                    type="email"
+                    className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="E-posta adresiniz"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-white text-sm font-medium">Telefon</label>
+                  <input
+                    type="tel"
+                    className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Telefon numaranız"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-white text-sm font-medium">Başvurmak İstediğiniz Pozisyon</label>
+                  <select className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="" className="bg-[#2F2F31]">Seçiniz</option>
+                    <option value="stajyer" className="bg-[#2F2F31]">Stajyer Avukat</option>
+                    <option value="junior" className="bg-[#2F2F31]">Junior Avukat</option>
+                    <option value="senior" className="bg-[#2F2F31]">Senior Avukat</option>
+                    <option value="uzman" className="bg-[#2F2F31]">Uzman</option>
+                    <option value="diger" className="bg-[#2F2F31]">Diğer</option>
+                  </select>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-white text-sm font-medium">Özgeçmiş (CV)</label>
+                  <div className="flex items-center justify-center w-full">
+                    <label className="flex flex-col items-center justify-center w-full h-32 border-2 border-white/20 border-dashed rounded-lg cursor-pointer bg-white/5 hover:bg-white/10">
+                      <div className="flex flex-col items-center justify-center pt-5 pb-6">
+                        <Upload className="w-8 h-8 text-blue-400 mb-2" />
+                        <p className="text-sm text-gray-300">PDF veya Word dosyası yükleyin</p>
+                      </div>
+                      <input type="file" className="hidden" accept=".pdf,.doc,.docx" />
+                    </label>
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-white text-sm font-medium">Mesajınız</label>
+                  <textarea
+                    className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 h-32 resize-none"
+                    placeholder="Kendinizi tanıtın ve neden AOREN'de çalışmak istediğinizi belirtin"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
+                >
+                  <Send className="w-5 h-5" />
+                  Başvuruyu Gönder
+                </button>
+              </form>
             </div>
           </div>
         </div>

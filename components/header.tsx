@@ -56,6 +56,12 @@ export default function Header() {
       if (socialSection) {
         socialSection.scrollIntoView({ behavior: 'smooth' })
       }
+    } else if (href === '/kariyer') {
+      // Ana sayfadaki kariyer bölümüne scroll yap
+      const careerSection = document.getElementById('career')
+      if (careerSection) {
+        careerSection.scrollIntoView({ behavior: 'smooth' })
+      }
     } else {
       // Diğer sayfalar için normal navigasyon
       window.location.href = href
