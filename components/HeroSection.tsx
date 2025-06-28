@@ -40,15 +40,15 @@ margin-top: 80px;
 const InfoBox = styled.div`
 background-color: rgba(255, 255, 255, 0.15);
 backdrop-filter: blur(10px);
-padding: 32px 22px;
+padding: 40px 24px;
 border-radius: 20px;
 cursor: pointer;
 transition: all 0.3s ease;
-width: 320px;
-min-height: 170px;
+width: 360px;
+min-height: 220px;
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 text-align: center;
 border: 1px solid rgba(255, 255, 255, 0.2);
@@ -61,33 +61,73 @@ box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border-radius: 24px;
 }
 
-h2 {
-  font-size: 1em;
-  margin-bottom: 20px;
-  color: white;
-  font-weight: 600;
-  line-height: 1.4;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-p {
-  font-size: 0.9em;
-  opacity: 0.9;
-  color: white;
-  margin: 0;
-  font-weight: 500;
-}
-
 @media (max-width: 768px) {
   width: 100%;
-  padding: 24px 14px;
+  padding: 32px 20px;
   min-height: auto;
   border-radius: 18px;
   
   &:hover {
     border-radius: 22px;
   }
+}
+`
+
+const SloganTitle = styled.h2`
+font-size: 1.4em;
+margin-bottom: 16px;
+color: white;
+font-weight: 700;
+line-height: 1.3;
+text-transform: uppercase;
+letter-spacing: 0.8px;
+text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+@media (max-width: 768px) {
+  font-size: 1.2em;
+  letter-spacing: 0.6px;
+}
+`
+
+const SloganSubtitle = styled.p`
+font-size: 1em;
+opacity: 0.95;
+color: rgba(255, 255, 255, 0.9);
+margin: 0 0 24px 0;
+font-weight: 500;
+line-height: 1.5;
+font-style: italic;
+
+@media (max-width: 768px) {
+  font-size: 0.95em;
+  margin-bottom: 20px;
+}
+`
+
+const ActionButton = styled.button`
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+border: 1px solid rgba(255, 255, 255, 0.3);
+color: white;
+padding: 12px 24px;
+border-radius: 12px;
+font-size: 0.9em;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+backdrop-filter: blur(10px);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+
+&:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  padding: 10px 20px;
+  font-size: 0.85em;
 }
 `
 
@@ -104,16 +144,25 @@ const HeroSection: React.FC = () => {
     <HeroContainer>
       <BoxContainer>
         <InfoBox>
-          <h2>YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN</h2>
-          <p>"Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım"</p>
+          <div>
+            <SloganTitle>YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN</SloganTitle>
+            <SloganSubtitle>"Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım"</SloganSubtitle>
+          </div>
+          <ActionButton>Ekibimizi Görün</ActionButton>
         </InfoBox>
         <InfoBox>
-          <h2>BÖLGESEL DEĞİL, ULUSLARARASI DÜZEYDE HİZMET SUNUYORUZ</h2>
-          <p>"Aynı Değerler, Farklı Şehirlerde"</p>
+          <div>
+            <SloganTitle>BÖLGESEL DEĞİL, ULUSLARARASI DÜZEYDE HİZMET SUNUYORUZ</SloganTitle>
+            <SloganSubtitle>"Aynı Değerler, Farklı Şehirlerde"</SloganSubtitle>
+          </div>
+          <ActionButton>Ofislerimizi Keşfedin</ActionButton>
         </InfoBox>
         <InfoBox>
-          <h2>KAPSAMLI HUKUKİ ÇÖZÜM ALANLARIMIZI İNCELEYİN</h2>
-          <p>"Hukukun Tüm Alanlarında Yetkin Kadro, Bütünleşik Yaklaşım"</p>
+          <div>
+            <SloganTitle>KAPSAMLI HUKUKİ ÇÖZÜM ALANLARIMIZI İNCELEYİN</SloganTitle>
+            <SloganSubtitle>"Hukukun Tüm Alanlarında Yetkin Kadro, Bütünleşik Yaklaşım"</SloganSubtitle>
+          </div>
+          <ActionButton>Uzmanlık Alanları</ActionButton>
         </InfoBox>
       </BoxContainer>
     </HeroContainer>
