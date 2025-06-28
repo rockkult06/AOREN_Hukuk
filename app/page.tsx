@@ -1,11 +1,25 @@
 import Head from "next/head"
 import Header from "@/components/header"
 import HeroSection from "@/components/HeroSection"
-import MainContent from "@/components/MainContent"
 import Footer from "@/components/Footer"
 import BackgroundVideo from "@/components/BackgroundVideo"
+import { useEffect } from "react"
+import { useRouter } from "next/navigation"
 
 export default function Home() {
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Kullanıcı hero section'dan aşağıya kaydırınca yönlendir
+      if (window.scrollY > window.innerHeight * 0.5) {
+        router.push("/employees")
+      }
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [router])
+
   return (
     <>
       <Head>
@@ -18,7 +32,6 @@ export default function Home() {
       <BackgroundVideo />
       <Header />
       <HeroSection />
-      <MainContent />
       <Footer />
     </>
   )
