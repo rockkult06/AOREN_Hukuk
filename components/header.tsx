@@ -24,7 +24,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={`fixed top-0 w-full transition-all duration-300 z-50 ${
+    <header className={`fixed top-0 w-full transition-all duration-300 z-[100] ${
       isScrolled 
         ? 'bg-white/90 backdrop-blur-md border-b border-gray-200' 
         : 'bg-transparent border-b border-white/20'
@@ -51,7 +51,7 @@ export default function Header() {
               <SheetTrigger asChild>
                 <Button 
                   variant="ghost" 
-                  className={`px-8 py-3 text-lg font-medium ${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'}`}
+                  className={`px-8 py-3 text-lg font-medium z-[110] relative ${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'}`}
                 >
                   <Menu className="h-6 w-6 mr-3" />
                   Menu
@@ -59,7 +59,7 @@ export default function Header() {
               </SheetTrigger>
               <SheetContent 
                 side="left"
-                className="border-none bg-transparent p-0 shadow-none mt-16 absolute transition-all duration-500 ease-in-out opacity-0 data-[state=open]:opacity-100 data-[state=closed]:opacity-0"
+                className="border-none bg-transparent p-0 shadow-none mt-16 absolute transition-all duration-500 ease-in-out opacity-0 data-[state=open]:opacity-100 data-[state=closed]:opacity-0 z-[105]"
               >
                 {/* Buzlu Cam Menu Kartı */}
                 <div className="m-6 bg-white/15 backdrop-blur-[10px] rounded-[20px] border border-white/20 shadow-2xl p-6 w-80 transition-all duration-300">
