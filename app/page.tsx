@@ -159,9 +159,11 @@ const ModalOverlay = styled.div`
 `
 
 const ModalContent = styled.div`
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
   color: #222;
   border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 48px rgba(0,0,0,0.18);
   max-width: 800px;
   width: 95vw;
@@ -523,10 +525,10 @@ export default function Home() {
                 onClick={() => setSelectedExpertise(index)}
               >
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-4 text-center leading-tight text-shadow-sm">
+                  <h3 className="text-xl font-bold text-black mb-4 text-center leading-tight">
                     {expertise.title}
                   </h3>
-                  <p className="text-white/90 text-sm text-center leading-relaxed font-medium italic">
+                  <p className="text-black text-sm text-center leading-relaxed font-medium italic">
                     {expertise.subtitle}
                   </p>
                 </div>
