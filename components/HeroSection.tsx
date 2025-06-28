@@ -142,6 +142,11 @@ const HeroSection: React.FC = () => {
     }
   }, [])
 
+  const handleScrollToTeam = () => {
+    const el = document.getElementById("team-section");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  }
+
   const handleNavigation = (path: string) => {
     router.push(path)
   }
@@ -154,7 +159,7 @@ const HeroSection: React.FC = () => {
             <SloganTitle>YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN</SloganTitle>
             <SloganSubtitle>"Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım"</SloganSubtitle>
           </div>
-          <ActionButton onClick={() => handleNavigation('/employees')}>Ekibimizi Görün</ActionButton>
+          <ActionButton onClick={handleScrollToTeam}>Ekibimizi Görün</ActionButton>
         </InfoBox>
         <InfoBox>
           <div>

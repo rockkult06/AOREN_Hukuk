@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import Head from "next/head"
 import Header from "@/components/header"
 import HeroSection from "@/components/HeroSection"
+import TeamSection from "@/components/TeamSection"
 import Footer from "@/components/Footer"
 import BackgroundVideo from "@/components/BackgroundVideo"
 import { useRouter } from "next/navigation"
@@ -33,7 +34,8 @@ export default function Home() {
       <BackgroundVideo />
       <Header />
       <HeroSection />
-      {/* <Footer />  // Footer'ı ana sayfada kaldırın, çünkü employees sayfasında zaten var */}
+      <TeamSection />
+      <Footer />
     </>
   )
 }
