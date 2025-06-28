@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Head from "next/head"
 import Header from "@/components/header"
 import HeroSection from "@/components/HeroSection"
@@ -10,6 +10,20 @@ import { useRouter } from "next/navigation"
 
 export default function Home() {
   const router = useRouter()
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentY = window.scrollY;
+      // Eğer kullanıcı yukarıya scroll yapıyorsa ve sayfanın üstüne yaklaşıyorsa, hero section'a smooth scroll
+      if (currentY < window.innerHeight * 0.5 && lastScrollY.current > currentY) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      lastScrollY.current = currentY;
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
