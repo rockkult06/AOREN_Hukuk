@@ -1,0 +1,167 @@
+{
+  "header": {
+    "home": "Ana Sayfa",
+    "team": "Ekibimiz",
+    "expertise": "Uzmanlık Alanlarımız",
+    "about": "Hakkımızda",
+    "offices": "Ofislerimiz",
+    "digital": "AOREN Dijital Hizmetleri",
+    "responsibility": "Kurumsal Sosyal Sorumluluk",
+    "careers": "AOREN'de Kariyer",
+    "contact": "İletişim",
+    "search": "Site içi arama..."
+  },
+  "hero": {
+    "title": "AOREN Hukuk Bürosu",
+    "subtitle": "Profesyonel Hukuki Danışmanlık",
+    "description": "Deneyimli avukat kadromuz ile hukuki ihtiyaçlarınıza en iyi çözümleri sunuyoruz. Ticaret, iş, aile ve ceza hukuku alanlarında uzman ekibimizle yanınızdayız.",
+    "getStarted": "Hemen Başlayın",
+    "learnMore": "Daha Fazla Bilgi"
+  },
+  "team": {
+    "title": "Ekibimiz",
+    "subtitle": "Deneyimli ve uzman avukat kadromuz",
+    "description": "Hukuk alanında uzun yıllar deneyim sahibi avukatlarımız, müvekkillerimize en kaliteli hukuki hizmeti sunmak için çalışmaktadır.",
+    "viewProfile": "Profili Görüntüle"
+  },
+  "expertise": {
+    "title": "Uzmanlık Alanlarımız",
+    "subtitle": "Geniş hukuki hizmet yelpazesi",
+    "description": "Farklı hukuk dallarında uzmanlaşmış ekibimizle, müvekkillerimizin tüm hukuki ihtiyaçlarını karşılıyoruz.",
+    "areas": {
+      "commercial": {
+        "title": "Ticaret Hukuku",
+        "description": "Şirket kuruluşu, birleşme, devralma ve ticari uyuşmazlıklar konularında danışmanlık hizmetleri."
+      },
+      "labor": {
+        "title": "İş Hukuku",
+        "description": "İş sözleşmeleri, işçi hakları, iş kazaları ve işveren yükümlülükleri konularında hukuki destek."
+      },
+      "family": {
+        "title": "Aile Hukuku",
+        "description": "Boşanma, velayet, nafaka ve aile içi hukuki sorunlarda profesyonel çözümler."
+      },
+      "criminal": {
+        "title": "Ceza Hukuku",
+        "description": "Suç isnadı, savunma ve ceza davalarında deneyimli avukat desteği."
+      },
+      "execution": {
+        "title": "İcra İflas Hukuku",
+        "description": "Alacak takibi, icra işlemleri ve iflas davalarında hukuki danışmanlık."
+      },
+      "mediation": {
+        "title": "Arabuluculuk",
+        "description": "Uyuşmazlıkların mahkeme dışı çözümü için profesyonel arabuluculuk hizmetleri."
+      }
+    }
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Güvenilir hukuki danışmanlık",
+    "description": "AOREN Hukuk Bürosu olarak, müvekkillerimize en kaliteli hukuki hizmeti sunmayı ilke edinmiş, deneyimli ve uzman avukat kadrosu ile hizmet veren bir hukuk bürosuyuz.",
+    "experience": "Yıllık Deneyim",
+    "cases": "Başarılı Dava",
+    "clients": "Memnun Müvekkil",
+    "awards": "Ödül"
+  },
+  "offices": {
+    "title": "Ofislerimiz",
+    "subtitle": "Size en yakın ofisimizden hizmet alın",
+    "description": "Türkiye'nin farklı şehirlerinde bulunan ofislerimizle müvekkillerimize kolay erişim imkanı sunuyoruz.",
+    "locations": {
+      "stuttgart": {
+        "title": "Stuttgart Ofisi",
+        "address": "Königstraße 10, 70173 Stuttgart, Almanya",
+        "phone": "+49 711 123 4567",
+        "email": "stuttgart@aoren.com.tr"
+      },
+      "istanbul": {
+        "title": "İstanbul Ofisi",
+        "address": "Levent Mahallesi, Büyükdere Caddesi No: 201, Şişli/İstanbul",
+        "phone": "+90 212 123 4567",
+        "email": "istanbul@aoren.com.tr"
+      },
+      "ankara": {
+        "title": "Ankara Ofisi",
+        "address": "Atatürk Bulvarı No: 123, Çankaya/Ankara",
+        "phone": "+90 312 123 4567",
+        "email": "ankara@aoren.com.tr"
+      }
+    }
+  },
+  "digital": {
+    "title": "AOREN Dijital Hizmetleri",
+    "subtitle": "Teknoloji ile hukuki çözümler",
+    "description": "Dijital çağın gereksinimlerini karşılayan yenilikçi hukuki hizmetlerimizle müvekkillerimize modern çözümler sunuyoruz."
+  },
+  "responsibility": {
+    "title": "Kurumsal Sosyal Sorumluluk",
+    "subtitle": "Topluma değer katma misyonumuz",
+    "description": "Hukuki hizmetlerimizin yanı sıra, toplumsal sorumluluk projelerimizle de değer yaratmaya devam ediyoruz."
+  },
+  "careers": {
+    "title": "AOREN'de Kariyer",
+    "subtitle": "Profesyonel gelişim fırsatları",
+    "description": "Dinamik ve gelişen ekibimize katılarak hukuk kariyerinizi AOREN ile şekillendirin.",
+    "applyNow": "Hemen Başvur"
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Bizimle iletişime geçin",
+    "description": "Hukuki danışmanlık ihtiyaçlarınız için bizimle iletişime geçebilirsiniz.",
+    "form": {
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "subject": "Konu",
+      "message": "Mesaj",
+      "send": "Gönder"
+    },
+    "info": {
+      "phone": "Telefon",
+      "fax": "Faks",
+      "email": "E-posta",
+      "hours": "Çalışma Saatleri",
+      "weekdays": "Pazartesi - Cuma: 09:00 - 18:00",
+      "saturday": "Cumartesi: 09:00 - 13:00"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "AOREN Hukuk Bürosu",
+      "description": "Yüksek etki yaratan hukuk kadromuzla, müvekkillerimize en kaliteli hukuki hizmeti sunmayı hedefliyoruz.",
+      "address": "Adres",
+      "addressText": "Atatürk Bulvarı No: 123\nÇankaya/Ankara"
+    },
+    "contact": {
+      "title": "İletişim",
+      "phone": "Telefon",
+      "fax": "Faks",
+      "email": "E-posta",
+      "hours": "Çalışma Saatleri",
+      "weekdays": "Pazartesi - Cuma: 09:00 - 18:00",
+      "saturday": "Cumartesi: 09:00 - 13:00"
+    },
+    "services": {
+      "title": "Hizmetlerimiz",
+      "commercial": "Ticaret Hukuku",
+      "labor": "İş Hukuku",
+      "family": "Aile Hukuku",
+      "criminal": "Ceza Hukuku",
+      "execution": "İcra İflas Hukuku",
+      "mediation": "Arabuluculuk"
+    },
+    "corporate": {
+      "title": "Kurumsal",
+      "team": "Ekibimiz",
+      "expertise": "Uzmanlık Alanlarımız",
+      "about": "Hakkımızda",
+      "offices": "Ofislerimiz",
+      "digital": "AOREN Dijital Hizmetleri",
+      "responsibility": "Kurumsal Sosyal Sorumluluk",
+      "careers": "AOREN'de Kariyer",
+      "contact": "İletişim"
+    },
+    "copyright": "© 2024 AOREN Hukuk Bürosu. Tüm hakları saklıdır. | Ankara Barosu'na kayıtlı avukatlık bürosu"
+  }
+} 

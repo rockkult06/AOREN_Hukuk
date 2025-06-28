@@ -1,0 +1,167 @@
+{
+  "header": {
+    "home": "Home",
+    "team": "Our Team",
+    "expertise": "Areas of Expertise",
+    "about": "About Us",
+    "offices": "Our Offices",
+    "digital": "AOREN Digital Services",
+    "responsibility": "Corporate Social Responsibility",
+    "careers": "Careers at AOREN",
+    "contact": "Contact",
+    "search": "Search website..."
+  },
+  "hero": {
+    "title": "AOREN Law Firm",
+    "subtitle": "Professional Legal Consultancy",
+    "description": "With our experienced team of lawyers, we provide the best solutions to your legal needs. We are with you with our expert team in commercial, labor, family and criminal law.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Experienced and expert team of lawyers",
+    "description": "Our lawyers with many years of experience in the field of law work to provide the highest quality legal service to our clients.",
+    "viewProfile": "View Profile"
+  },
+  "expertise": {
+    "title": "Areas of Expertise",
+    "subtitle": "Wide range of legal services",
+    "description": "With our team specialized in different branches of law, we meet all the legal needs of our clients.",
+    "areas": {
+      "commercial": {
+        "title": "Commercial Law",
+        "description": "Consultancy services on company establishment, mergers, acquisitions and commercial disputes."
+      },
+      "labor": {
+        "title": "Labor Law",
+        "description": "Legal support on employment contracts, workers' rights, work accidents and employer obligations."
+      },
+      "family": {
+        "title": "Family Law",
+        "description": "Professional solutions for divorce, custody, alimony and family legal issues."
+      },
+      "criminal": {
+        "title": "Criminal Law",
+        "description": "Experienced lawyer support in criminal accusations, defense and criminal cases."
+      },
+      "execution": {
+        "title": "Execution and Bankruptcy Law",
+        "description": "Legal consultancy in debt collection, execution procedures and bankruptcy cases."
+      },
+      "mediation": {
+        "title": "Mediation",
+        "description": "Professional mediation services for out-of-court resolution of disputes."
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Reliable legal consultancy",
+    "description": "As AOREN Law Firm, we are a law firm that has adopted the principle of providing the highest quality legal service to our clients and serves with an experienced and expert team of lawyers.",
+    "experience": "Years of Experience",
+    "cases": "Successful Cases",
+    "clients": "Satisfied Clients",
+    "awards": "Awards"
+  },
+  "offices": {
+    "title": "Our Offices",
+    "subtitle": "Get service from our nearest office",
+    "description": "With our offices located in different cities of Turkey, we provide easy access to our clients.",
+    "locations": {
+      "stuttgart": {
+        "title": "Stuttgart Office",
+        "address": "Königstraße 10, 70173 Stuttgart, Germany",
+        "phone": "+49 711 123 4567",
+        "email": "stuttgart@aoren.com.tr"
+      },
+      "istanbul": {
+        "title": "Istanbul Office",
+        "address": "Levent District, Büyükdere Avenue No: 201, Şişli/Istanbul",
+        "phone": "+90 212 123 4567",
+        "email": "istanbul@aoren.com.tr"
+      },
+      "ankara": {
+        "title": "Ankara Office",
+        "address": "Atatürk Boulevard No: 123, Çankaya/Ankara",
+        "phone": "+90 312 123 4567",
+        "email": "ankara@aoren.com.tr"
+      }
+    }
+  },
+  "digital": {
+    "title": "AOREN Digital Services",
+    "subtitle": "Legal solutions with technology",
+    "description": "We offer modern solutions to our clients with our innovative legal services that meet the requirements of the digital age."
+  },
+  "responsibility": {
+    "title": "Corporate Social Responsibility",
+    "subtitle": "Our mission to add value to society",
+    "description": "In addition to our legal services, we continue to create value with our social responsibility projects."
+  },
+  "careers": {
+    "title": "Careers at AOREN",
+    "subtitle": "Professional development opportunities",
+    "description": "Shape your legal career with AOREN by joining our dynamic and growing team.",
+    "applyNow": "Apply Now"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch with us",
+    "description": "You can contact us for your legal consultancy needs.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send"
+    },
+    "info": {
+      "phone": "Phone",
+      "fax": "Fax",
+      "email": "Email",
+      "hours": "Working Hours",
+      "weekdays": "Monday - Friday: 09:00 - 18:00",
+      "saturday": "Saturday: 09:00 - 13:00"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "AOREN Law Firm",
+      "description": "With our high-impact legal team, we aim to provide the highest quality legal service to our clients.",
+      "address": "Address",
+      "addressText": "Atatürk Boulevard No: 123\nÇankaya/Ankara"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "Phone",
+      "fax": "Fax",
+      "email": "Email",
+      "hours": "Working Hours",
+      "weekdays": "Monday - Friday: 09:00 - 18:00",
+      "saturday": "Saturday: 09:00 - 13:00"
+    },
+    "services": {
+      "title": "Our Services",
+      "commercial": "Commercial Law",
+      "labor": "Labor Law",
+      "family": "Family Law",
+      "criminal": "Criminal Law",
+      "execution": "Execution and Bankruptcy Law",
+      "mediation": "Mediation"
+    },
+    "corporate": {
+      "title": "Corporate",
+      "team": "Our Team",
+      "expertise": "Areas of Expertise",
+      "about": "About Us",
+      "offices": "Our Offices",
+      "digital": "AOREN Digital Services",
+      "responsibility": "Corporate Social Responsibility",
+      "careers": "Careers at AOREN",
+      "contact": "Contact"
+    },
+    "copyright": "© 2024 AOREN Law Firm. All rights reserved. | Law firm registered with Ankara Bar Association"
+  }
+} 

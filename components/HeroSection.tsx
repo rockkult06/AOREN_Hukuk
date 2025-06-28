@@ -5,6 +5,7 @@ import styled from "styled-components"
 // Import `useRef` from React
 import { useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
+import { useLanguage } from "@/contexts/LanguageContext"
 
 const HeroContainer = styled.section`
 position: relative;
@@ -135,6 +136,7 @@ letter-spacing: 0.5px;
 const HeroSection: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
   const router = useRouter()
+  const { t } = useLanguage()
 
   useEffect(() => {
     if (videoRef.current) {
@@ -174,21 +176,21 @@ const HeroSection: React.FC = () => {
             <SloganTitle>YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN</SloganTitle>
             <SloganSubtitle>"Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım"</SloganSubtitle>
           </div>
-          <ActionButton onClick={() => handleNavigation('/employees')}>Ekibimizi Görün</ActionButton>
+          <ActionButton onClick={() => handleNavigation('/employees')}>{t('header.team')}</ActionButton>
         </InfoBox>
         <InfoBox>
           <div>
             <SloganTitle>BÖLGESEL DEĞİL, ULUSLARARASI DÜZEYDE HİZMET SUNUYORUZ</SloganTitle>
             <SloganSubtitle>"Aynı Değerler, Farklı Şehirlerde"</SloganSubtitle>
           </div>
-          <ActionButton onClick={() => handleNavigation('/ofislerimiz')}>Ofislerimizi Keşfedin</ActionButton>
+          <ActionButton onClick={() => handleNavigation('/ofislerimiz')}>{t('header.offices')}</ActionButton>
         </InfoBox>
         <InfoBox>
           <div>
             <SloganTitle>KAPSAMLI HUKUKİ ÇÖZÜM ALANLARIMIZI İNCELEYİN</SloganTitle>
             <SloganSubtitle>"Hukukun Tüm Alanlarında Yetkin Kadro, Bütünleşik Yaklaşım"</SloganSubtitle>
           </div>
-          <ActionButton onClick={() => handleNavigation('/uzmanlik-alanlari')}>Uzmanlık Alanları</ActionButton>
+          <ActionButton onClick={() => handleNavigation('/uzmanlik-alanlari')}>{t('header.expertise')}</ActionButton>
         </InfoBox>
       </BoxContainer>
     </HeroContainer>

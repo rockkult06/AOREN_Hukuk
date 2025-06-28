@@ -7,6 +7,7 @@ import Footer from "@/components/Footer"
 import BackgroundVideo from "@/components/BackgroundVideo"
 import styled from "styled-components"
 import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop, MapPin, MapPinned, Phone, GraduationCap, Scale, Leaf, Target, Briefcase, Upload, Send, LayoutDashboard, CheckCircle, FileSignature, MessageSquare, GitBranch, Clock } from "lucide-react"
+import { useLanguage } from "@/contexts/LanguageContext"
 
 const TeamSection = styled.section`
   padding: 80px 20px;
@@ -405,6 +406,7 @@ const expertiseData = [
 export default function Home() {
   const [selectedMember, setSelectedMember] = useState<number | null>(null)
   const [selectedExpertise, setSelectedExpertise] = useState<number | null>(null)
+  const { t } = useLanguage()
 
   // Scroll event handler
   useEffect(() => {
@@ -436,10 +438,9 @@ export default function Home() {
       <section id="team" className="min-h-screen bg-[#2F2F31] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">Ekibimiz</h2>
+            <h2 className="text-5xl font-bold text-white mb-6">{t('team.title')}</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              AOREN Legal Services; her biri kendi uzmanlık alanında derin bilgiye ve uluslararası 
-              deneyime sahip avukatlardan oluşan seçkin bir ekiple hizmet sunar.
+              {t('team.description')}
             </p>
           </div>
 
@@ -531,12 +532,12 @@ export default function Home() {
         />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">Uzmanlık Alanlarımız</h2>
+            <h2 className="text-5xl font-bold text-white mb-6">{t('expertise.title')}</h2>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed mb-8">
-              AOREN, hem bireysel hem kurumsal müvekkillerine geniş bir yelpazede hukuki destek sunar.
+              {t('expertise.description')}
             </p>
             <p className="text-lg text-white/80 font-medium">
-              Uzmanlıklarımızdan bazıları:
+              {t('expertise.subtitle')}
             </p>
           </div>
 
@@ -580,7 +581,7 @@ export default function Home() {
         />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">Hakkımızda</h2>
+            <h2 className="text-5xl font-bold text-white mb-6">{t('about.title')}</h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -663,9 +664,9 @@ export default function Home() {
         />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">Ofislerimiz</h2>
+            <h2 className="text-5xl font-bold text-white mb-6">{t('offices.title')}</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              AOREN Legal Services olarak, Almanya ve Türkiye'deki üç stratejik merkez ofisimizle, müvekkillerimize yerel yakınlıkla birlikte küresel standartlarda hizmet sunuyoruz.
+              {t('offices.description')}
             </p>
           </div>
 
@@ -771,9 +772,9 @@ export default function Home() {
         />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">Kurumsal Sosyal Sorumluluk</h2>
+            <h2 className="text-5xl font-bold text-white mb-6">{t('responsibility.title')}</h2>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic">
-              Adalet sadece mahkeme salonlarında değil, toplumun her alanında inşa edilir.
+              {t('responsibility.description')}
             </p>
           </div>
 
@@ -843,15 +844,12 @@ export default function Home() {
         />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">AOREN'de Kariyer</h2>
+            <h2 className="text-5xl font-bold text-white mb-6">{t('careers.title')}</h2>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic mb-4">
-              Kariyerinizde sıradan değil, stratejik bir adım atmak ister misiniz?
-            </p>
-            <p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed mb-2">
-              AOREN, sadece çalışılacak bir yer değil; gelişilecek, katkı sağlanacak ve birlikte üretilecek bir ekosistemdir.
+              {t('careers.subtitle')}
             </p>
             <p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Stajyerden ortaklığa giden bu yolda sizi destekleyecek bir kariyer modeli sunuyoruz.
+              {t('careers.description')}
             </p>
           </div>
 
@@ -962,9 +960,9 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">AOREN Dijital Hizmetleri</h2>
+            <h2 className="text-5xl font-bold text-white mb-6">{t('digital.title')}</h2>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic">
-              Teknoloji, bizim için sadece bir araç değil, hizmetimizin ayrılmaz bir parçasıdır.
+              {t('digital.description')}
             </p>
           </div>
 
@@ -1093,15 +1091,12 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">İletişim</h2>
+            <h2 className="text-5xl font-bold text-white mb-6">{t('contact.title')}</h2>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic mb-2">
-              Bize ulaşmanız yeterli.
-            </p>
-            <p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed mb-2">
-              İster bir ilk danışma, ister kapsamlı bir iş birliği…
+              {t('contact.subtitle')}
             </p>
             <p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Tüm sorularınız ve işbirliği talepleriniz için buradayız.
+              {t('contact.description')}
             </p>
           </div>
 

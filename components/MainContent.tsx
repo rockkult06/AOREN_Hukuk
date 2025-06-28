@@ -3,6 +3,7 @@
 import type React from "react"
 import styled from "styled-components"
 import { useRouter } from "next/navigation"
+import { useLanguage } from "@/contexts/LanguageContext"
 
 const MainContentContainer = styled.div`
   padding: 120px 40px 80px 40px;
@@ -192,30 +193,31 @@ const TeamMember = styled.div`
 
 const MainContent: React.FC = () => {
   const router = useRouter()
+  const { t } = useLanguage()
 
   const newsItems = [
     {
       id: 1,
       date: "10.12.2024",
-      title: "Ticaret Hukukunda Yeni Düzenlemeler",
+      title: t('expertise.areas.commercial.title'),
       image: "/placeholder.svg?height=200&width=300",
     },
     {
       id: 2,
       date: "08.12.2024",
-      title: "Aile Hukukunda Güncel Gelişmeler",
+      title: t('expertise.areas.family.title'),
       image: "/placeholder.svg?height=200&width=300",
     },
     {
       id: 3,
       date: "05.12.2024",
-      title: "İş Hukuku Uygulamaları",
+      title: t('expertise.areas.labor.title'),
       image: "/placeholder.svg?height=200&width=300",
     },
     {
       id: 4,
       date: "02.12.2024",
-      title: "Ceza Hukukunda Yenilikler",
+      title: t('expertise.areas.criminal.title'),
       image: "/placeholder.svg?height=200&width=300",
     },
   ]
@@ -242,9 +244,9 @@ const MainContent: React.FC = () => {
     <MainContentContainer>
       <AboutSection>
         <p>
-          AOREN, yüksek etki yaratan hukuk kadrosuyla 220'den fazla çalışanı ile hizmet vermektedir.
+          {t('about.description')}
         </p>
-        <button onClick={() => navigateToPage('/hakkimizda')}>Daha fazla bilgi</button>
+        <button onClick={() => navigateToPage('/hakkimizda')}>{t('hero.learnMore')}</button>
       </AboutSection>
 
       <SectionTitle>Ekibimizden Öne Çıkanlar</SectionTitle>

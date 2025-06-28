@@ -2,6 +2,7 @@
 
 import type React from "react"
 import styled from "styled-components"
+import { useLanguage } from "@/contexts/LanguageContext"
 
 const FooterContainer = styled.footer`
   background-color: #222;
@@ -62,89 +63,88 @@ const Copyright = styled.div`
 `
 
 const Footer: React.FC = () => {
+  const { t } = useLanguage()
+
   return (
     <FooterContainer>
       <FooterContent>
         <FooterSection>
-          <h3>AOREN Hukuk Bürosu</h3>
+          <h3>{t('footer.company.title')}</h3>
           <p>
-            Yüksek etki yaratan hukuk kadromuzla, müvekkillerimize en kaliteli hukuki hizmeti sunmayı
-            hedefliyoruz.
+            {t('footer.company.description')}
           </p>
           <p>
-            <strong>Adres:</strong>
+            <strong>{t('footer.company.address')}:</strong>
             <br />
-            Atatürk Bulvarı No: 123
-            <br />
-            Çankaya/Ankara
+            {t('footer.company.addressText')}
           </p>
         </FooterSection>
 
         <FooterSection>
-          <h3>İletişim</h3>
+          <h3>{t('footer.contact.title')}</h3>
           <p>
-            <strong>Telefon:</strong> +90 312 123 45 67
+            <strong>{t('footer.contact.phone')}:</strong> +90 312 123 45 67
           </p>
           <p>
-            <strong>Faks:</strong> +90 312 123 45 68
+            <strong>{t('footer.contact.fax')}:</strong> +90 312 123 45 68
           </p>
           <p>
-            <strong>E-posta:</strong> info@aoren.com.tr
+            <strong>{t('footer.contact.email')}:</strong> info@aoren.com.tr
           </p>
           <p>
-            <strong>Çalışma Saatleri:</strong>
+            <strong>{t('footer.contact.hours')}:</strong>
             <br />
-            Pazartesi - Cuma: 09:00 - 18:00
+            {t('footer.contact.weekdays')}
             <br />
-            Cumartesi: 09:00 - 13:00
+            {t('footer.contact.saturday')}
           </p>
         </FooterSection>
 
         <FooterSection>
-          <h3>Hizmetlerimiz</h3>
+          <h3>{t('footer.services.title')}</h3>
           <ul>
-            <li>Ticaret Hukuku</li>
-            <li>İş Hukuku</li>
-            <li>Aile Hukuku</li>
-            <li>Ceza Hukuku</li>
-            <li>İcra İflas Hukuku</li>
-            <li>Arabuluculuk</li>
+            <li>{t('footer.services.commercial')}</li>
+            <li>{t('footer.services.labor')}</li>
+            <li>{t('footer.services.family')}</li>
+            <li>{t('footer.services.criminal')}</li>
+            <li>{t('footer.services.execution')}</li>
+            <li>{t('footer.services.mediation')}</li>
           </ul>
         </FooterSection>
 
         <FooterSection>
-          <h3>Kurumsal</h3>
+          <h3>{t('footer.corporate.title')}</h3>
           <ul>
             <li>
-              <a href="#team">Ekibimiz</a>
+              <a href="#team">{t('footer.corporate.team')}</a>
             </li>
             <li>
-              <a href="#expertise">Uzmanlık Alanlarımız</a>
+              <a href="#expertise">{t('footer.corporate.expertise')}</a>
             </li>
             <li>
-              <a href="#about">Hakkımızda</a>
+              <a href="#about">{t('footer.corporate.about')}</a>
             </li>
             <li>
-              <a href="#offices">Ofislerimiz</a>
+              <a href="#offices">{t('footer.corporate.offices')}</a>
             </li>
             <li>
-              <a href="#digital">AOREN Dijital Hizmetleri</a>
+              <a href="#digital">{t('footer.corporate.digital')}</a>
             </li>
             <li>
-              <a href="#responsibility">Kurumsal Sosyal Sorumluluk</a>
+              <a href="#responsibility">{t('footer.corporate.responsibility')}</a>
             </li>
             <li>
-              <a href="#careers">AOREN'de Kariyer</a>
+              <a href="#careers">{t('footer.corporate.careers')}</a>
             </li>
             <li>
-              <a href="#contact">İletişim</a>
+              <a href="#contact">{t('footer.corporate.contact')}</a>
             </li>
           </ul>
         </FooterSection>
       </FooterContent>
 
       <Copyright>
-        <p>© 2024 AOREN Hukuk Bürosu. Tüm hakları saklıdır. | Ankara Barosu'na kayıtlı avukatlık bürosu</p>
+        <p>{t('footer.copyright')}</p>
       </Copyright>
     </FooterContainer>
   )

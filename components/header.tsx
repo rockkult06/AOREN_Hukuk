@@ -1,17 +1,19 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, Search, User, Lock, Users, Scale, Info, Building, Newspaper, Computer, Heart, Briefcase, Mail } from "lucide-react"
+import { Menu, Search, User, Lock, Users, Scale, Info, Building, Newspaper, Computer, Heart, Briefcase, Mail, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import Link from "next/link"
 import Image from "next/image"
+import { useLanguage } from "@/contexts/LanguageContext"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const { language, setLanguage, t } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -80,6 +82,17 @@ export default function Header() {
     }
   }
 
+  const menuItems = [
+    { name: t('header.team'), href: "/employees", icon: Users },
+    { name: t('header.expertise'), href: "/uzmanlik-alanlari", icon: Scale },
+    { name: t('header.about'), href: "/hakkimizda", icon: Info },
+    { name: t('header.offices'), href: "/ofislerimiz", icon: Building },
+    { name: t('header.digital'), href: "/dijital-hizmetler", icon: Computer },
+    { name: t('header.responsibility'), href: "/sosyal-sorumluluk", icon: Heart },
+    { name: t('header.careers'), href: "/kariyer", icon: Briefcase },
+    { name: t('header.contact'), href: "/iletisim", icon: Mail },
+  ]
+
   return (
     <header className={`fixed top-0 w-full transition-all duration-300 z-[100] ${
       isScrolled 
@@ -129,16 +142,7 @@ export default function Header() {
 
                   {/* Menu Items */}
                   <div className="space-y-1">
-                    {[
-                      { name: "Ekibimiz", href: "/employees", icon: Users },
-                      { name: "Uzmanlık Alanlarımız", href: "/uzmanlik-alanlari", icon: Scale },
-                      { name: "Hakkımızda", href: "/hakkimizda", icon: Info },
-                      { name: "Ofislerimiz", href: "/ofislerimiz", icon: Building },
-                      { name: "AOREN Dijital Hizmetleri", href: "/dijital-hizmetler", icon: Computer },
-                      { name: "Kurumsal Sosyal Sorumluluk", href: "/sosyal-sorumluluk", icon: Heart },
-                      { name: "AOREN'de Kariyer", href: "/kariyer", icon: Briefcase },
-                      { name: "İletişim", href: "/iletisim", icon: Mail },
-                    ].map((item, index) => {
+                    {menuItems.map((item, index) => {
                       const IconComponent = item.icon;
                       return (
                         <button
@@ -190,7 +194,7 @@ export default function Header() {
               <Search className={`absolute left-3 h-4 w-4 ${isScrolled ? 'text-gray-400' : 'text-white/60'}`} />
               <Input
                 type="search"
-                placeholder="Site içi arama..."
+                placeholder={t('header.search')}
                 className={`pl-10 w-64 ${
                   isScrolled 
                     ? 'bg-white border-gray-200 text-gray-900 placeholder:text-gray-500' 
@@ -206,16 +210,18 @@ export default function Header() {
             </Button>
 
             {/* Language Selector */}
-            <Select defaultValue="tr">
-              <SelectTrigger className={`w-20 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="tr">TR</SelectItem>
-                <SelectItem value="en">EN</SelectItem>
-                <SelectItem value="de">DE</SelectItem>
-              </SelectContent>
-            </Select>
+            <div className="flex items-center">
+              <Globe className={`h-4 w-4 mr-2 ${isScrolled ? 'text-gray-700' : 'text-white'}`} />
+              <Select value={language} onValueChange={(value: 'tr' | 'en') => setLanguage(value)}>
+                <SelectTrigger className={`w-16 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="tr">TR</SelectItem>
+                  <SelectItem value="en">EN</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
           </div>
         </div>
       </div>

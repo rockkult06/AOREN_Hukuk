@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Plus_Jakarta_Sans } from "next/font/google"
 import StyledComponentsRegistry from "@/lib/styled-components-registry"
 import GlobalStyle from "@/styles/globals"
+import { LanguageProvider } from "@/contexts/LanguageContext"
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -26,12 +27,13 @@ export default function RootLayout({
       <body className={`${plusJakartaSans.className} antialiased`}>
         <StyledComponentsRegistry>
           <GlobalStyle />
-          {children}
+          <LanguageProvider>
+            {children}
+          </LanguageProvider>
         </StyledComponentsRegistry>
       </body>
     </html>
   )
 }
-
 
 import './globals.css'
