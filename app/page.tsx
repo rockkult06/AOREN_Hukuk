@@ -6,7 +6,7 @@ import HeroSection from "@/components/HeroSection"
 import Footer from "@/components/Footer"
 import BackgroundVideo from "@/components/BackgroundVideo"
 import styled from "styled-components"
-import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop, MapPin, MapPinned, Phone, GraduationCap, Scale, Leaf, Target, Briefcase, Upload, Send, LayoutDashboard, CheckCircle, FileSignature, MessageSquare, GitBranch } from "lucide-react"
+import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop, MapPin, MapPinned, Phone, GraduationCap, Scale, Leaf, Target, Briefcase, Upload, Send, LayoutDashboard, CheckCircle, FileSignature, MessageSquare, GitBranch, Clock } from "lucide-react"
 
 const TeamSection = styled.section`
   padding: 80px 20px;
@@ -1011,6 +1011,181 @@ export default function Home() {
             <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed italic">
               Hukuki süreçlerinizi dijitalleştirirken, insan dokunuşundan ödün vermiyoruz.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* İletişim Bölümü */}
+      <section id="contact" className="min-h-screen relative py-20">
+        {/* Arkaplan Görseli */}
+        <div 
+          className="absolute inset-0 z-0" 
+          style={{
+            backgroundImage: 'url(/contact.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(8px) brightness(0.3)',
+          }}
+        />
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6">İletişim</h2>
+            <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic mb-2">
+              Bize ulaşmanız yeterli.
+            </p>
+            <p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed mb-2">
+              İster bir ilk danışma, ister kapsamlı bir iş birliği…
+            </p>
+            <p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              Tüm sorularınız ve işbirliği talepleriniz için buradayız.
+            </p>
+          </div>
+
+          {/* Ofis Bilgileri */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {/* Stuttgart Ofisi */}
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <MapPin className="w-8 h-8 text-[#DEA582] mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Stuttgart</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start text-gray-300">
+                  <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1" />
+                  <p>Neckarstraße 155, 70190 Stuttgart, Almanya</p>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
+                  <p>+49 (0)711 123 45 67</p>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
+                  <p>stuttgart@aorenlegal.com</p>
+                </div>
+              </div>
+            </div>
+
+            {/* İstanbul Ofisi */}
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <MapPin className="w-8 h-8 text-[#DEA582] mr-4" />
+                <h3 className="text-2xl font-semibold text-white">İstanbul</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start text-gray-300">
+                  <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1" />
+                  <p>Büyükdere Caddesi No:233, Nurol Plaza, Kat:11, Levent, 34394 Şişli / İstanbul</p>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
+                  <p>+90 (212) 345 67 89</p>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
+                  <p>istanbul@aorenlegal.com</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Ankara Ofisi */}
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <MapPin className="w-8 h-8 text-[#DEA582] mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Ankara</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start text-gray-300">
+                  <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1" />
+                  <p>Mustafa Kemal Mah. 2151. Cad. No:15, Kat:4, Çankaya / Ankara</p>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
+                  <p>+90 (312) 456 78 90</p>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
+                  <p>ankara@aorenlegal.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* İletişim Notu */}
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center mb-6">
+              <Clock className="w-8 h-8 text-[#DEA582] mr-3" />
+              <p className="text-xl text-white/90">
+                Telefon, e-posta ve müvekkil portalı üzerinden iletişim kanallarımız 7/24 açıktır.
+              </p>
+            </div>
+          </div>
+
+          {/* İletişim Formu */}
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8">
+              <div className="flex items-center mb-8">
+                <MessageSquare className="w-8 h-8 text-[#DEA582] mr-4" />
+                <h3 className="text-2xl font-semibold text-white">İletişim Formu</h3>
+              </div>
+              
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-white text-sm font-medium">Ad</label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#DEA582]"
+                      placeholder="Adınız"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-white text-sm font-medium">Soyad</label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#DEA582]"
+                      placeholder="Soyadınız"
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-white text-sm font-medium">E-posta</label>
+                  <input
+                    type="email"
+                    className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#DEA582]"
+                    placeholder="E-posta adresiniz"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-white text-sm font-medium">Konu</label>
+                  <select className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#DEA582]">
+                    <option value="" className="bg-[#2F2F31]">Seçiniz</option>
+                    <option value="danisma" className="bg-[#2F2F31]">İlk Danışma Talebi</option>
+                    <option value="isbirligi" className="bg-[#2F2F31]">İş Birliği Talebi</option>
+                    <option value="randevu" className="bg-[#2F2F31]">Randevu Talebi</option>
+                    <option value="diger" className="bg-[#2F2F31]">Diğer</option>
+                  </select>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-white text-sm font-medium">Mesajınız</label>
+                  <textarea
+                    className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#DEA582] h-32 resize-none"
+                    placeholder="Mesajınızı buraya yazın..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-[#DEA582] hover:bg-[#D29F91] text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
+                >
+                  <Send className="w-5 h-5" />
+                  Mesajı Gönder
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
