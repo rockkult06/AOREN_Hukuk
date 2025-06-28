@@ -145,9 +145,15 @@ const HeroSection: React.FC = () => {
   const handleNavigation = (path: string) => {
     if (path === '/employees') {
       // Ana sayfadaki ekibimiz bölümüne scroll yap
-      const ekibimizSection = document.getElementById('ekibimiz')
-      if (ekibimizSection) {
-        ekibimizSection.scrollIntoView({ behavior: 'smooth' })
+      const teamSection = document.getElementById('team')
+      if (teamSection) {
+        teamSection.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else if (path === '/uzmanlik-alanlari') {
+      // Ana sayfadaki uzmanlık alanları bölümüne scroll yap
+      const expertiseSection = document.getElementById('expertise')
+      if (expertiseSection) {
+        expertiseSection.scrollIntoView({ behavior: 'smooth' })
       }
     } else {
       router.push(path)

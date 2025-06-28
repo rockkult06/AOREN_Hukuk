@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head"
 import Header from "@/components/header"
 import HeroSection from "@/components/HeroSection"
@@ -7,7 +7,6 @@ import Footer from "@/components/Footer"
 import BackgroundVideo from "@/components/BackgroundVideo"
 import styled from "styled-components"
 import { Linkedin, Mail, X } from "lucide-react"
-import { useState } from "react"
 
 const TeamSection = styled.section`
   padding: 80px 20px;
@@ -320,6 +319,33 @@ const employeesData = [
 export default function Home() {
   const [selectedMember, setSelectedMember] = useState<number | null>(null)
 
+  // Scroll event handler
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY
+      const windowHeight = window.innerHeight
+      
+      // Ekibimiz bölümüne scroll
+      if (scrollPosition > windowHeight * 0.8 && scrollPosition < windowHeight * 1.8) {
+        const teamSection = document.getElementById('team')
+        if (teamSection) {
+          teamSection.scrollIntoView({ behavior: 'smooth' })
+        }
+      }
+      
+      // Uzmanlık alanları bölümüne scroll
+      if (scrollPosition > windowHeight * 1.8) {
+        const expertiseSection = document.getElementById('expertise')
+        if (expertiseSection) {
+          expertiseSection.scrollIntoView({ behavior: 'smooth' })
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <>
       <Head>
@@ -333,40 +359,128 @@ export default function Home() {
       <Header />
       <HeroSection />
       
-      <TeamSection id="ekibimiz">
-        <TeamTitle>Ekibimiz</TeamTitle>
-        <TeamDescription>
-          AOREN Legal Services; her biri kendi uzmanlık alanında derin bilgiye ve uluslararası deneyime sahip avukatlardan oluşan seçkin bir ekiple hizmet sunar.
-        </TeamDescription>
-        
-        <TeamGrid>
-          {employeesData.map((member, index) => (
-            <TeamCard key={index} onClick={() => setSelectedMember(index)}>
-              <ProfileImage>
-                <img 
-                  src={member.image || "/placeholder-user.jpg"} 
-                  alt={member.name}
-                  onError={(e) => {
-                    e.currentTarget.src = "/placeholder-user.jpg"
-                  }}
-                />
-              </ProfileImage>
-              <MemberName>{member.name}</MemberName>
-              <MemberTitle>{member.title}</MemberTitle>
-              <MemberDescription>{member.description}</MemberDescription>
-              <SocialButtons>
-                <SocialButton>
-                  <Linkedin size={18} />
-                </SocialButton>
-                <SocialButton>
-                  <Mail size={18} />
-                </SocialButton>
-              </SocialButtons>
-            </TeamCard>
-          ))}
-        </TeamGrid>
-      </TeamSection>
+      {/* Ekibimiz Bölümü */}
+      <section id="team" className="min-h-screen bg-[#2F2F31] py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6">Ekibimiz</h2>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              AOREN Legal Services; her biri kendi uzmanlık alanında derin bilgiye ve uluslararası 
+              deneyime sahip avukatlardan oluşan seçkin bir ekiple hizmet sunar.
+            </p>
+          </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* İlk satır - 2 kişi */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:col-span-2">
+              {employeesData.slice(0, 2).map((member, index) => (
+                <div 
+                  key={index}
+                  className="bg-white/10 backdrop-blur-sm rounded-[20px] border border-white/20 shadow-lg p-8 hover:shadow-xl hover:bg-white/15 transition-all duration-300 cursor-pointer hover:scale-105"
+                  onClick={() => setSelectedMember(index)}
+                >
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-[220px] h-[220px] rounded-[20px] overflow-hidden mb-6 bg-gray-200">
+                      <img 
+                        src={member.image || "/placeholder-user.jpg"} 
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.currentTarget.src = "/placeholder-user.jpg"
+                        }}
+                      />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
+                    <p className="text-blue-300 font-semibold mb-4 text-center">{member.title}</p>
+                    <p className="text-gray-300 text-sm leading-relaxed mb-6">{member.description}</p>
+                    <div className="flex gap-3">
+                      <button className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all">
+                        <Linkedin size={18} />
+                      </button>
+                      <button className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all">
+                        <Mail size={18} />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            {/* İkinci satır - 2 kişi */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:col-span-2">
+              {employeesData.slice(2, 4).map((member, index) => (
+                <div 
+                  key={index + 2}
+                  className="bg-white/10 backdrop-blur-sm rounded-[20px] border border-white/20 shadow-lg p-8 hover:shadow-xl hover:bg-white/15 transition-all duration-300 cursor-pointer hover:scale-105"
+                  onClick={() => setSelectedMember(index + 2)}
+                >
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-[220px] h-[220px] rounded-[20px] overflow-hidden mb-6 bg-gray-200">
+                      <img 
+                        src={member.image || "/placeholder-user.jpg"} 
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.currentTarget.src = "/placeholder-user.jpg"
+                        }}
+                      />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
+                    <p className="text-blue-300 font-semibold mb-4 text-center">{member.title}</p>
+                    <p className="text-gray-300 text-sm leading-relaxed mb-6">{member.description}</p>
+                    <div className="flex gap-3">
+                      <button className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all">
+                        <Linkedin size={18} />
+                      </button>
+                      <button className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all">
+                        <Mail size={18} />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Uzmanlık Alanlarımız Bölümü */}
+      <section id="expertise" className="min-h-screen bg-[#F6F4F0] py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-[#2F2F31] mb-6">Uzmanlık Alanlarımız</h2>
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
+              AOREN, hem bireysel hem kurumsal müvekkillerine geniş bir yelpazede hukuki destek sunar.
+            </p>
+            <p className="text-lg text-gray-600 font-medium">
+              Uzmanlıklarımızdan bazıları:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {[
+              "Aile Hukuku & Uluslararası Miras",
+              "Ticaret ve Şirketler Hukuku", 
+              "Gayrimenkul ve Yatırım Hukuku",
+              "Ceza Hukuku ve Dijital Güvenlik",
+              "Uyum ve Risk Yönetimi",
+              "Kurumsal Finansman, Girişim Sermayesi",
+              "Uyuşmazlık Çözümü & Uluslararası Tahkim"
+            ].map((expertise, index) => (
+              <div 
+                key={index}
+                className="bg-white/80 backdrop-blur-sm rounded-[20px] border border-gray-200/50 shadow-lg p-6 hover:shadow-xl hover:bg-white/90 transition-all duration-300 hover:scale-105"
+              >
+                <h3 className="text-lg font-semibold text-[#2F2F31] text-center leading-relaxed">
+                  {expertise}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Modal */}
       {selectedMember !== null && (
         <ModalOverlay onClick={() => setSelectedMember(null)}>
           <ModalContent onClick={e => e.stopPropagation()}>

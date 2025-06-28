@@ -23,6 +23,27 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const handleMenuClick = (href: string) => {
+    setIsMenuOpen(false)
+    
+    if (href === '/employees') {
+      // Ana sayfadaki ekibimiz bölümüne scroll yap
+      const teamSection = document.getElementById('team')
+      if (teamSection) {
+        teamSection.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else if (href === '/uzmanlik-alanlari') {
+      // Ana sayfadaki uzmanlık alanları bölümüne scroll yap
+      const expertiseSection = document.getElementById('expertise')
+      if (expertiseSection) {
+        expertiseSection.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      // Diğer sayfalar için normal navigasyon
+      window.location.href = href
+    }
+  }
+
   return (
     <header className={`fixed top-0 w-full transition-all duration-300 z-[100] ${
       isScrolled 
@@ -85,16 +106,17 @@ export default function Header() {
                     ].map((item, index) => {
                       const IconComponent = item.icon;
                       return (
-                        <Link
+                        <button
                           key={item.name}
-                          href={item.href}
-                          onClick={() => setIsMenuOpen(false)}
-                          className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0"
+                          onClick={() => handleMenuClick(item.href)}
+                          className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0 w-full text-left"
                           style={{ 
                             animationDelay: `${index * 50}ms`,
                             animation: 'slideInLeft 0.6s ease-out forwards',
                             textDecoration: 'none',
-                            borderBottom: 'none'
+                            borderBottom: 'none',
+                            border: 'none',
+                            background: 'transparent'
                           }}
                         >
                           <div className="flex items-center gap-3">
@@ -103,7 +125,7 @@ export default function Header() {
                               {item.name}
                             </span>
                           </div>
-                        </Link>
+                        </button>
                       );
                     })}
                   </div>
