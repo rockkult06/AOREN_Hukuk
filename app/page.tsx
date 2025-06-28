@@ -909,101 +909,101 @@ export default function Home() {
             {/* Müvekkil Portalı */}
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <LayoutDashboard className="w-12 h-12 text-blue-400 mr-4" />
+                <LayoutDashboard className="w-12 h-12 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Müvekkil Portalı</h3>
               </div>
               <p className="text-gray-200 leading-relaxed">
                 Dosyalarınıza 7/24 erişim imkanı sağlayan özel portalımız ile tüm hukuki süreçlerinizi tek bir platformdan takip edebilirsiniz.
               </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  Anlık dosya durumu takibi
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  Belge arşivine kolay erişim
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  Duruşma takvimi entegrasyonu
-                </li>
-              </ul>
+                              <ul className="mt-4 space-y-2">
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    Anlık dosya durumu takibi
+                  </li>
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    Belge arşivine kolay erişim
+                  </li>
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    Duruşma takvimi entegrasyonu
+                  </li>
+                </ul>
             </div>
 
             {/* Dijital İmza ve Belge Takibi */}
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <FileSignature className="w-12 h-12 text-blue-400 mr-4" />
+                <FileSignature className="w-12 h-12 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Dijital İmza ve Belge Takibi</h3>
               </div>
               <p className="text-gray-200 leading-relaxed">
                 Güvenli elektronik imza sistemi ile belge onay süreçlerinizi hızlandırın, kağıt israfını önleyin.
               </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  E-imza entegrasyonu
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  Otomatik versiyon kontrolü
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  Gelişmiş belge güvenliği
-                </li>
-              </ul>
+                              <ul className="mt-4 space-y-2">
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    E-imza entegrasyonu
+                  </li>
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    Otomatik versiyon kontrolü
+                  </li>
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    Gelişmiş belge güvenliği
+                  </li>
+                </ul>
             </div>
 
             {/* Güvenli Mesajlaşma Sistemi */}
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <MessageSquare className="w-12 h-12 text-blue-400 mr-4" />
+                <MessageSquare className="w-12 h-12 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Güvenli Mesajlaşma Sistemi</h3>
               </div>
               <p className="text-gray-200 leading-relaxed">
                 Uçtan uca şifrelenmiş mesajlaşma sistemi ile güvenli iletişim sağlayın.
               </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  Anlık bildirimler
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  Dosya paylaşımı
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  Görüntülü görüşme desteği
-                </li>
-              </ul>
+                              <ul className="mt-4 space-y-2">
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    Anlık bildirimler
+                  </li>
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    Dosya paylaşımı
+                  </li>
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    Görüntülü görüşme desteği
+                  </li>
+                </ul>
             </div>
 
             {/* Proaktif Süreç Yönetimi */}
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <GitBranch className="w-12 h-12 text-blue-400 mr-4" />
+                <GitBranch className="w-12 h-12 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Proaktif Süreç Yönetimi</h3>
               </div>
               <p className="text-gray-200 leading-relaxed">
                 Yapay zeka destekli süreç yönetimi ile olası riskleri önceden tespit edin.
               </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  Otomatik risk analizi
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  Vade takip sistemi
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                  Akıllı hatırlatmalar
-                </li>
-              </ul>
+                              <ul className="mt-4 space-y-2">
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    Otomatik risk analizi
+                  </li>
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    Vade takip sistemi
+                  </li>
+                  <li className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                    Akıllı hatırlatmalar
+                  </li>
+                </ul>
             </div>
           </div>
 
