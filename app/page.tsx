@@ -10,8 +10,22 @@ import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop, 
 
 const TeamSection = styled.section`
   padding: 80px 20px;
-  background: #2F2F31;
   min-height: 100vh;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/team.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.3);
+    z-index: 0;
+  }
 `
 
 const TeamTitle = styled.h2`
@@ -103,7 +117,7 @@ const MemberName = styled.h3`
 const MemberTitle = styled.p`
   font-size: 1rem;
   font-weight: 600;
-  color: #64B5F6;
+  color: #DEA582;
   margin-bottom: 16px;
   text-align: center;
   text-transform: uppercase;
@@ -451,7 +465,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
-                    <p className="text-blue-300 font-semibold mb-4 text-center">{member.title}</p>
+                    <p className="text-[#DEA582] font-semibold mb-4 text-center">{member.title}</p>
                     <p className="text-gray-300 text-sm leading-relaxed mb-6">{member.description}</p>
                     <div className="flex gap-3">
                       <button className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all">
@@ -486,7 +500,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
-                    <p className="text-blue-300 font-semibold mb-4 text-center">{member.title}</p>
+                    <p className="text-[#DEA582] font-semibold mb-4 text-center">{member.title}</p>
                     <p className="text-gray-300 text-sm leading-relaxed mb-6">{member.description}</p>
                     <div className="flex gap-3">
                       <button className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all">
@@ -505,8 +519,18 @@ export default function Home() {
       </section>
 
       {/* Uzmanlık Alanlarımız Bölümü */}
-      <section id="expertise" className="min-h-screen bg-[#949393] py-20">
-        <div className="container mx-auto px-4">
+      <section id="expertise" className="min-h-screen relative py-20">
+        {/* Arkaplan Görseli */}
+        <div 
+          className="absolute inset-0 z-0" 
+          style={{
+            backgroundImage: 'url(/sp.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(8px) brightness(0.3)',
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-[#2F2F31] mb-6">Uzmanlık Alanlarımız</h2>
             <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
@@ -544,8 +568,18 @@ export default function Home() {
       </section>
 
       {/* Hakkımızda Bölümü */}
-      <section id="about" className="min-h-screen bg-[#2F2F31] py-20">
-        <div className="container mx-auto px-4">
+      <section id="about" className="min-h-screen relative py-20">
+        {/* Arkaplan Görseli */}
+        <div 
+          className="absolute inset-0 z-0" 
+          style={{
+            backgroundImage: 'url(/ab.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(8px) brightness(0.3)',
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Hakkımızda</h2>
           </div>
@@ -553,7 +587,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <Building className="w-8 h-8 text-blue-400 mr-4" />
+                <Building className="w-8 h-8 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">AOREN Legal Services</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
@@ -563,7 +597,7 @@ export default function Home() {
 
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <Globe className="w-8 h-8 text-blue-400 mr-4" />
+                <Globe className="w-8 h-8 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Uluslararası Varlık</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
@@ -575,7 +609,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <Handshake className="w-8 h-8 text-blue-400 mr-4" />
+                <Handshake className="w-8 h-8 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Stratejik Ortaklık Yaklaşımımız</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
@@ -585,7 +619,7 @@ export default function Home() {
 
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <Network className="w-8 h-8 text-blue-400 mr-4" />
+                <Network className="w-8 h-8 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Uluslararası Yetenek & Yerel Derinlik</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
@@ -595,7 +629,7 @@ export default function Home() {
 
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <Users className="w-8 h-8 text-blue-400 mr-4" />
+                <Users className="w-8 h-8 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Disiplinlerarası Uzmanlık Ağı</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
@@ -605,7 +639,7 @@ export default function Home() {
 
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <Laptop className="w-8 h-8 text-blue-400 mr-4" />
+                <Laptop className="w-8 h-8 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Dijital Dönüşüm ve Şeffaflık</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
@@ -617,8 +651,18 @@ export default function Home() {
       </section>
 
       {/* Ofislerimiz Bölümü */}
-      <section id="offices" className="min-h-screen bg-[#2F2F31] py-20">
-        <div className="container mx-auto px-4">
+      <section id="offices" className="min-h-screen relative py-20">
+        {/* Arkaplan Görseli */}
+        <div 
+          className="absolute inset-0 z-0" 
+          style={{
+            backgroundImage: 'url(/of.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(8px) brightness(0.3)',
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Ofislerimiz</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
@@ -630,26 +674,26 @@ export default function Home() {
             {/* Stuttgart Ofisi */}
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300 shadow-lg">
               <div className="flex items-center mb-6">
-                <MapPin className="w-8 h-8 text-blue-600 mr-4" />
+                <MapPin className="w-8 h-8 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Stuttgart</h3>
               </div>
               <div className="mb-4">
-                <h4 className="text-lg font-semibold text-blue-400 mb-3">Avrupa Operasyon Merkezi</h4>
+                <h4 className="text-lg font-semibold text-[#DEA582] mb-3">Avrupa Operasyon Merkezi</h4>
                 <p className="text-gray-300 leading-relaxed mb-6">
                   Stratejik konumu sayesinde, sınır ötesi ticari işlemlerinizde güçlü bir üs niteliğindedir. Almanya'daki Türk girişimciler, Avrupa'ya açılmak isteyen şirketler ve diaspora toplulukları için özel çözümler geliştiriyoruz.
                 </p>
               </div>
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-start">
-                  <MapPinned className="w-5 h-5 text-blue-400 mr-2 mt-1 flex-shrink-0" />
+                  <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1 flex-shrink-0" />
                   <p>Neckarstraße 155, 70190 Stuttgart, Almanya</p>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-blue-400 mr-2" />
+                  <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
                   <p>+49 (0)711 123 45 67</p>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="w-5 h-5 text-blue-400 mr-2" />
+                  <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
                   <p>stuttgart@aorenlegal.com</p>
                 </div>
               </div>
@@ -658,26 +702,26 @@ export default function Home() {
             {/* İstanbul Ofisi */}
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300 shadow-lg">
               <div className="flex items-center mb-6">
-                <MapPin className="w-8 h-8 text-blue-600 mr-4" />
+                <MapPin className="w-8 h-8 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">İstanbul</h3>
               </div>
               <div className="mb-4">
-                <h4 className="text-lg font-semibold text-blue-400 mb-3">Ticaret ve Finans Merkezi</h4>
+                <h4 className="text-lg font-semibold text-[#DEA582] mb-3">Ticaret ve Finans Merkezi</h4>
                 <p className="text-gray-300 leading-relaxed mb-6">
                   Türkiye'nin ekonomik merkezinde yer alan İstanbul ofisimiz, yatırım, finans ve gayrimenkul işlemleriniz için uzman kadrosuyla hizmet verir. Anadolu ve Avrupa yakalarında ayrı danışman ekipleri ile hızlı ve kapsamlı çözümler sunar.
                 </p>
               </div>
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-start">
-                  <MapPinned className="w-5 h-5 text-blue-400 mr-2 mt-1 flex-shrink-0" />
+                  <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1 flex-shrink-0" />
                   <p>Büyükdere Caddesi No:233, Nurol Plaza, Kat:11, Levent, 34394 Şişli / İstanbul</p>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-blue-400 mr-2" />
+                  <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
                   <p>+90 (212) 345 67 89</p>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="w-5 h-5 text-blue-400 mr-2" />
+                  <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
                   <p>istanbul@aorenlegal.com</p>
                 </div>
               </div>
@@ -686,26 +730,26 @@ export default function Home() {
             {/* Ankara Ofisi */}
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300 shadow-lg">
               <div className="flex items-center mb-6">
-                <MapPin className="w-8 h-8 text-blue-600 mr-4" />
+                <MapPin className="w-8 h-8 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Ankara</h3>
               </div>
               <div className="mb-4">
-                <h4 className="text-lg font-semibold text-blue-400 mb-3">Koordinasyon ve Kamu İlişkileri Merkezi</h4>
+                <h4 className="text-lg font-semibold text-[#DEA582] mb-3">Koordinasyon ve Kamu İlişkileri Merkezi</h4>
                 <p className="text-gray-300 leading-relaxed mb-6">
                   Başkentteki ofisimiz, kamu kurumlarıyla etkili iletişim gerektiren dosyalar ve ülke çapındaki operasyonlarımızın koordinasyonu için özel bir merkezdir. Ayrıca, akademik iş birlikleri ve mevzuat takibi konusunda da destek sağlamaktadır.
                 </p>
               </div>
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-start">
-                  <MapPinned className="w-5 h-5 text-blue-400 mr-2 mt-1 flex-shrink-0" />
+                  <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1 flex-shrink-0" />
                   <p>Mustafa Kemal Mah. 2151. Cad. No:15, Kat:4, Çankaya / Ankara</p>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-blue-400 mr-2" />
+                  <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
                   <p>+90 (312) 456 78 90</p>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="w-5 h-5 text-blue-400 mr-2" />
+                  <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
                   <p>ankara@aorenlegal.com</p>
                 </div>
               </div>
@@ -715,8 +759,18 @@ export default function Home() {
       </section>
 
       {/* Kurumsal Sosyal Sorumluluk Bölümü */}
-      <section id="social-responsibility" className="min-h-screen bg-[#949393] py-20">
-        <div className="container mx-auto px-4">
+      <section id="responsibility" className="min-h-screen relative py-20">
+        {/* Arkaplan Görseli */}
+        <div 
+          className="absolute inset-0 z-0" 
+          style={{
+            backgroundImage: 'url(/res.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(8px) brightness(0.3)',
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Kurumsal Sosyal Sorumluluk</h2>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic">
@@ -728,7 +782,7 @@ export default function Home() {
             {/* Hukuk Eğitimi */}
             <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <GraduationCap className="w-12 h-12 text-blue-400 mr-4" />
+                <GraduationCap className="w-12 h-12 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Hukuk Eğitimi</h3>
               </div>
               <p className="text-gray-100 leading-relaxed">
@@ -739,7 +793,7 @@ export default function Home() {
             {/* Kadınların Adalete Erişimi */}
             <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <Scale className="w-12 h-12 text-blue-400 mr-4" />
+                <Scale className="w-12 h-12 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Kadınların Adalete Erişimi</h3>
               </div>
               <p className="text-gray-100 leading-relaxed">
@@ -750,7 +804,7 @@ export default function Home() {
             {/* Çevresel Farkındalık */}
             <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300">
               <div className="flex items-center mb-6">
-                <Leaf className="w-12 h-12 text-blue-400 mr-4" />
+                <Leaf className="w-12 h-12 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Çevresel Farkındalık</h3>
               </div>
               <p className="text-gray-100 leading-relaxed">
@@ -762,7 +816,7 @@ export default function Home() {
           <div className="text-center">
             <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300 max-w-3xl mx-auto">
               <div className="flex items-center justify-center mb-6">
-                <Target className="w-12 h-12 text-blue-400 mr-4" />
+                <Target className="w-12 h-12 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">BM Sürdürülebilir Kalkınma Hedefleri</h3>
               </div>
               <p className="text-gray-100 leading-relaxed">
@@ -777,8 +831,18 @@ export default function Home() {
       </section>
 
       {/* AOREN'de Kariyer Bölümü */}
-      <section id="career" className="min-h-screen bg-[#2F2F31] py-20">
-        <div className="container mx-auto px-4">
+      <section id="careers" className="min-h-screen relative py-20">
+        {/* Arkaplan Görseli */}
+        <div 
+          className="absolute inset-0 z-0" 
+          style={{
+            backgroundImage: 'url(/kar.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(8px) brightness(0.3)',
+          }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">AOREN'de Kariyer</h2>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic mb-4">
@@ -796,7 +860,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8">
               <div className="flex items-center mb-8">
-                <Briefcase className="w-8 h-8 text-blue-400 mr-4" />
+                <Briefcase className="w-8 h-8 text-[#DEA582] mr-4" />
                 <h3 className="text-2xl font-semibold text-white">Kariyer Başvuru Formu</h3>
               </div>
               
@@ -855,7 +919,7 @@ export default function Home() {
                   <div className="flex items-center justify-center w-full">
                     <label className="flex flex-col items-center justify-center w-full h-32 border-2 border-white/20 border-dashed rounded-lg cursor-pointer bg-white/5 hover:bg-white/10">
                       <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                        <Upload className="w-8 h-8 text-blue-400 mb-2" />
+                        <Upload className="w-8 h-8 text-[#DEA582] mb-2" />
                         <p className="text-sm text-gray-300">PDF veya Word dosyası yükleyin</p>
                       </div>
                       <input type="file" className="hidden" accept=".pdf,.doc,.docx" />

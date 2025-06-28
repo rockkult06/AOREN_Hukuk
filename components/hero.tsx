@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Hukuki Haklarınızı
-            <span className="text-blue-400 block">Koruyoruz</span>
+            <span className="text-[#DEA582] block">Koruyoruz</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -37,21 +37,21 @@ export default function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="text-center">
               <div className="flex justify-center mb-3">
-                <Shield className="h-8 w-8 text-blue-400" />
+                <Shield className="h-8 w-8 text-[#DEA582]" />
               </div>
               <div className="text-3xl font-bold text-white mb-1">500+</div>
               <div className="text-gray-300">Başarılı Dava</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-3">
-                <Users className="h-8 w-8 text-blue-400" />
+                <Users className="h-8 w-8 text-[#DEA582]" />
               </div>
               <div className="text-3xl font-bold text-white mb-1">1000+</div>
               <div className="text-gray-300">Memnun Müvekkil</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-3">
-                <Award className="h-8 w-8 text-blue-400" />
+                <Award className="h-8 w-8 text-[#DEA582]" />
               </div>
               <div className="text-3xl font-bold text-white mb-1">15+</div>
               <div className="text-gray-300">Yıllık Deneyim</div>

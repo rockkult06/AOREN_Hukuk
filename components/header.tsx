@@ -102,7 +102,7 @@ export default function Header() {
               <SheetTrigger asChild>
                 <Button 
                   variant="ghost" 
-                  className={`px-8 py-3 text-lg font-medium z-[110] relative ${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'}`}
+                  className={`px-8 py-3 text-lg font-medium z-[110] relative ${isScrolled ? 'text-gray-700 hover:text-[#DEA582]' : 'text-white hover:text-[#D29F91]'}`}
                 >
                   <Menu className="h-6 w-6 mr-3" />
                   Menu
