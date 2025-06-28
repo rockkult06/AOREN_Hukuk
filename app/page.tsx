@@ -6,7 +6,7 @@ import HeroSection from "@/components/HeroSection"
 import Footer from "@/components/Footer"
 import BackgroundVideo from "@/components/BackgroundVideo"
 import styled from "styled-components"
-import { Linkedin, Mail, X } from "lucide-react"
+import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop } from "lucide-react"
 
 const TeamSection = styled.section`
   padding: 80px 20px;
@@ -539,6 +539,79 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Hakkımızda Bölümü */}
+      <section id="about" className="min-h-screen bg-[#2F2F31] py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6">Hakkımızda</h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <Building className="w-8 h-8 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">AOREN Legal Services</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed">
+                AOREN Legal Services, klasik hukuk bürosu anlayışının ötesine geçerek, müvekkillerine yalnızca hukuki temsil değil, iş stratejileriyle entegre çözümler sunan bir danışmanlık ekosistemi olarak faaliyet gösterir. Her bir dava, yalnızca yasal bir süreç değil; iş hedeflerinize ve yaşam kalitenize doğrudan etki eden stratejik bir alandır.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <Globe className="w-8 h-8 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Uluslararası Varlık</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed">
+                Kurucu ortaklarımızın vizyonuyla temelleri Ankara'da atılan AOREN, kısa sürede ulusal sınırları aşarak Stuttgart, İstanbul ve Ankara'daki ofisleriyle uluslararası ölçekte hizmet sunan güvenilir bir hukuk markası haline gelmiştir.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <Handshake className="w-8 h-8 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Stratejik Ortaklık Yaklaşımımız</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed">
+                AOREN, her müvekkiliyle uzun vadeli, güvene dayalı ilişkiler kurmayı hedefler. Hukuki çözümleri, yalnızca mevzuata uygunluk düzeyinde değil; işinizin sürdürülebilir büyümesini destekleyecek şekilde tasarlarız. Karmaşık problemler karşısında, farklı disiplinleri bir araya getirerek uygulanabilir, riskleri azaltan ve zaman kazandıran çözümler üretiriz.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <Network className="w-8 h-8 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Uluslararası Yetenek & Yerel Derinlik</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed">
+                Türkiye'deki güçlü hukuki ve akademik altyapımızı, Avrupa'daki stratejik ortaklıklarımızla tamamlıyoruz. Avrupa pazarındaki yatırımlardan Türkiye'deki aile şirketi yapılandırmalarına, çok dilli ve çok hukuklu sorunlara kadar, hem bireysel hem de kurumsal müvekkillerimize çok katmanlı bir temsil gücü sunuyoruz.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <Users className="w-8 h-8 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Disiplinlerarası Uzmanlık Ağı</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed">
+                AOREN çatısı altında yalnızca avukatlar değil; vergi uzmanları, siber güvenlik danışmanları, yeminli tercümanlar, finans analistleri ve akademik danışmanlar da görev alır. Böylece bir davaya yalnızca hukuki değil, ekonomik, teknolojik ve toplumsal perspektiflerle de bakarız.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <Laptop className="w-8 h-8 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Dijital Dönüşüm ve Şeffaflık</h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed">
+                Hizmetlerimizi teknolojiyle güçlendirerek, şeffaf ve erişilebilir hale getiriyoruz. AOREN'e özel geliştirilen dijital müvekkil portalı sayesinde belgelerinize, dava süreçlerine ve danışmanlık raporlarına 7/24 erişebilirsiniz. Bu sayede, sizinle açık iletişimi sadece sözde değil, sistemsel olarak da sürdürüyoruz.
+              </p>
+            </div>
           </div>
         </div>
       </section>

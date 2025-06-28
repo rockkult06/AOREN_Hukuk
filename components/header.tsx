@@ -38,6 +38,12 @@ export default function Header() {
       if (expertiseSection) {
         expertiseSection.scrollIntoView({ behavior: 'smooth' })
       }
+    } else if (href === '/hakkimizda') {
+      // Ana sayfadaki hakkımızda bölümüne scroll yap
+      const aboutSection = document.getElementById('about')
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' })
+      }
     } else {
       // Diğer sayfalar için normal navigasyon
       window.location.href = href
