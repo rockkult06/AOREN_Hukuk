@@ -103,24 +103,12 @@ const Footer: React.FC = () => {
         <FooterSection>
           <h3>Hizmetlerimiz</h3>
           <ul>
-            <li>
-              <a href="#">Ticaret Hukuku</a>
-            </li>
-            <li>
-              <a href="#">İş Hukuku</a>
-            </li>
-            <li>
-              <a href="#">Aile Hukuku</a>
-            </li>
-            <li>
-              <a href="#">Ceza Hukuku</a>
-            </li>
-            <li>
-              <a href="#">İcra İflas Hukuku</a>
-            </li>
-            <li>
-              <a href="#">Arabuluculuk</a>
-            </li>
+            <li>Ticaret Hukuku</li>
+            <li>İş Hukuku</li>
+            <li>Aile Hukuku</li>
+            <li>Ceza Hukuku</li>
+            <li>İcra İflas Hukuku</li>
+            <li>Arabuluculuk</li>
           </ul>
         </FooterSection>
 
@@ -128,22 +116,28 @@ const Footer: React.FC = () => {
           <h3>Kurumsal</h3>
           <ul>
             <li>
-              <a href="#">Hakkımızda</a>
+              <a href="#team">Ekibimiz</a>
             </li>
             <li>
-              <a href="#">Ekibimiz</a>
+              <a href="#expertise">Uzmanlık Alanlarımız</a>
             </li>
             <li>
-              <a href="#">Kariyer</a>
+              <a href="#about">Hakkımızda</a>
             </li>
             <li>
-              <a href="#">Haberler</a>
+              <a href="#offices">Ofislerimiz</a>
             </li>
             <li>
-              <a href="#">İletişim</a>
+              <a href="#digital">AOREN Dijital Hizmetleri</a>
             </li>
             <li>
-              <a href="#">Gizlilik Politikası</a>
+              <a href="#responsibility">Kurumsal Sosyal Sorumluluk</a>
+            </li>
+            <li>
+              <a href="#careers">AOREN'de Kariyer</a>
+            </li>
+            <li>
+              <a href="#contact">İletişim</a>
             </li>
           </ul>
         </FooterSection>
