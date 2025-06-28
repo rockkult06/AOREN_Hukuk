@@ -2,9 +2,9 @@
 
 import type React from "react"
 import styled from "styled-components"
-import Link from "next/link"
 // Import `useRef` from React
 import { useRef, useEffect } from "react"
+import { useRouter } from "next/navigation"
 
 const HeroContainer = styled.section`
 position: relative;
@@ -118,8 +118,6 @@ transition: all 0.3s ease;
 backdrop-filter: blur(10px);
 text-transform: uppercase;
 letter-spacing: 0.5px;
-text-decoration: none;
-display: inline-block;
 
 &:hover {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
@@ -136,12 +134,17 @@ display: inline-block;
 
 const HeroSection: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const router = useRouter()
 
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.75
     }
   }, [])
+
+  const handleNavigation = (path: string) => {
+    router.push(path)
+  }
 
   return (
     <HeroContainer>
@@ -151,27 +154,21 @@ const HeroSection: React.FC = () => {
             <SloganTitle>YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN</SloganTitle>
             <SloganSubtitle>"Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım"</SloganSubtitle>
           </div>
-          <Link href="/employees">
-            <ActionButton>Ekibimizi Görün</ActionButton>
-          </Link>
+          <ActionButton onClick={() => handleNavigation('/employees')}>Ekibimizi Görün</ActionButton>
         </InfoBox>
         <InfoBox>
           <div>
             <SloganTitle>BÖLGESEL DEĞİL, ULUSLARARASI DÜZEYDE HİZMET SUNUYORUZ</SloganTitle>
             <SloganSubtitle>"Aynı Değerler, Farklı Şehirlerde"</SloganSubtitle>
           </div>
-          <Link href="/ofislerimiz">
-            <ActionButton>Ofislerimizi Keşfedin</ActionButton>
-          </Link>
+          <ActionButton onClick={() => handleNavigation('/ofislerimiz')}>Ofislerimizi Keşfedin</ActionButton>
         </InfoBox>
         <InfoBox>
           <div>
             <SloganTitle>KAPSAMLI HUKUKİ ÇÖZÜM ALANLARIMIZI İNCELEYİN</SloganTitle>
             <SloganSubtitle>"Hukukun Tüm Alanlarında Yetkin Kadro, Bütünleşik Yaklaşım"</SloganSubtitle>
           </div>
-          <Link href="/uzmanlik-alanlari">
-            <ActionButton>Uzmanlık Alanları</ActionButton>
-          </Link>
+          <ActionButton onClick={() => handleNavigation('/uzmanlik-alanlari')}>Uzmanlık Alanları</ActionButton>
         </InfoBox>
       </BoxContainer>
     </HeroContainer>
