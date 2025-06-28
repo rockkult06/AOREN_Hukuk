@@ -23,7 +23,7 @@ const TeamSection = styled.section`
     background-image: url('/team.jpg');
     background-size: cover;
     background-position: center;
-    filter: blur(8px) brightness(0.3);
+    filter: brightness(0.3);
     z-index: 0;
   }
 `
@@ -411,9 +411,6 @@ export default function Home() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY
       const windowHeight = window.innerHeight
-      
-      // Bu scroll event'i kaldırıyoruz çünkü otomatik scroll istemiyoruz
-      // Kullanıcı manuel olarak scroll yapabilir
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -429,9 +426,11 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       </Head>
 
-      <BackgroundVideo />
-      <Header />
-      <HeroSection />
+      <div className="relative">
+        <BackgroundVideo />
+        <Header />
+        <HeroSection />
+      </div>
       
       {/* Ekibimiz Bölümü */}
       <section id="team" className="min-h-screen bg-[#2F2F31] py-20">
@@ -527,16 +526,16 @@ export default function Home() {
             backgroundImage: 'url(/sp.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'blur(8px) brightness(0.3)',
+            filter: 'brightness(0.3)',
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-[#2F2F31] mb-6">Uzmanlık Alanlarımız</h2>
-            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
+            <h2 className="text-5xl font-bold text-white mb-6">Uzmanlık Alanlarımız</h2>
+            <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed mb-8">
               AOREN, hem bireysel hem kurumsal müvekkillerine geniş bir yelpazede hukuki destek sunar.
             </p>
-            <p className="text-lg text-gray-600 font-medium">
+            <p className="text-lg text-white/80 font-medium">
               Uzmanlıklarımızdan bazıları:
             </p>
           </div>
@@ -549,12 +548,12 @@ export default function Home() {
                 onClick={() => setSelectedExpertise(index)}
               >
                 <div>
-                  <h3 className="text-xl font-bold text-black mb-4 text-center leading-tight">
-                    {expertise.title}
-                  </h3>
-                  <p className="text-black text-sm text-center leading-relaxed font-medium italic">
-                    {expertise.subtitle}
-                  </p>
+                                  <h3 className="text-xl font-bold text-white mb-4 text-center leading-tight">
+                  {expertise.title}
+                </h3>
+                <p className="text-white/80 text-sm text-center leading-relaxed font-medium italic">
+                  {expertise.subtitle}
+                </p>
                 </div>
                 <div className="mt-6 text-center">
                   <button className="bg-gradient-to-r from-white/20 to-white/10 text-white px-6 py-2 rounded-[12px] font-semibold text-sm hover:from-white/30 hover:to-white/20 transition-all duration-300 hover:scale-105 border border-white/30 backdrop-blur-sm">
@@ -576,7 +575,7 @@ export default function Home() {
             backgroundImage: 'url(/ab.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'blur(8px) brightness(0.3)',
+            filter: 'brightness(0.3)',
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -659,7 +658,7 @@ export default function Home() {
             backgroundImage: 'url(/of.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'blur(8px) brightness(0.3)',
+            filter: 'brightness(0.3)',
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -767,7 +766,7 @@ export default function Home() {
             backgroundImage: 'url(/res.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'blur(8px) brightness(0.3)',
+            filter: 'brightness(0.3)',
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -839,7 +838,7 @@ export default function Home() {
             backgroundImage: 'url(/kar.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'blur(8px) brightness(0.3)',
+            filter: 'brightness(0.3)',
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -957,7 +956,7 @@ export default function Home() {
             backgroundImage: 'url(/digital.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'blur(8px) brightness(0.3)',
+            filter: 'brightness(0.3)',
           }}
         />
 
@@ -1088,7 +1087,7 @@ export default function Home() {
             backgroundImage: 'url(/contact.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'blur(8px) brightness(0.3)',
+            filter: 'brightness(0.3)',
           }}
         />
 
