@@ -2,6 +2,7 @@
 
 import type React from "react"
 import styled from "styled-components"
+import Link from "next/link"
 // Import `useRef` from React
 import { useRef, useEffect } from "react"
 
@@ -117,6 +118,8 @@ transition: all 0.3s ease;
 backdrop-filter: blur(10px);
 text-transform: uppercase;
 letter-spacing: 0.5px;
+text-decoration: none;
+display: inline-block;
 
 &:hover {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
@@ -148,21 +151,27 @@ const HeroSection: React.FC = () => {
             <SloganTitle>YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN</SloganTitle>
             <SloganSubtitle>"Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım"</SloganSubtitle>
           </div>
-          <ActionButton>Ekibimizi Görün</ActionButton>
+          <Link href="/employees">
+            <ActionButton>Ekibimizi Görün</ActionButton>
+          </Link>
         </InfoBox>
         <InfoBox>
           <div>
             <SloganTitle>BÖLGESEL DEĞİL, ULUSLARARASI DÜZEYDE HİZMET SUNUYORUZ</SloganTitle>
             <SloganSubtitle>"Aynı Değerler, Farklı Şehirlerde"</SloganSubtitle>
           </div>
-          <ActionButton>Ofislerimizi Keşfedin</ActionButton>
+          <Link href="/ofislerimiz">
+            <ActionButton>Ofislerimizi Keşfedin</ActionButton>
+          </Link>
         </InfoBox>
         <InfoBox>
           <div>
             <SloganTitle>KAPSAMLI HUKUKİ ÇÖZÜM ALANLARIMIZI İNCELEYİN</SloganTitle>
             <SloganSubtitle>"Hukukun Tüm Alanlarında Yetkin Kadro, Bütünleşik Yaklaşım"</SloganSubtitle>
           </div>
-          <ActionButton>Uzmanlık Alanları</ActionButton>
+          <Link href="/uzmanlik-alanlari">
+            <ActionButton>Uzmanlık Alanları</ActionButton>
+          </Link>
         </InfoBox>
       </BoxContainer>
     </HeroContainer>
