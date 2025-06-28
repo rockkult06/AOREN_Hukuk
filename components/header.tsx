@@ -59,11 +59,11 @@ export default function Header() {
               </SheetTrigger>
               <SheetContent 
                 side="left"
-                className="border-none bg-transparent p-0 shadow-none mt-16 absolute transition-all duration-500 ease-in-out opacity-0 data-[state=open]:opacity-100 data-[state=closed]:opacity-0 z-[120]"
+                className="border-none bg-transparent p-0 shadow-none fixed top-0 left-0 transition-all duration-500 ease-in-out opacity-0 data-[state=open]:opacity-100 data-[state=closed]:opacity-0 z-[120] h-screen w-full"
                 style={{ zIndex: 120 }}
               >
                 {/* Buzlu Cam Menu Kartı */}
-                <div className="m-6 bg-white/15 backdrop-blur-[10px] rounded-[20px] border border-white/20 shadow-2xl p-6 w-80 transition-all duration-300">
+                <div className="m-6 bg-white/15 backdrop-blur-[10px] rounded-[20px] border border-white/20 shadow-2xl p-6 w-80 transition-all duration-300 mt-20">
                   {/* Menu Header */}
                   <div className="mb-6">
                     <h2 className="text-2xl font-bold text-white mb-2">Menu</h2>
