@@ -8,10 +8,15 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import Link from "next/link"
 import Image from "next/image"
+import { useRouter } from 'next/router'
+import { LanguageSwitcher } from './LanguageSwitcher'
+import { getTranslation } from '@/lib/i18n'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const router = useRouter()
+  const t = getTranslation(router.locale as 'tr' | 'en' | 'de')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,6 +79,18 @@ export default function Header() {
     }
   }
 
+  const menuItems = [
+    { href: '/team', label: t.header.menuItems.team },
+    { href: '/expertise', label: t.header.menuItems.expertise },
+    { href: '/about', label: t.header.menuItems.about },
+    { href: '/offices', label: t.header.menuItems.offices },
+    { href: '/news', label: t.header.menuItems.news },
+    { href: '/digital-services', label: t.header.menuItems.digitalServices },
+    { href: '/social-responsibility', label: t.header.menuItems.socialResponsibility },
+    { href: '/career', label: t.header.menuItems.career },
+    { href: '/contact', label: t.header.menuItems.contact },
+  ]
+
   return (
     <header className={`fixed top-0 w-full transition-all duration-300 z-[100] ${
       isScrolled 
@@ -123,21 +140,10 @@ export default function Header() {
 
                   {/* Menu Items */}
                   <div className="space-y-1">
-                    {[
-                      { name: "Ekibimiz", href: "/employees", icon: Users },
-                      { name: "Uzmanlık Alanlarımız", href: "/uzmanlik-alanlari", icon: Scale },
-                      { name: "Hakkımızda", href: "/hakkimizda", icon: Info },
-                      { name: "Ofislerimiz", href: "/ofislerimiz", icon: Building },
-                      { name: "Haberler", href: "/haberler", icon: Newspaper },
-                      { name: "AOREN Dijital Hizmetleri", href: "/dijital-hizmetler", icon: Computer },
-                      { name: "Kurumsal Sosyal Sorumluluk", href: "/sosyal-sorumluluk", icon: Heart },
-                      { name: "AOREN'de Kariyer", href: "/kariyer", icon: Briefcase },
-                      { name: "İletişim", href: "/iletisim", icon: Mail },
-                    ].map((item, index) => {
-                      const IconComponent = item.icon;
+                    {menuItems.map((item, index) => {
                       return (
                         <button
-                          key={item.name}
+                          key={item.href}
                           onClick={() => handleMenuClick(item.href)}
                           className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0 w-full text-left"
                           style={{ 
@@ -150,9 +156,8 @@ export default function Header() {
                           }}
                         >
                           <div className="flex items-center gap-3">
-                            <IconComponent className="w-5 h-5 text-white group-hover:text-white transition-colors duration-200" />
                             <span className="text-white text-base font-medium group-hover:text-white group-hover:text-lg transition-all duration-200" style={{textDecoration: 'none', borderBottom: 'none'}}>
-                              {item.name}
+                              {item.label}
                             </span>
                           </div>
                         </button>
@@ -185,7 +190,7 @@ export default function Header() {
               <Search className={`absolute left-3 h-4 w-4 ${isScrolled ? 'text-gray-400' : 'text-white/60'}`} />
               <Input
                 type="search"
-                placeholder="Site içi arama..."
+                placeholder={t.header.search}
                 className={`pl-10 w-64 ${
                   isScrolled 
                     ? 'bg-white border-gray-200 text-gray-900 placeholder:text-gray-500' 
@@ -197,20 +202,11 @@ export default function Header() {
             {/* User Login - Kurumsal */}
             <Button variant="ghost" className={`${isScrolled ? 'text-gray-700' : 'text-white'}`}>
               <Lock className="h-5 w-5 mr-2" />
-              <span className="font-medium">Kurumsal</span>
+              <span className="font-medium">{t.header.corporate}</span>
             </Button>
 
             {/* Language Selector */}
-            <Select defaultValue="tr">
-              <SelectTrigger className={`w-20 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="tr">TR</SelectItem>
-                <SelectItem value="en">EN</SelectItem>
-                <SelectItem value="de">DE</SelectItem>
-              </SelectContent>
-            </Select>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

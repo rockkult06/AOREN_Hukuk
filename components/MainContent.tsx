@@ -190,7 +190,29 @@ const TeamMember = styled.div`
   }
 `
 
-const MainContent: React.FC = () => {
+interface Area {
+  title: string;
+  subtitle: string;
+}
+
+interface TeamSection {
+  title: string;
+  description: string;
+}
+
+interface ExpertiseSection {
+  title: string;
+  description: string;
+  subtitle: string;
+  areas: Area[];
+}
+
+interface MainContentProps {
+  teamSection: TeamSection;
+  expertiseSection: ExpertiseSection;
+}
+
+const MainContent: React.FC<MainContentProps> = ({ teamSection, expertiseSection }) => {
   const router = useRouter()
 
   const newsItems = [

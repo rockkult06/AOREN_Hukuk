@@ -5,6 +5,7 @@ import styled from "styled-components"
 // Import `useRef` from React
 import { useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
+import BackgroundVideo from './BackgroundVideo'
 
 const HeroContainer = styled.section`
 position: relative;
@@ -132,7 +133,20 @@ letter-spacing: 0.5px;
 }
 `
 
-const HeroSection: React.FC = () => {
+interface Stats {
+  cases: string;
+  clients: string;
+  experience: string;
+}
+
+interface HeroSectionProps {
+  title: string;
+  subtitle: string;
+  description: string;
+  stats: Stats;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ title, subtitle, description, stats }) => {
   const videoRef = useRef<HTMLVideoElement>(null)
   const router = useRouter()
 
@@ -167,31 +181,37 @@ const HeroSection: React.FC = () => {
   }
 
   return (
-    <HeroContainer>
-      <BoxContainer>
-        <InfoBox>
-          <div>
-            <SloganTitle>YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN</SloganTitle>
-            <SloganSubtitle>"Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım"</SloganSubtitle>
+    <section className="relative w-full h-screen overflow-hidden">
+      <BackgroundVideo />
+      <div className="absolute inset-0 bg-black/30" />
+      
+      <div className="absolute inset-0 flex items-center">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 animate-fade-in-up">
+              {title}
+              <br />
+              {subtitle}
+            </h1>
+            <p className="text-xl text-white/90 mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              {description}
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+              <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+                <div className="text-3xl font-bold text-white mb-2">{stats.cases}</div>
+              </div>
+              <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                <div className="text-3xl font-bold text-white mb-2">{stats.clients}</div>
+              </div>
+              <div className="animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+                <div className="text-3xl font-bold text-white mb-2">{stats.experience}</div>
+              </div>
+            </div>
           </div>
-          <ActionButton onClick={() => handleNavigation('/employees')}>Ekibimizi Görün</ActionButton>
-        </InfoBox>
-        <InfoBox>
-          <div>
-            <SloganTitle>BÖLGESEL DEĞİL, ULUSLARARASI DÜZEYDE HİZMET SUNUYORUZ</SloganTitle>
-            <SloganSubtitle>"Aynı Değerler, Farklı Şehirlerde"</SloganSubtitle>
-          </div>
-          <ActionButton onClick={() => handleNavigation('/ofislerimiz')}>Ofislerimizi Keşfedin</ActionButton>
-        </InfoBox>
-        <InfoBox>
-          <div>
-            <SloganTitle>KAPSAMLI HUKUKİ ÇÖZÜM ALANLARIMIZI İNCELEYİN</SloganTitle>
-            <SloganSubtitle>"Hukukun Tüm Alanlarında Yetkin Kadro, Bütünleşik Yaklaşım"</SloganSubtitle>
-          </div>
-          <ActionButton onClick={() => handleNavigation('/uzmanlik-alanlari')}>Uzmanlık Alanları</ActionButton>
-        </InfoBox>
-      </BoxContainer>
-    </HeroContainer>
+        </div>
+      </div>
+    </section>
   )
 }
 
