@@ -519,19 +519,19 @@ export default function Home() {
             {expertiseData.map((expertise, index) => (
               <div 
                 key={index}
-                className="bg-white/80 backdrop-blur-sm rounded-[20px] border border-gray-200/50 shadow-lg p-8 hover:shadow-xl hover:bg-white/90 transition-all duration-300 hover:scale-105 cursor-pointer min-h-[220px] flex flex-col justify-between"
+                className="bg-white/15 backdrop-blur-[10px] rounded-[20px] border border-white/20 shadow-2xl p-8 hover:shadow-xl hover:bg-white/25 transition-all duration-300 hover:scale-105 cursor-pointer min-h-[220px] flex flex-col justify-between"
                 onClick={() => setSelectedExpertise(index)}
               >
                 <div>
-                  <h3 className="text-xl font-bold text-[#2F2F31] mb-4 text-center leading-tight">
+                  <h3 className="text-xl font-bold text-white mb-4 text-center leading-tight text-shadow-sm">
                     {expertise.title}
                   </h3>
-                  <p className="text-gray-600 text-sm text-center leading-relaxed font-medium italic">
+                  <p className="text-white/90 text-sm text-center leading-relaxed font-medium italic">
                     {expertise.subtitle}
                   </p>
                 </div>
                 <div className="mt-6 text-center">
-                  <button className="bg-gradient-to-r from-[#2F2F31] to-gray-600 text-white px-6 py-2 rounded-[12px] font-semibold text-sm hover:from-gray-600 hover:to-[#2F2F31] transition-all duration-300 hover:scale-105">
+                  <button className="bg-gradient-to-r from-white/20 to-white/10 text-white px-6 py-2 rounded-[12px] font-semibold text-sm hover:from-white/30 hover:to-white/20 transition-all duration-300 hover:scale-105 border border-white/30 backdrop-blur-sm">
                     Detayları Görün
                   </button>
                 </div>
