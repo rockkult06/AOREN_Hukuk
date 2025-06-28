@@ -13,11 +13,11 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       // Kullanıcı hero section'dan aşağıya kaydırınca yönlendir
-      if (window.scrollY > window.innerHeight * 0.5) {
+      if (window.scrollY > window.innerHeight * 0.3) {
         router.push("/employees")
       }
     }
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [router])
 
@@ -33,7 +33,7 @@ export default function Home() {
       <BackgroundVideo />
       <Header />
       <HeroSection />
-      <Footer />
+      {/* <Footer />  // Footer'ı ana sayfada kaldırın, çünkü employees sayfasında zaten var */}
     </>
   )
 }
