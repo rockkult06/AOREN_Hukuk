@@ -44,6 +44,12 @@ export default function Header() {
       if (aboutSection) {
         aboutSection.scrollIntoView({ behavior: 'smooth' })
       }
+    } else if (href === '/ofislerimiz') {
+      // Ana sayfadaki ofislerimiz bölümüne scroll yap
+      const officesSection = document.getElementById('offices')
+      if (officesSection) {
+        officesSection.scrollIntoView({ behavior: 'smooth' })
+      }
     } else {
       // Diğer sayfalar için normal navigasyon
       window.location.href = href
