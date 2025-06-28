@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation"
 const HeroContainer = styled.section`
 position: relative;
 width: 100%;
-min-height: 100vh;
+height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -142,13 +142,16 @@ const HeroSection: React.FC = () => {
     }
   }, [])
 
-  const handleScrollToTeam = () => {
-    const el = document.getElementById("team-section");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  }
-
   const handleNavigation = (path: string) => {
-    router.push(path)
+    if (path === '/employees') {
+      // Ana sayfadaki ekibimiz bölümüne scroll yap
+      const ekibimizSection = document.getElementById('ekibimiz')
+      if (ekibimizSection) {
+        ekibimizSection.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      router.push(path)
+    }
   }
 
   return (
@@ -159,7 +162,7 @@ const HeroSection: React.FC = () => {
             <SloganTitle>YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN</SloganTitle>
             <SloganSubtitle>"Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım"</SloganSubtitle>
           </div>
-          <ActionButton onClick={handleScrollToTeam}>Ekibimizi Görün</ActionButton>
+          <ActionButton onClick={() => handleNavigation('/employees')}>Ekibimizi Görün</ActionButton>
         </InfoBox>
         <InfoBox>
           <div>

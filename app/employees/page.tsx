@@ -368,12 +368,12 @@ export default function EmployeesPage() {
         
         <TeamSection>
           <TeamGrid>
-            {employeesData.map((member, index) => (
+              {employeesData.map((member, index) => (
               <TeamCard key={index} onClick={() => setSelected(index)}>
                 <ProfileImage>
-                  <img 
+                    <img
                     src={member.image || "/placeholder-user.jpg"} 
-                    alt={member.name}
+                      alt={member.name}
                     onError={(e) => {
                       e.currentTarget.src = "/placeholder-user.jpg"
                     }}
