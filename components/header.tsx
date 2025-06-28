@@ -58,7 +58,7 @@ export default function Header() {
       }
     } else if (href === '/kariyer') {
       // Ana sayfadaki kariyer bölümüne scroll yap
-      const careerSection = document.getElementById('career')
+      const careerSection = document.getElementById('careers')
       if (careerSection) {
         careerSection.scrollIntoView({ behavior: 'smooth' })
       }
@@ -67,6 +67,12 @@ export default function Header() {
       const digitalSection = document.getElementById('digital-services')
       if (digitalSection) {
         digitalSection.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else if (href === '/iletisim') {
+      // Ana sayfadaki iletişim bölümüne scroll yap
+      const contactSection = document.getElementById('contact')
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' })
       }
     } else {
       // Diğer sayfalar için normal navigasyon
@@ -128,7 +134,6 @@ export default function Header() {
                       { name: "Uzmanlık Alanlarımız", href: "/uzmanlik-alanlari", icon: Scale },
                       { name: "Hakkımızda", href: "/hakkimizda", icon: Info },
                       { name: "Ofislerimiz", href: "/ofislerimiz", icon: Building },
-                      { name: "Haberler", href: "/haberler", icon: Newspaper },
                       { name: "AOREN Dijital Hizmetleri", href: "/dijital-hizmetler", icon: Computer },
                       { name: "Kurumsal Sosyal Sorumluluk", href: "/sosyal-sorumluluk", icon: Heart },
                       { name: "AOREN'de Kariyer", href: "/kariyer", icon: Briefcase },
