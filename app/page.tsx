@@ -6,7 +6,7 @@ import HeroSection from "@/components/HeroSection"
 import Footer from "@/components/Footer"
 import BackgroundVideo from "@/components/BackgroundVideo"
 import styled from "styled-components"
-import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop, MapPin, MapPinned, Phone } from "lucide-react"
+import { Linkedin, Mail, X, Building, Globe, Handshake, Network, Users, Laptop, MapPin, MapPinned, Phone, GraduationCap, Scale, Leaf, Target } from "lucide-react"
 
 const TeamSection = styled.section`
   padding: 80px 20px;
@@ -709,6 +709,68 @@ export default function Home() {
                   <p>ankara@aorenlegal.com</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Kurumsal Sosyal Sorumluluk Bölümü */}
+      <section id="social-responsibility" className="min-h-screen bg-[#949393] py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6">Kurumsal Sosyal Sorumluluk</h2>
+            <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic">
+              Adalet sadece mahkeme salonlarında değil, toplumun her alanında inşa edilir.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Hukuk Eğitimi */}
+            <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <GraduationCap className="w-12 h-12 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Hukuk Eğitimi</h3>
+              </div>
+              <p className="text-gray-100 leading-relaxed">
+                Genç hukukçuların yetişmesine katkı sağlıyor, üniversitelerde mentorluk programları düzenliyor ve staj imkanları sunuyoruz.
+              </p>
+            </div>
+
+            {/* Kadınların Adalete Erişimi */}
+            <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <Scale className="w-12 h-12 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Kadınların Adalete Erişimi</h3>
+              </div>
+              <p className="text-gray-100 leading-relaxed">
+                Kadınların hukuki haklarını öğrenmeleri ve adalete erişimlerini kolaylaştırmak için ücretsiz danışmanlık hizmetleri sunuyoruz.
+              </p>
+            </div>
+
+            {/* Çevresel Farkındalık */}
+            <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <Leaf className="w-12 h-12 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">Çevresel Farkındalık</h3>
+              </div>
+              <p className="text-gray-100 leading-relaxed">
+                Çevre hukuku alanında pro bono davalar üstleniyor ve sürdürülebilirlik projelerine hukuki destek sağlıyoruz.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300 max-w-3xl mx-auto">
+              <div className="flex items-center justify-center mb-6">
+                <Target className="w-12 h-12 text-blue-400 mr-4" />
+                <h3 className="text-2xl font-semibold text-white">BM Sürdürülebilir Kalkınma Hedefleri</h3>
+              </div>
+              <p className="text-gray-100 leading-relaxed">
+                AOREN olarak, BM Sürdürülebilir Kalkınma Hedefleri doğrultusunda hukuk eğitimi, kadınların adalete erişimi ve çevresel farkındalık projelerine destek veriyoruz.
+              </p>
+              <p className="text-2xl font-semibold text-white mt-6 italic">
+                Toplum için, hukukla dönüşüm.
+              </p>
             </div>
           </div>
         </div>
