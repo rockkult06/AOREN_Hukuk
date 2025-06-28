@@ -14,9 +14,13 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
+      const teamSection = document.getElementById("team-section");
+      if (!teamSection) return;
+      const teamSectionTop = teamSection.offsetTop;
       const currentY = window.scrollY;
-      // Eğer kullanıcı yukarıya scroll yapıyorsa ve sayfanın üstüne yaklaşıyorsa, hero section'a smooth scroll
-      if (currentY < window.innerHeight * 0.5 && lastScrollY.current > currentY) {
+
+      // Kullanıcı yukarıya scroll yapıyor ve team-section'ın üstüne çıkıyorsa
+      if (currentY < teamSectionTop && lastScrollY.current > currentY) {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
       lastScrollY.current = currentY;
