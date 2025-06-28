@@ -8,16 +8,10 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import Link from "next/link"
 import Image from "next/image"
-import { useRouter, usePathname } from 'next/navigation'
-import { LanguageSwitcher } from './LanguageSwitcher'
-import { getTranslation } from '@/lib/i18n'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const router = useRouter()
-  const pathname = usePathname()
-  const t = getTranslation('tr')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -80,85 +74,143 @@ export default function Header() {
     }
   }
 
-  const menuItems = [
-    { href: '/team', label: t.header.menuItems.team },
-    { href: '/expertise', label: t.header.menuItems.expertise },
-    { href: '/about', label: t.header.menuItems.about },
-    { href: '/offices', label: t.header.menuItems.offices },
-    { href: '/news', label: t.header.menuItems.news },
-    { href: '/digital-services', label: t.header.menuItems.digitalServices },
-    { href: '/social-responsibility', label: t.header.menuItems.socialResponsibility },
-    { href: '/career', label: t.header.menuItems.career },
-    { href: '/contact', label: t.header.menuItems.contact },
-  ]
-
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex-shrink-0">
-            <Image
-              src="/aoren-logo.png"
-              alt="AOREN Logo"
-              width={120}
-              height={40}
-              className="h-10 w-auto"
-            />
+    <header className={`fixed top-0 w-full transition-all duration-300 z-[100] ${
+      isScrolled 
+        ? 'bg-white/90 backdrop-blur-md border-b border-gray-200' 
+        : 'bg-transparent border-b border-white/20'
+    }`}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Left - Logo */}
+          <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
+            <div className="relative h-12 w-auto">
+              <Image
+                src={isScrolled ? "/aoren-logo1.png" : "/aoren-logo.png"}
+                alt="AOREN Logo"
+                width={150}
+                height={48}
+                className="h-12 w-auto object-contain transition-all duration-300"
+                priority
+              />
+            </div>
           </Link>
 
-          <div className="hidden lg:flex items-center space-x-8">
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+          {/* Center - Menu Button (Büyük) */}
+          <div className="flex-1 flex justify-center">
+            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+              <SheetTrigger asChild>
+                <Button 
+                  variant="ghost" 
+                  className={`px-8 py-3 text-lg font-medium z-[110] relative ${isScrolled ? 'text-gray-700 hover:text-[#DEA582]' : 'text-white hover:text-[#D29F91]'}`}
+                >
+                  <Menu className="h-6 w-6 mr-3" />
+                  Menu
+                </Button>
+              </SheetTrigger>
+              <SheetContent 
+                side="left"
+                className="border-none bg-transparent p-0 shadow-none fixed top-0 left-0 transition-all duration-500 ease-in-out opacity-0 data-[state=open]:opacity-100 data-[state=closed]:opacity-0 z-[120] h-screen w-full"
+                style={{ zIndex: 120 }}
+              >
+                {/* Buzlu Cam Menu Kartı */}
+                <div className="m-6 bg-white/15 backdrop-blur-[10px] rounded-[20px] border border-white/20 shadow-2xl p-6 w-80 transition-all duration-300 mt-20">
+                  {/* Menu Header */}
+                  <div className="mb-6">
+                    <h2 className="text-2xl font-bold text-white mb-2">Menu</h2>
+                    <div className="w-12 h-0.5 bg-blue-500"></div>
+                  </div>
+
+                  {/* Menu Items */}
+                  <div className="space-y-1">
+                    {[
+                      { name: "Ekibimiz", href: "/employees", icon: Users },
+                      { name: "Uzmanlık Alanlarımız", href: "/uzmanlik-alanlari", icon: Scale },
+                      { name: "Hakkımızda", href: "/hakkimizda", icon: Info },
+                      { name: "Ofislerimiz", href: "/ofislerimiz", icon: Building },
+                      { name: "Haberler", href: "/haberler", icon: Newspaper },
+                      { name: "AOREN Dijital Hizmetleri", href: "/dijital-hizmetler", icon: Computer },
+                      { name: "Kurumsal Sosyal Sorumluluk", href: "/sosyal-sorumluluk", icon: Heart },
+                      { name: "AOREN'de Kariyer", href: "/kariyer", icon: Briefcase },
+                      { name: "İletişim", href: "/iletisim", icon: Mail },
+                    ].map((item, index) => {
+                      const IconComponent = item.icon;
+                      return (
+                        <button
+                          key={item.name}
+                          onClick={() => handleMenuClick(item.href)}
+                          className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0 w-full text-left"
+                          style={{ 
+                            animationDelay: `${index * 50}ms`,
+                            animation: 'slideInLeft 0.6s ease-out forwards',
+                            textDecoration: 'none',
+                            borderBottom: 'none',
+                            border: 'none',
+                            background: 'transparent'
+                          }}
+                        >
+                          <div className="flex items-center gap-3">
+                            <IconComponent className="w-5 h-5 text-white group-hover:text-white transition-colors duration-200" />
+                            <span className="text-white text-base font-medium group-hover:text-white group-hover:text-lg transition-all duration-200" style={{textDecoration: 'none', borderBottom: 'none'}}>
+                              {item.name}
+                            </span>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Animation Keyframes */}
+                <style jsx>{`
+                  @keyframes slideInLeft {
+                    from {
+                      opacity: 0;
+                      transform: translateX(-20px);
+                    }
+                    to {
+                      opacity: 1;
+                      transform: translateX(0);
+                    }
+                  }
+                `}</style>
+              </SheetContent>
+            </Sheet>
+          </div>
+
+          {/* Right Side - Search, User, Language */}
+          <div className="flex items-center space-x-4">
+            {/* Search Bar */}
+            <div className="hidden lg:flex items-center relative">
+              <Search className={`absolute left-3 h-4 w-4 ${isScrolled ? 'text-gray-400' : 'text-white/60'}`} />
               <Input
                 type="search"
-                placeholder={t.header.search}
-                className="pl-10 w-64 bg-gray-50"
+                placeholder="Site içi arama..."
+                className={`pl-10 w-64 ${
+                  isScrolled 
+                    ? 'bg-white border-gray-200 text-gray-900 placeholder:text-gray-500' 
+                    : 'bg-white/10 border-white/20 text-white placeholder:text-white/70'
+                }`}
               />
             </div>
 
-            <nav className="flex items-center space-x-6">
-              <Button variant="ghost" asChild>
-                <Link href="/corporate">
-                  {t.header.corporate}
-                </Link>
-              </Button>
-              <LanguageSwitcher />
-            </nav>
-          </div>
+            {/* User Login - Kurumsal */}
+            <Button variant="ghost" className={`${isScrolled ? 'text-gray-700' : 'text-white'}`}>
+              <Lock className="h-5 w-5 mr-2" />
+              <span className="font-medium">Kurumsal</span>
+            </Button>
 
-          <div className="lg:hidden flex items-center">
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
-                  <span className="sr-only">{t.header.menu}</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-80">
-                <nav className="flex flex-col space-y-4 mt-6">
-                  <div className="relative mb-6">
-                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
-                    <Input
-                      type="search"
-                      placeholder={t.header.search}
-                      className="pl-10 w-full bg-gray-50"
-                    />
-                  </div>
-                  {menuItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                  <div className="pt-4">
-                    <LanguageSwitcher />
-                  </div>
-                </nav>
-              </SheetContent>
-            </Sheet>
+            {/* Language Selector */}
+            <Select defaultValue="tr">
+              <SelectTrigger className={`w-20 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="tr">TR</SelectItem>
+                <SelectItem value="en">EN</SelectItem>
+                <SelectItem value="de">DE</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
         </div>
       </div>
