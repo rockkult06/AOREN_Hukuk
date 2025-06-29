@@ -16,45 +16,183 @@
     "subtitle": "Professional Legal Consultancy",
     "description": "With our experienced team of lawyers, we provide the best solutions to your legal needs. We are with you with our expert team in commercial, labor, family and criminal law.",
     "getStarted": "Get Started",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "slogan1": "MEET OUR HIGH-IMPACT LEGAL TEAM",
+    "slogan1Sub": "Strategic Thinking Lawyers. Interdisciplinary Approach",
+    "slogan2": "WE PROVIDE SERVICES NOT REGIONALLY, BUT INTERNATIONALLY",
+    "slogan2Sub": "Same Values, Different Cities",
+    "slogan3": "EXPLORE OUR COMPREHENSIVE LEGAL SOLUTION AREAS",
+    "slogan3Sub": "Competent Staff in All Areas of Law, Integrated Approach"
   },
   "team": {
     "title": "Our Team",
     "subtitle": "Experienced and expert team of lawyers",
-    "description": "Our lawyers with many years of experience in the field of law work to provide the highest quality legal service to our clients.",
-    "viewProfile": "View Profile"
-  },
-  "expertise": {
-    "title": "Areas of Expertise",
-    "subtitle": "Wide range of legal services",
-    "description": "With our team specialized in different branches of law, we meet all the legal needs of our clients.",
-    "areas": {
-      "commercial": {
-        "title": "Commercial Law",
-        "description": "Consultancy services on company establishment, mergers, acquisitions and commercial disputes."
+    "description": "AOREN Legal Services serves with a distinguished team of lawyers, each with deep knowledge and international experience in their field of expertise.",
+    "viewProfile": "View Profile",
+    "teamHighlights": "Highlights from Our Team",
+    "members": {
+      "abdullah": {
+        "title": "Founding Partner | Commercial and International Investment Law Expert",
+        "description": "With his authorized experience under BRAO 206, he leads at the intersection of strategic consultancy approach and law.",
+        "about": "Av. Abdullah ÖREN, the founding partner of AOREN, stands out with his recognized competence under BRAO 206, especially in commercial law, international investment processes and corporate mergers. Thanks to his strategic vision, he not only provides legal solutions; he develops consultancy that directly contributes to his clients' business goals.\n\nThroughout his career, he has played an active role in the legal structuring of hundreds of domestic and foreign companies, and with his experience in cross-border transactions, he has created a strong bridge on the Europe-Turkey line.",
+        "expertise": {
+          "1": "International Trade and Contracts",
+          "2": "Corporate Law and Corporate Structuring",
+          "3": "Investment Funds and Venture Capital",
+          "4": "Mergers and Acquisitions"
+        },
+        "languages": "Turkish, English, German"
       },
-      "labor": {
-        "title": "Labor Law",
-        "description": "Legal support on employment contracts, workers' rights, work accidents and employer obligations."
+      "ekin": {
+        "title": "Criminal Law and Reputation Management Expert",
+        "description": "Known for effective defense strategies in press law and white-collar crimes.",
+        "about": "Av. Ekin Tuncel, a reliable guide in the complex nature of criminal proceedings, effectively represents his clients especially in white-collar crimes, press freedom violations and cyber security-focused cases.\n\nHe has developed strong strategies in media communication and reputation defense during crisis periods for individuals and companies in direct contact with the public. His success in judicial and preventive consultancy is appreciated by both individual and corporate clients.",
+        "expertise": {
+          "1": "Economic Crimes and Criminal Investigations",
+          "2": "Press and Social Media Law",
+          "3": "Digital Security and Personal Data Protection",
+          "4": "Reputation Management and Emergency Legal Intervention"
+        },
+        "languages": "Turkish, English"
       },
-      "family": {
-        "title": "Family Law",
-        "description": "Professional solutions for divorce, custody, alimony and family legal issues."
+      "melis": {
+        "title": "Family Law and International Inheritance Law Expert",
+        "description": "While approaching complex personal relationship files with empathy, she produces solutions with high sensitivity.",
+        "about": "Av. Melis Bayraktar is an expert with deep expertise in complex family structures, property regime arrangements and multinational inheritance files. She attracts attention with her ethical approach and solution-oriented communication style in emotionally sensitive files.\n\nShe is a name that foreign nationals living in Turkey and Turkish citizens living abroad consult with confidence in their family and inheritance transactions. She develops sustainable structures in asset planning, will arrangements and intergenerational transitions.",
+        "expertise": {
+          "1": "Divorce and Property Division",
+          "2": "Marriage Contracts",
+          "3": "International Inheritance Planning",
+          "4": "Family Company Law"
+        },
+        "languages": "Turkish, English, French"
       },
-      "criminal": {
-        "title": "Criminal Law",
-        "description": "Experienced lawyer support in criminal accusations, defense and criminal cases."
-      },
-      "execution": {
-        "title": "Execution and Bankruptcy Law",
-        "description": "Legal consultancy in debt collection, execution procedures and bankruptcy cases."
-      },
-      "mediation": {
-        "title": "Mediation",
-        "description": "Professional mediation services for out-of-court resolution of disputes."
+      "kerem": {
+        "title": "Labor Law and Corporate Compliance Consultant",
+        "description": "He specializes in corporate human resources processes, risk management and ethical compliance.",
+        "about": "Av. Kerem Yıldız, who plans the legal dimension of corporate human resources processes down to the finest detail, handles labor law practices not only on a contract basis, but also from the perspective of ethical and sustainable corporate structure.\n\nHe has also taken an active role in internal audit systems in multinational companies, KVKK/GDPR compliance and the relationship between business world & human rights. Thanks to his proactive consultancy approach, he controls the legal risks of institutions before they emerge.",
+        "expertise": {
+          "1": "Labor Law and Executive Contracts",
+          "2": "Corporate Ethics & Risk Management",
+          "3": "KVKK & GDPR Compliance Consultancy",
+          "4": "Working Life and Human Rights"
+        },
+        "languages": "Turkish, English"
       }
     }
   },
+  "expertise": {
+    "title": "Areas of Expertise",
+    "subtitle": "Some of our specialties:",
+    "description": "AOREN provides a wide range of legal support to both individual and corporate clients.",
+    "viewDetails": "View Details",
+    "areas": {
+      "commercial": {
+        "title": "Commercial Law",
+        "description": "Consultancy services on company establishment, mergers, acquisitions and commercial disputes.",
+        "subtitle": "For every family union's legal needs."
+      },
+      "labor": {
+        "title": "Labor Law",
+        "description": "Legal support on employment contracts, workers' rights, work accidents and employer obligations.",
+        "subtitle": "Legal support on employment contracts, workers' rights, work accidents and employer obligations."
+      },
+      "family": {
+        "title": "Family Law",
+        "description": "Professional solutions for divorce, custody, alimony and family legal issues.",
+        "subtitle": "Empathetic approach in complex personal relationship cases, producing solutions with high sensitivity."
+      },
+      "criminal": {
+        "title": "Criminal Law",
+        "description": "Experienced lawyer support in criminal accusations, defense and criminal cases.",
+        "subtitle": "Experienced lawyer support in criminal accusations, defense and criminal cases."
+      },
+      "execution": {
+        "title": "Execution and Bankruptcy Law",
+        "description": "Legal consultancy in debt collection, execution procedures and bankruptcy cases.",
+        "subtitle": "Legal consultancy in debt collection, execution procedures and bankruptcy cases."
+      },
+      "mediation": {
+        "title": "Mediation",
+        "description": "Professional mediation services for out-of-court resolution of disputes.",
+        "subtitle": "Professional mediation services for out-of-court resolution of disputes."
+      },
+      "realEstate": {
+        "title": "Real Estate and Investment Law",
+        "subtitle": "The value of your investments depends on a solid legal foundation."
+      },
+      "international": {
+        "title": "Family Law & International Inheritance Law",
+        "subtitle": "For every family union's legal needs."
+      },
+             "commercial2": {
+         "title": "Commercial and Corporate Law",
+         "subtitle": "In the modern business world, legal infrastructure is a fundamental element for strategic success.",
+         "description": "AOREN accompanies companies of all sizes throughout their commercial life cycle. We are with you at all stages, from establishment processes to mergers and acquisitions, from shareholding agreements to redesigning governance structures.\n\nWe provide support in a wide range of areas, from legal structuring of domestic and foreign investments to contract design to competition law.",
+         "services": {
+           "1": "Company establishment and general assembly processes",
+           "2": "Partnership agreements and shareholder structures",
+           "3": "Mergers, divisions and acquisitions",
+           "4": "Commercial contracts and international transactions"
+         }
+       },
+       "international": {
+         "title": "Family Law & International Inheritance Law",
+         "subtitle": "Every family is unique; so are their legal needs.",
+         "description": "AOREN provides effective and sustainable solutions in complex family structures and multinational inheritance transactions, taking into account emotional sensitivities. We provide not only legal but also strategic consultancy in matters such as divorce, property sharing, marriage contracts, custody arrangements.\n\nIn international inheritance planning, we put the intergenerational transfer of your assets under legal guarantee, taking into account different legal systems and citizenship situations.",
+         "services": {
+           "1": "Property regime and divorce protocols",
+           "2": "Asset planning and will arrangements",
+           "3": "International inheritance cases",
+           "4": "Family company transition processes"
+         }
+       },
+       "realEstate": {
+         "title": "Real Estate and Investment Law",
+         "subtitle": "The value of your investments depends on a solid legal foundation.",
+         "description": "AOREN provides comprehensive legal support for prestigious real estate projects and large-scale land investments. We are experts in land development, title deed transactions, urban transformation projects and legal management of investment portfolios.\n\nWe develop solutions focused on digitalization and sustainability in real estate, from PropTech startups to mixed-use projects.",
+         "services": {
+           "1": "Purchase-sale, rental and title deed transactions",
+           "2": "Zoning law and project development consultancy",
+           "3": "Land partnership agreements",
+           "4": "Real estate investment funds"
+         }
+       },
+       "criminal2": {
+         "title": "Criminal Law and Digital Security",
+         "subtitle": "Your defense should be not only legal but also strategic.",
+         "description": "AOREN develops strong and proactive defense strategies in the most complex areas of criminal law, especially in white-collar crimes, tax evasion, money laundering and cyber crimes.\n\nWe provide expert support in digital security issues, personal data protection, legal interventions after cyber attacks and reputation management processes.",
+         "services": {
+           "1": "Economic and financial crimes",
+           "2": "Cyber crimes and data security",
+           "3": "Press and social media law",
+           "4": "Personal security and threat management"
+         }
+       },
+       "compliance": {
+         "title": "Compliance and Risk Management",
+         "subtitle": "Legal compliance is not just an obligation; it is a competitive advantage.",
+         "description": "AOREN develops holistic solutions for corporate structures including ethical compliance policies, internal audit systems, KVKK and GDPR processes, external notification mechanisms and anti-corruption protocols.\n\nWe support the sustainability of your company by detecting risks in advance and providing preventive legal framework.",
+         "services": {
+           "1": "KVKK and GDPR compliance audits",
+           "2": "Ethics policies and workplace internal regulations",
+           "3": "External notification/whistleblower systems",
+           "4": "Regulation tracking and crisis management"
+         }
+       },
+       "finance": {
+         "title": "Corporate Finance and Venture Capital",
+         "subtitle": "The legal dimension of financial decisions determines the future of your investment.",
+         "description": "AOREN provides comprehensive legal consultancy in private equity investments, venture capital funds, public offerings and international investment processes.\n\nWe make all processes compatible with your business strategy, from investor agreements to partnership structuring, from bank guarantee systems to capital market regulations.",
+         "services": {
+           "1": "Venture capital and investment round consultancy",
+           "2": "Banking contracts and collateral structures",
+           "3": "IPO and Borsa Istanbul transactions",
+           "4": "Financial restructuring"
+         }
+       }
+     }
+   },
   "about": {
     "title": "About Us",
     "subtitle": "Reliable legal consultancy",
@@ -62,55 +200,158 @@
     "experience": "Years of Experience",
     "cases": "Successful Cases",
     "clients": "Satisfied Clients",
-    "awards": "Awards"
+    "awards": "Awards",
+    "legalServices": {
+      "title": "AOREN Legal Services",
+      "description": "AOREN Legal Services operates as a consultancy ecosystem that goes beyond the classical law firm approach and offers its clients not only legal representation but also solutions integrated with business strategies. Each case is not just a legal process; it is a strategic area that directly affects your business goals and quality of life."
+    },
+    "international": {
+      "title": "International Presence",
+      "description": "AOREN, founded in Ankara with the vision of our founding partners, quickly crossed national borders and became a reliable law brand serving internationally with its offices in Stuttgart, Istanbul and Ankara."
+    },
+    "partnership": {
+      "title": "Our Strategic Partnership Approach",
+      "description": "AOREN aims to establish long-term, trust-based relationships with each client. We design legal solutions not only at the level of regulatory compliance; but in a way that will support the sustainable growth of your business. In the face of complex problems, we bring together different disciplines to produce applicable solutions that reduce risks and save time."
+    },
+    "talent": {
+      "title": "International Talent & Local Depth",
+      "description": "We complement our strong legal and academic infrastructure in Turkey with our strategic partnerships in Europe. From investments in the European market to family company structuring in Turkey, from multilingual and multi-legal problems, we offer multi-layered representation power to both individual and corporate clients."
+    },
+    "interdisciplinary": {
+      "title": "Interdisciplinary Expertise Network",
+      "description": "Under the AOREN umbrella, not only lawyers work; tax experts, cyber security consultants, sworn translators, financial analysts and academic consultants also serve. Thus, we look at a case not only from legal but also economic, technological and social perspectives."
+    },
+    "digitalTransformation": {
+      "title": "Digital Transformation and Transparency",
+      "description": "We strengthen our services with technology, making them transparent and accessible. Thanks to the digital client portal specially developed for AOREN, you can access your documents, case processes and consultancy reports 24/7. In this way, we maintain open communication with you not only in words but also systematically."
+    }
   },
   "offices": {
     "title": "Our Offices",
     "subtitle": "Get service from our nearest office",
-    "description": "With our offices located in different cities of Turkey, we provide easy access to our clients.",
+    "description": "As AOREN Legal Services, we provide services to our clients with global standards with local proximity through our three strategic headquarters in Germany and Turkey.",
     "locations": {
       "stuttgart": {
         "title": "Stuttgart Office",
-        "address": "Königstraße 10, 70173 Stuttgart, Germany",
-        "phone": "+49 711 123 4567",
-        "email": "stuttgart@aoren.com.tr"
+        "subtitle": "European Operations Center",
+        "description": "Thanks to its strategic location, it serves as a strong base for your cross-border commercial transactions. We develop special solutions for Turkish entrepreneurs in Germany, companies wanting to expand to Europe and diaspora communities.",
+        "address": "Neckarstraße 155, 70190 Stuttgart, Germany",
+        "phone": "+49 (0)711 123 45 67",
+        "email": "stuttgart@aorenlegal.com"
       },
       "istanbul": {
         "title": "Istanbul Office",
-        "address": "Levent District, Büyükdere Avenue No: 201, Şişli/Istanbul",
-        "phone": "+90 212 123 4567",
-        "email": "istanbul@aoren.com.tr"
+        "subtitle": "Trade and Finance Center",
+        "description": "Our Istanbul office, located in Turkey's economic center, serves with its expert staff for your investment, finance and real estate transactions. It offers fast and comprehensive solutions with separate advisory teams on the Anatolian and European sides.",
+        "address": "Büyükdere Avenue No:233, Nurol Plaza, Floor:11, Levent, 34394 Şişli / Istanbul",
+        "phone": "+90 (212) 345 67 89",
+        "email": "istanbul@aorenlegal.com"
       },
       "ankara": {
         "title": "Ankara Office",
-        "address": "Atatürk Boulevard No: 123, Çankaya/Ankara",
-        "phone": "+90 312 123 4567",
-        "email": "ankara@aoren.com.tr"
+        "subtitle": "Coordination and Public Relations Center",
+        "description": "Our office in the capital is a special center for files requiring effective communication with public institutions and coordination of our operations across the country. It also provides support in academic collaborations and legislation tracking.",
+        "address": "Mustafa Kemal District 2151. Street No:15, Floor:4, Çankaya / Ankara",
+        "phone": "+90 (312) 456 78 90",
+        "email": "ankara@aorenlegal.com"
       }
     }
   },
   "digital": {
     "title": "AOREN Digital Services",
     "subtitle": "Legal solutions with technology",
-    "description": "We offer modern solutions to our clients with our innovative legal services that meet the requirements of the digital age."
+    "description": "Technology is not just a tool for us, it is an integral part of our service.",
+    "bottomText": "While digitalizing your legal processes, we do not compromise on the human touch.",
+    "services": {
+      "clientPortal": {
+        "title": "Client Portal",
+        "description": "With our special portal that provides 7/24 access to your files, you can follow all your legal processes from a single platform.",
+        "features": [
+          "Real-time file status tracking",
+          "Easy access to document archive",
+          "Hearing calendar integration"
+        ]
+      },
+      "digitalSignature": {
+        "title": "Digital Signature and Document Tracking",
+        "description": "Speed up your document approval processes with secure electronic signature system, prevent paper waste.",
+        "features": [
+          "E-signature integration",
+          "Automatic version control",
+          "Advanced document security"
+        ]
+      },
+      "messaging": {
+        "title": "Secure Messaging System",
+        "description": "Ensure secure communication with end-to-end encrypted messaging system.",
+        "features": [
+          "Instant notifications",
+          "File sharing",
+          "Video call support"
+        ]
+      },
+      "processManagement": {
+        "title": "Proactive Process Management",
+        "description": "Detect possible risks in advance with AI-supported process management.",
+        "features": [
+          "Automatic risk analysis",
+          "Due date tracking system",
+          "Smart reminders"
+        ]
+      }
+    }
   },
   "responsibility": {
     "title": "Corporate Social Responsibility",
     "subtitle": "Our mission to add value to society",
-    "description": "In addition to our legal services, we continue to create value with our social responsibility projects."
+    "description": "Justice is built not only in courtrooms, but in all areas of society.",
+    "quote": "For society, transformation through law.",
+    "areas": {
+      "education": {
+        "title": "Legal Education",
+        "description": "We contribute to the training of young lawyers, organize mentorship programs at universities and provide internship opportunities."
+      },
+      "womensRights": {
+        "title": "Women's Access to Justice",
+        "description": "We provide free consultancy services for women to learn their legal rights and facilitate their access to justice."
+      },
+      "environment": {
+        "title": "Environmental Awareness",
+        "description": "We take pro bono cases in environmental law and provide legal support to sustainability projects."
+      },
+      "sustainability": {
+        "title": "UN Sustainable Development Goals",
+        "description": "As AOREN, we support legal education, women's access to justice and environmental awareness projects in line with the UN Sustainable Development Goals."
+      }
+    }
   },
   "careers": {
     "title": "Careers at AOREN",
-    "subtitle": "Professional development opportunities",
-    "description": "Shape your legal career with AOREN by joining our dynamic and growing team.",
-    "applyNow": "Apply Now"
+    "subtitle": "Do you want to take a strategic step in your career, not an ordinary one?",
+    "description": "AOREN is not just a place to work; it is an ecosystem where you can develop, contribute and produce together. We offer a career model that will support you on this path from intern to partnership.",
+    "applyNow": "Apply Now",
+    "form": {
+      "title": "Career Application Form",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "position": "Applied Position",
+      "experience": "Experience",
+      "cv": "Upload CV",
+      "coverLetter": "Cover Letter",
+      "submit": "Submit Application"
+    }
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Get in touch with us",
-    "description": "You can contact us for your legal consultancy needs.",
+    "subtitle": "Just reach out to us.",
+    "description": "Whether it's an initial consultation or comprehensive cooperation... We are here for all your questions and cooperation requests.",
+    "availability": "Our communication channels via phone, email and client portal are open 24/7.",
     "form": {
-      "name": "Full Name",
+      "title": "Contact Form",
+      "name": "Name",
+      "surname": "Surname",
       "email": "Email",
       "phone": "Phone",
       "subject": "Subject",
@@ -163,5 +404,14 @@
       "contact": "Contact"
     },
     "copyright": "© 2024 AOREN Law Firm. All rights reserved. | Law firm registered with Ankara Bar Association"
+  },
+  "common": {
+    "readMore": "Read more",
+    "viewDetails": "View Details",
+    "apply": "Apply",
+    "send": "Send",
+    "submit": "Submit",
+    "close": "Close",
+    "viewProfile": "View Profile"
   }
 } 

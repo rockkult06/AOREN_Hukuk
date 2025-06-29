@@ -16,45 +16,183 @@
     "subtitle": "Profesyonel Hukuki Danışmanlık",
     "description": "Deneyimli avukat kadromuz ile hukuki ihtiyaçlarınıza en iyi çözümleri sunuyoruz. Ticaret, iş, aile ve ceza hukuku alanlarında uzman ekibimizle yanınızdayız.",
     "getStarted": "Hemen Başlayın",
-    "learnMore": "Daha Fazla Bilgi"
+    "learnMore": "Daha Fazla Bilgi",
+    "slogan1": "YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN",
+    "slogan1Sub": "Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım",
+    "slogan2": "BÖLGESEL DEĞİL, ULUSLARARASI DÜZEYDE HİZMET SUNUYORUZ",
+    "slogan2Sub": "Aynı Değerler, Farklı Şehirlerde",
+    "slogan3": "KAPSAMLI HUKUKİ ÇÖZÜM ALANLARIMIZI İNCELEYİN",
+    "slogan3Sub": "Hukukun Tüm Alanlarında Yetkin Kadro, Bütünleşik Yaklaşım"
   },
   "team": {
     "title": "Ekibimiz",
     "subtitle": "Deneyimli ve uzman avukat kadromuz",
-    "description": "Hukuk alanında uzun yıllar deneyim sahibi avukatlarımız, müvekkillerimize en kaliteli hukuki hizmeti sunmak için çalışmaktadır.",
-    "viewProfile": "Profili Görüntüle"
-  },
-  "expertise": {
-    "title": "Uzmanlık Alanlarımız",
-    "subtitle": "Geniş hukuki hizmet yelpazesi",
-    "description": "Farklı hukuk dallarında uzmanlaşmış ekibimizle, müvekkillerimizin tüm hukuki ihtiyaçlarını karşılıyoruz.",
-    "areas": {
-      "commercial": {
-        "title": "Ticaret Hukuku",
-        "description": "Şirket kuruluşu, birleşme, devralma ve ticari uyuşmazlıklar konularında danışmanlık hizmetleri."
+    "description": "AOREN Legal Services; her biri kendi uzmanlık alanında derin bilgiye ve uluslararası deneyime sahip avukatlardan oluşan seçkin bir ekiple hizmet sunar.",
+    "viewProfile": "Profili Görüntüle",
+    "teamHighlights": "Ekibimizden Öne Çıkanlar",
+    "members": {
+      "abdullah": {
+        "title": "Kurucu Ortak | Ticaret ve Uluslararası Yatırım Hukuku Uzmanı",
+        "description": "BRAO 206 kapsamında yetkilendirilmiş deneyimiyle, stratejik danışmanlık yaklaşımının hukukla kesiştiği noktada liderlik eder.",
+        "about": "AOREN'in kurucu ortağı olan Av. Abdullah ÖREN, özellikle ticaret hukuku, uluslararası yatırım süreçleri ve şirket birleşmeleri alanlarında BRAO 206 kapsamında tanınan yetkinliğiyle öne çıkar. Stratejik vizyonu sayesinde, yalnızca hukuki çözümler sunmakla kalmaz; müvekkillerinin iş hedeflerine doğrudan katkı sağlayan danışmanlıklar geliştirir.\n\nKariyeri boyunca yüzlerce yerli ve yabancı şirketin hukuki yapılanmasında aktif rol almış, sınır ötesi işlemlerde edindiği tecrübeyle Avrupa-Türkiye hattında güçlü bir köprü oluşturmuştur.",
+        "expertise": {
+          "1": "Uluslararası Ticaret ve Sözleşmeler",
+          "2": "Şirketler Hukuku ve Kurumsal Yapılandırma",
+          "3": "Yatırım Fonları ve Girişim Sermayesi",
+          "4": "Birleşme ve Devralmalar"
+        },
+        "languages": "Türkçe, İngilizce, Almanca"
       },
-      "labor": {
-        "title": "İş Hukuku",
-        "description": "İş sözleşmeleri, işçi hakları, iş kazaları ve işveren yükümlülükleri konularında hukuki destek."
+      "ekin": {
+        "title": "Ceza Hukuku ve İtibar Yönetimi Uzmanı",
+        "description": "Basın hukuku ve beyaz yaka suçları alanındaki etkin savunma stratejileriyle tanınır.",
+        "about": "Ceza yargılamalarının karmaşık doğasında güvenilir bir rehber olan Av. Ekin Tuncel, özellikle beyaz yaka suçları, basın özgürlüğü ihlalleri ve siber güvenlik odaklı davalarda müvekkillerini etkili şekilde temsil eder.\n\nKamuoyu ile doğrudan ilişki içinde olan bireyler ve şirketler için kriz dönemlerinde medya iletişimi ve itibar savunusu alanlarında güçlü stratejiler geliştirmiştir. Adli ve önleyici danışmanlık alanındaki başarısı, hem bireysel hem kurumsal müvekkiller tarafından takdir görmektedir.",
+        "expertise": {
+          "1": "Ekonomik Suçlar ve Ceza Soruşturmaları",
+          "2": "Basın ve Sosyal Medya Hukuku",
+          "3": "Dijital Güvenlik ve Kişisel Verilerin Korunması",
+          "4": "İtibar Yönetimi ve Acil Hukuki Müdahale"
+        },
+        "languages": "Türkçe, İngilizce"
       },
-      "family": {
-        "title": "Aile Hukuku",
-        "description": "Boşanma, velayet, nafaka ve aile içi hukuki sorunlarda profesyonel çözümler."
+      "melis": {
+        "title": "Aile Hukuku ve Uluslararası Miras Hukuku Uzmanı",
+        "description": "Karmaşık kişisel ilişki dosyalarında empatiyle yaklaşırken, yüksek hassasiyetle çözüm üretir.",
+        "about": "Av. Melis Bayraktar, karmaşık aile yapıları, mal rejimi düzenlemeleri ve çok uluslu miras dosyalarında derin uzmanlığa sahip bir uzmandır. Duygusal olarak hassas dosyalarda gösterdiği etik yaklaşım ve çözüm odaklı iletişim tarzıyla dikkat çeker.\n\nTürkiye'de yaşayan yabancı uyruklu bireyler ile yurtdışında yaşayan Türk kökenli vatandaşların ailevi ve miras işlemlerinde güvenle danıştığı bir isimdir. Varlık planlaması, vasiyetname düzenlemeleri ve kuşaklar arası geçişlerde sürdürülebilir yapılandırmalar geliştirmektedir.",
+        "expertise": {
+          "1": "Boşanma ve Mal Paylaşımı",
+          "2": "Evlilik Sözleşmeleri",
+          "3": "Uluslararası Miras Planlaması",
+          "4": "Aile Şirketi Hukuku"
+        },
+        "languages": "Türkçe, İngilizce, Fransızca"
       },
-      "criminal": {
-        "title": "Ceza Hukuku",
-        "description": "Suç isnadı, savunma ve ceza davalarında deneyimli avukat desteği."
-      },
-      "execution": {
-        "title": "İcra İflas Hukuku",
-        "description": "Alacak takibi, icra işlemleri ve iflas davalarında hukuki danışmanlık."
-      },
-      "mediation": {
-        "title": "Arabuluculuk",
-        "description": "Uyuşmazlıkların mahkeme dışı çözümü için profesyonel arabuluculuk hizmetleri."
+      "kerem": {
+        "title": "İş Hukuku ve Kurumsal Uyum Danışmanı",
+        "description": "Şirket içi insan kaynakları süreçleri, risk yönetimi ve etik uyum konularında uzmanlaşmıştır.",
+        "about": "Şirket içi insan kaynakları süreçlerinin hukuki boyutunu en ince ayrıntısına kadar planlayan Av. Kerem Yıldız, iş hukuku uygulamalarını sadece sözleşme temelli değil, aynı zamanda etik ve sürdürülebilir kurumsal yapı perspektifinden ele alır.\n\nÇok uluslu şirketlerdeki iç denetim sistemleri, KVKK/GDPR uyumu ve iş dünyası & insan hakları arasındaki ilişki konusunda da aktif rol üstlenmiştir. Proaktif danışmanlık anlayışı sayesinde, kurumların hukuki risklerini daha ortaya çıkmadan kontrol altına alır.",
+        "expertise": {
+          "1": "İş Hukuku ve Yönetici Sözleşmeleri",
+          "2": "Kurumsal Etik & Risk Yönetimi",
+          "3": "KVKK & GDPR Uyum Danışmanlığı",
+          "4": "Çalışma Hayatı ve İnsan Hakları"
+        },
+        "languages": "Türkçe, İngilizce"
       }
     }
   },
+  "expertise": {
+    "title": "Uzmanlık Alanlarımız",
+    "subtitle": "Uzmanlıklarımızdan bazıları:",
+    "description": "AOREN, hem bireysel hem kurumsal müvekkillerine geniş bir yelpazede hukuki destek sunar.",
+    "viewDetails": "Detayları Görün",
+    "areas": {
+      "commercial": {
+        "title": "Ticaret Hukuku",
+        "description": "Şirket kuruluşu, birleşme, devralma ve ticari uyuşmazlıklar konularında danışmanlık hizmetleri.",
+        "subtitle": "Her aile birliğin hukuki ihtiyaçları için öyle."
+      },
+      "labor": {
+        "title": "İş Hukuku",
+        "description": "İş sözleşmeleri, işçi hakları, iş kazaları ve işveren yükümlülükleri konularında hukuki destek.",
+        "subtitle": "İş sözleşmeleri, işçi hakları, iş kazaları ve işveren yükümlülükleri konularında hukuki destek."
+      },
+      "family": {
+        "title": "Aile Hukuku",
+        "description": "Boşanma, velayet, nafaka ve aile içi hukuki sorunlarda profesyonel çözümler.",
+        "subtitle": "Karmaşık kişisel ilişki dosyalarında empatik yaklaşım, yüksek hassasiyetle çözüm üretir."
+      },
+      "criminal": {
+        "title": "Ceza Hukuku",
+        "description": "Suç isnadı, savunma ve ceza davalarında deneyimli avukat desteği.",
+        "subtitle": "Suç isnadı, savunma ve ceza davalarında deneyimli avukat desteği."
+      },
+      "execution": {
+        "title": "İcra İflas Hukuku",
+        "description": "Alacak takibi, icra işlemleri ve iflas davalarında hukuki danışmanlık.",
+        "subtitle": "Alacak takibi, icra işlemleri ve iflas davalarında hukuki danışmanlık."
+      },
+      "mediation": {
+        "title": "Arabuluculuk",
+        "description": "Uyuşmazlıkların mahkeme dışı çözümü için profesyonel arabuluculuk hizmetleri.",
+        "subtitle": "Uyuşmazlıkların mahkeme dışı çözümü için profesyonel arabuluculuk hizmetleri."
+      },
+      "realEstate": {
+        "title": "Gayrimenkul ve Yatırım Hukuku",
+        "subtitle": "Yatırımlarınızın değeri, sağlam bir hukuki zemine dayanır."
+      },
+      "international": {
+        "title": "Aile Hukuku & Uluslararası Miras Hukuku",
+        "subtitle": "Her aile birliğin hukuki ihtiyaçları için öyle."
+      },
+             "commercial2": {
+         "title": "Ticaret ve Şirketler Hukuku",
+         "subtitle": "Modern iş dünyasında hukuki alt yapı, stratejik başarı için temel unsurdur.",
+         "description": "AOREN, her ölçekten şirketin ticari yaşam döngüsüne eşlik eder. Kuruluş süreçlerinden birleşme ve devralmalara, pay sahipliği sözleşmelerinden yönetişim yapılarının yeniden tasarlanmasına kadar tüm aşamalarda yanınızdayız.\n\nYerli ve yabancı yatırımların hukuki yapılandırmalarında, sözleşme tasarımlarından rekabet hukukuna kadar geniş bir yelpazede destek sunarız.",
+         "services": {
+           "1": "Şirket kuruluşu ve genel kurul süreçleri",
+           "2": "Ortaklık sözleşmeleri ve hissedar yapıları",
+           "3": "Birleşme, bölünme ve devralmalar",
+           "4": "Ticaret sözleşmeleri ve uluslararası işlemler"
+         }
+       },
+       "international": {
+         "title": "Aile Hukuku & Uluslararası Miras",
+         "subtitle": "Her aile biriciktir; hukuki ihtiyaçları da öyle.",
+         "description": "AOREN, karmaşık ailevi yapılar ve çok uluslu miras işlemlerinde, duygusal hassasiyetleri gözeterek etkili ve sürdürülebilir çözümler sunar. Boşanma, mal paylaşımı, evlilik sözleşmeleri, velayet düzenlemeleri gibi konularda yalnızca hukuki değil, stratejik danışmanlık da sağlarız.\n\nUluslararası miras planlamasında, farklı hukuk sistemleri ve vatandaşlık durumlarını göz önünde bulundurarak, varlıklarınızın nesiller arası aktarımını hukuki güvence altına alırız.",
+         "services": {
+           "1": "Mal rejimi ve boşanma protokolleri",
+           "2": "Varlık planlaması ve vasiyet düzenlemeleri",
+           "3": "Uluslararası miras davaları",
+           "4": "Aile şirketi geçiş süreçleri"
+         }
+       },
+       "realEstate": {
+         "title": "Gayrimenkul ve Yatırım Hukuku",
+         "subtitle": "Yatırımlarınızın değeri, sağlam bir hukuki zemine dayanır.",
+         "description": "AOREN, prestijli gayrimenkul projeleri ve büyük ölçekli arsa yatırımları için kapsamlı hukuki destek sunar. Arsa geliştirme, tapu işlemleri, kentsel dönüşüm projeleri ve yatırım portföylerinin hukuki yönetimi konusunda uzmanız.\n\nPropTech alanındaki girişimlerden karma kullanım projelerine kadar, gayrimenkul alanında dijitalleşme ve sürdürülebilirlik eksenli çözümler geliştiriyoruz.",
+         "services": {
+           "1": "Alım-satım, kira ve tapu işlemleri",
+           "2": "İmar hukuku ve proje geliştirme danışmanlığı",
+           "3": "Arsa ortaklık sözleşmeleri",
+           "4": "Gayrimenkul yatırım fonları"
+         }
+       },
+       "criminal2": {
+         "title": "Ceza Hukuku ve Dijital Güvenlik",
+         "subtitle": "Savunmanız sadece hukuki değil, stratejik da olmalı.",
+         "description": "AOREN, ceza hukukunun en karmaşık alanlarında, özellikle beyaz yaka suçları, vergi kaçakçılığı, kara para aklama ve siber suçlar gibi konularda güçlü ve proaktif savunma stratejileri geliştirir.\n\nDijital güvenlik konularında, kişisel verilerin korunması, siber saldırı sonrası yasal müdahaleler ve itibar yönetimi süreçlerinde uzman desteği sağlıyoruz.",
+         "services": {
+           "1": "Ekonomik ve mali suçlar",
+           "2": "Siber suçlar ve veri güvenliği",
+           "3": "Basın ve sosyal medya hukuku",
+           "4": "Kişisel güvenlik ve tehdit yönetimi"
+         }
+       },
+       "compliance": {
+         "title": "Uyum ve Risk Yönetimi",
+         "subtitle": "Yasal uyum, yalnızca bir zorunluluk değil; rekabet avantajıdır.",
+         "description": "AOREN, kurumsal yapılar için etik uyum politikaları, iç denetim sistemleri, KVKK ve GDPR süreçleri, harici bildirim mekanizmaları ve yolsuzlukla mücadele protokollerini içeren bütüncül çözümler geliştirir.\n\nRiskleri önceden tespit edip önleyici hukuki çerçeve sunarak, şirketinizin sürdürülebilirliğini destekliyoruz.",
+         "services": {
+           "1": "KVKK ve GDPR uyum denetimleri",
+           "2": "Etik politika ve işyeri iç tüzükleri",
+           "3": "Harici bildirim/whistleblower sistemleri",
+           "4": "Regülasyon takibi ve kriz yönetimi"
+         }
+       },
+       "finance": {
+         "title": "Kurumsal Finansman ve Girişim Sermayesi",
+         "subtitle": "Finansal kararların hukuki boyutu, yatırımınızın geleceğini belirler.",
+         "description": "AOREN, özel sermaye yatırımları, girişim sermayesi fonları, halka arzlar ve uluslararası yatırım süreçlerinde kapsamlı hukuki danışmanlık sunar.\n\nYatırımcı sözleşmelerinden ortaklık yapılandırmalarına, banka teminat sistemlerinden sermaye piyasası regülasyonlarına kadar tüm süreçleri iş stratejinizle uyumlu hale getiririz.",
+         "services": {
+           "1": "Girişim sermayesi ve yatırım turu danışmanlığı",
+           "2": "Bankacılık sözleşmeleri ve teminat yapıları",
+           "3": "Halka arz ve Borsa İstanbul işlemleri",
+           "4": "Finansal yeniden yapılandırma"
+         }
+       }
+     }
+   },
   "about": {
     "title": "Hakkımızda",
     "subtitle": "Güvenilir hukuki danışmanlık",
@@ -62,55 +200,158 @@
     "experience": "Yıllık Deneyim",
     "cases": "Başarılı Dava",
     "clients": "Memnun Müvekkil",
-    "awards": "Ödül"
+    "awards": "Ödül",
+    "legalServices": {
+      "title": "AOREN Legal Services",
+      "description": "AOREN Legal Services, klasik hukuk bürosu anlayışının ötesine geçerek, müvekkillerine yalnızca hukuki temsil değil, iş stratejileriyle entegre çözümler sunan bir danışmanlık ekosistemi olarak faaliyet gösterir. Her bir dava, yalnızca yasal bir süreç değil; iş hedeflerinize ve yaşam kalitenize doğrudan etki eden stratejik bir alandır."
+    },
+    "international": {
+      "title": "Uluslararası Varlık",
+      "description": "Kurucu ortaklarımızın vizyonuyla temelleri Ankara'da atılan AOREN, kısa sürede ulusal sınırları aşarak Stuttgart, İstanbul ve Ankara'daki ofisleriyle uluslararası ölçekte hizmet sunan güvenilir bir hukuk markası haline gelmiştir."
+    },
+    "partnership": {
+      "title": "Stratejik Ortaklık Yaklaşımımız",
+      "description": "AOREN, her müvekkiliyle uzun vadeli, güvene dayalı ilişkiler kurmayı hedefler. Hukuki çözümleri, yalnızca mevzuata uygunluk düzeyinde değil; işinizin sürdürülebilir büyümesini destekleyecek şekilde tasarlarız. Karmaşık problemler karşısında, farklı disiplinleri bir araya getirerek uygulanabilir, riskleri azaltan ve zaman kazandıran çözümler üretiriz."
+    },
+    "talent": {
+      "title": "Uluslararası Yetenek & Yerel Derinlik",
+      "description": "Türkiye'deki güçlü hukuki ve akademik altyapımızı, Avrupa'daki stratejik ortaklıklarımızla tamamlıyoruz. Avrupa pazarındaki yatırımlardan Türkiye'deki aile şirketi yapılandırmalarına, çok dilli ve çok hukuklu sorunlara kadar, hem bireysel hem de kurumsal müvekkillerimize çok katmanlı bir temsil gücü sunuyoruz."
+    },
+    "interdisciplinary": {
+      "title": "Disiplinlerarası Uzmanlık Ağı",
+      "description": "AOREN çatısı altında yalnızca avukatlar değil; vergi uzmanları, siber güvenlik danışmanları, yeminli tercümanlar, finans analistleri ve akademik danışmanlar da görev alır. Böylece bir davaya yalnızca hukuki değil, ekonomik, teknolojik ve toplumsal perspektiflerle de bakarız."
+    },
+    "digitalTransformation": {
+      "title": "Dijital Dönüşüm ve Şeffaflık",
+      "description": "Hizmetlerimizi teknolojiyle güçlendirerek, şeffaf ve erişilebilir hale getiriyoruz. AOREN'e özel geliştirilen dijital müvekkil portalı sayesinde belgelerinize, dava süreçlerine ve danışmanlık raporlarına 7/24 erişebilirsiniz. Bu sayede, sizinle açık iletişimi sadece sözde değil, sistemsel olarak da sürdürüyoruz."
+    }
   },
   "offices": {
     "title": "Ofislerimiz",
     "subtitle": "Size en yakın ofisimizden hizmet alın",
-    "description": "Türkiye'nin farklı şehirlerinde bulunan ofislerimizle müvekkillerimize kolay erişim imkanı sunuyoruz.",
+    "description": "AOREN Legal Services olarak, Almanya ve Türkiye'deki üç stratejik merkez ofisimizle, müvekkillerimize yerel yakınlıkla birlikte küresel standartlarda hizmet sunuyoruz.",
     "locations": {
       "stuttgart": {
         "title": "Stuttgart Ofisi",
-        "address": "Königstraße 10, 70173 Stuttgart, Almanya",
-        "phone": "+49 711 123 4567",
-        "email": "stuttgart@aoren.com.tr"
+        "subtitle": "Avrupa Operasyon Merkezi",
+        "description": "Stratejik konumu sayesinde, sınır ötesi ticari işlemlerinizde güçlü bir üs niteliğindedir. Almanya'daki Türk girişimciler, Avrupa'ya açılmak isteyen şirketler ve diaspora toplulukları için özel çözümler geliştiriyoruz.",
+        "address": "Neckarstraße 155, 70190 Stuttgart, Almanya",
+        "phone": "+49 (0)711 123 45 67",
+        "email": "stuttgart@aorenlegal.com"
       },
       "istanbul": {
         "title": "İstanbul Ofisi",
-        "address": "Levent Mahallesi, Büyükdere Caddesi No: 201, Şişli/İstanbul",
-        "phone": "+90 212 123 4567",
-        "email": "istanbul@aoren.com.tr"
+        "subtitle": "Ticaret ve Finans Merkezi",
+        "description": "Türkiye'nin ekonomik merkezinde yer alan İstanbul ofisimiz, yatırım, finans ve gayrimenkul işlemleriniz için uzman kadrosuyla hizmet verir. Anadolu ve Avrupa yakalarında ayrı danışman ekipleri ile hızlı ve kapsamlı çözümler sunar.",
+        "address": "Büyükdere Caddesi No:233, Nurol Plaza, Kat:11, Levent, 34394 Şişli / İstanbul",
+        "phone": "+90 (212) 345 67 89",
+        "email": "istanbul@aorenlegal.com"
       },
       "ankara": {
         "title": "Ankara Ofisi",
-        "address": "Atatürk Bulvarı No: 123, Çankaya/Ankara",
-        "phone": "+90 312 123 4567",
-        "email": "ankara@aoren.com.tr"
+        "subtitle": "Koordinasyon ve Kamu İlişkileri Merkezi",
+        "description": "Başkentteki ofisimiz, kamu kurumlarıyla etkili iletişim gerektiren dosyalar ve ülke çapındaki operasyonlarımızın koordinasyonu için özel bir merkezdir. Ayrıca, akademik iş birlikleri ve mevzuat takibi konusunda da destek sağlamaktadır.",
+        "address": "Mustafa Kemal Mah. 2151. Cad. No:15, Kat:4, Çankaya / Ankara",
+        "phone": "+90 (312) 456 78 90",
+        "email": "ankara@aorenlegal.com"
       }
     }
   },
   "digital": {
     "title": "AOREN Dijital Hizmetleri",
     "subtitle": "Teknoloji ile hukuki çözümler",
-    "description": "Dijital çağın gereksinimlerini karşılayan yenilikçi hukuki hizmetlerimizle müvekkillerimize modern çözümler sunuyoruz."
+    "description": "Teknoloji, bizim için sadece bir araç değil, hizmetimizin ayrılmaz bir parçasıdır.",
+    "bottomText": "Hukuki süreçlerinizi dijitalleştirirken, insan dokunuşundan ödün vermiyoruz.",
+    "services": {
+      "clientPortal": {
+        "title": "Müvekkil Portalı",
+        "description": "Dosyalarınıza 7/24 erişim imkanı sağlayan özel portalımız ile tüm hukuki süreçlerinizi tek bir platformdan takip edebilirsiniz.",
+        "features": [
+          "Anlık dosya durumu takibi",
+          "Belge arşivine kolay erişim",
+          "Duruşma takvimi entegrasyonu"
+        ]
+      },
+      "digitalSignature": {
+        "title": "Dijital İmza ve Belge Takibi",
+        "description": "Güvenli elektronik imza sistemi ile belge onay süreçlerinizi hızlandırın, kağıt israfını önleyin.",
+        "features": [
+          "E-imza entegrasyonu",
+          "Otomatik versiyon kontrolü",
+          "Gelişmiş belge güvenliği"
+        ]
+      },
+      "messaging": {
+        "title": "Güvenli Mesajlaşma Sistemi",
+        "description": "Uçtan uca şifrelenmiş mesajlaşma sistemi ile güvenli iletişim sağlayın.",
+        "features": [
+          "Anlık bildirimler",
+          "Dosya paylaşımı",
+          "Görüntülü görüşme desteği"
+        ]
+      },
+      "processManagement": {
+        "title": "Proaktif Süreç Yönetimi",
+        "description": "Yapay zeka destekli süreç yönetimi ile olası riskleri önceden tespit edin.",
+        "features": [
+          "Otomatik risk analizi",
+          "Vade takip sistemi",
+          "Akıllı hatırlatmalar"
+        ]
+      }
+    }
   },
   "responsibility": {
     "title": "Kurumsal Sosyal Sorumluluk",
     "subtitle": "Topluma değer katma misyonumuz",
-    "description": "Hukuki hizmetlerimizin yanı sıra, toplumsal sorumluluk projelerimizle de değer yaratmaya devam ediyoruz."
+    "description": "Adalet sadece mahkeme salonlarında değil, toplumun her alanında inşa edilir.",
+    "quote": "Toplum için, hukukla dönüşüm.",
+    "areas": {
+      "education": {
+        "title": "Hukuk Eğitimi",
+        "description": "Genç hukukçuların yetişmesine katkı sağlıyor, üniversitelerde mentorluk programları düzenliyor ve staj imkanları sunuyoruz."
+      },
+      "womensRights": {
+        "title": "Kadınların Adalete Erişimi",
+        "description": "Kadınların hukuki haklarını öğrenmeleri ve adalete erişimlerini kolaylaştırmak için ücretsiz danışmanlık hizmetleri sunuyoruz."
+      },
+      "environment": {
+        "title": "Çevresel Farkındalık",
+        "description": "Çevre hukuku alanında pro bono davalar üstleniyor ve sürdürülebilirlik projelerine hukuki destek sağlıyoruz."
+      },
+      "sustainability": {
+        "title": "BM Sürdürülebilir Kalkınma Hedefleri",
+        "description": "AOREN olarak, BM Sürdürülebilir Kalkınma Hedefleri doğrultusunda hukuk eğitimi, kadınların adalete erişimi ve çevresel farkındalık projelerine destek veriyoruz."
+      }
+    }
   },
   "careers": {
     "title": "AOREN'de Kariyer",
-    "subtitle": "Profesyonel gelişim fırsatları",
-    "description": "Dinamik ve gelişen ekibimize katılarak hukuk kariyerinizi AOREN ile şekillendirin.",
-    "applyNow": "Hemen Başvur"
+    "subtitle": "Kariyerinizde sıradan değil, stratejik bir adım atmak ister misiniz?",
+    "description": "AOREN, sadece çalışılacak bir yer değil; gelişilecek, katkı sağlanacak ve birlikte üretilecek bir ekosistemdir. Stajyerden ortaklığa giden bu yolda sizi destekleyecek bir kariyer modeli sunuyoruz.",
+    "applyNow": "Hemen Başvur",
+    "form": {
+      "title": "Kariyer Başvuru Formu",
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "position": "Başvurulan Pozisyon",
+      "experience": "Deneyim",
+      "cv": "CV Yükle",
+      "coverLetter": "Ön Yazı",
+      "submit": "Başvuru Gönder"
+    }
   },
   "contact": {
     "title": "İletişim",
-    "subtitle": "Bizimle iletişime geçin",
-    "description": "Hukuki danışmanlık ihtiyaçlarınız için bizimle iletişime geçebilirsiniz.",
+    "subtitle": "Bize ulaşmanız yeterli.",
+    "description": "İster bir ilk danışma, ister kapsamlı bir iş birliği… Tüm sorularınız ve işbirliği talepleriniz için buradayız.",
+    "availability": "Telefon, e-posta ve müvekkil portalı üzerinden iletişim kanallarımız 7/24 açıktır.",
     "form": {
-      "name": "Ad Soyad",
+      "title": "İletişim Formu",
+      "name": "Ad",
+      "surname": "Soyad",
       "email": "E-posta",
       "phone": "Telefon",
       "subject": "Konu",
@@ -163,5 +404,14 @@
       "contact": "İletişim"
     },
     "copyright": "© 2024 AOREN Hukuk Bürosu. Tüm hakları saklıdır. | Ankara Barosu'na kayıtlı avukatlık bürosu"
+  },
+  "common": {
+    "readMore": "Devamını oku",
+    "viewDetails": "Detayları Görün",
+    "apply": "Başvur",
+    "send": "Gönder",
+    "submit": "Gönder",
+    "close": "Kapat",
+    "viewProfile": "Profili Görüntüle"
   }
 } 

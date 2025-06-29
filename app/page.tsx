@@ -266,139 +266,140 @@ const ModalLabel = styled.div`
   color: #1976D2;
 `
 
-const employeesData = [
+// Çalışan verileri - çeviri anahtarları ile
+const getEmployeesData = (t: any) => [
   {
     name: "Av. Abdullah ÖREN",
-    title: "Kurucu Ortak | Ticaret ve Uluslararası Yatırım Hukuku Uzmanı",
-    description: "BRAO 206 kapsamında yetkilendirilmiş deneyimiyle, stratejik danışmanlık yaklaşımının hukukla kesiştiği noktada liderlik eder.",
+    title: t('team.members.abdullah.title'),
+    description: t('team.members.abdullah.description'),
     image: "/1.png",
     details: {
-      about: `AOREN'in kurucu ortağı olan Av. Abdullah ÖREN, özellikle ticaret hukuku, uluslararası yatırım süreçleri ve şirket birleşmeleri alanlarında BRAO 206 kapsamında tanınan yetkinliğiyle öne çıkar. Stratejik vizyonu sayesinde, yalnızca hukuki çözümler sunmakla kalmaz; müvekkillerinin iş hedeflerine doğrudan katkı sağlayan danışmanlıklar geliştirir.\n\nKariyeri boyunca yüzlerce yerli ve yabancı şirketin hukuki yapılanmasında aktif rol almış, sınır ötesi işlemlerde edindiği tecrübeyle Avrupa-Türkiye hattında güçlü bir köprü oluşturmuştur.`,
+      about: t('team.members.abdullah.about'),
       expertise: [
-        "Uluslararası Ticaret ve Sözleşmeler",
-        "Şirketler Hukuku ve Kurumsal Yapılandırma",
-        "Yatırım Fonları ve Girişim Sermayesi",
-        "Birleşme ve Devralmalar"
+        t('team.members.abdullah.expertise.1'),
+        t('team.members.abdullah.expertise.2'),
+        t('team.members.abdullah.expertise.3'),
+        t('team.members.abdullah.expertise.4')
       ],
-      languages: "Türkçe, İngilizce, Almanca"
+      languages: t('team.members.abdullah.languages')
     }
   },
   {
     name: "Av. Ekin Tuncel",
-    title: "Ceza Hukuku ve İtibar Yönetimi Uzmanı",
-    description: "Basın hukuku ve beyaz yaka suçları alanındaki etkin savunma stratejileriyle tanınır.",
+    title: t('team.members.ekin.title'),
+    description: t('team.members.ekin.description'),
     image: "/2.png",
     details: {
-      about: `Ceza yargılamalarının karmaşık doğasında güvenilir bir rehber olan Av. Ekin Tuncel, özellikle beyaz yaka suçları, basın özgürlüğü ihlalleri ve siber güvenlik odaklı davalarda müvekkillerini etkili şekilde temsil eder.\n\nKamuoyu ile doğrudan ilişki içinde olan bireyler ve şirketler için kriz dönemlerinde medya iletişimi ve itibar savunusu alanlarında güçlü stratejiler geliştirmiştir. Adli ve önleyici danışmanlık alanındaki başarısı, hem bireysel hem kurumsal müvekkiller tarafından takdir görmektedir.`,
+      about: t('team.members.ekin.about'),
       expertise: [
-        "Ekonomik Suçlar ve Ceza Soruşturmaları",
-        "Basın ve Sosyal Medya Hukuku",
-        "Dijital Güvenlik ve Kişisel Verilerin Korunması",
-        "İtibar Yönetimi ve Acil Hukuki Müdahale"
+        t('team.members.ekin.expertise.1'),
+        t('team.members.ekin.expertise.2'),
+        t('team.members.ekin.expertise.3'),
+        t('team.members.ekin.expertise.4')
       ],
-      languages: "Türkçe, İngilizce"
+      languages: t('team.members.ekin.languages')
     }
   },
   {
     name: "Av. Melis Bayraktar",
-    title: "Aile Hukuku ve Uluslararası Miras Hukuku Uzmanı",
-    description: "Karmaşık kişisel ilişki dosyalarında empatiyle yaklaşırken, yüksek hassasiyetle çözüm üretir.",
+    title: t('team.members.melis.title'),
+    description: t('team.members.melis.description'),
     image: "/4.png",
     details: {
-      about: `Av. Melis Bayraktar, karmaşık aile yapıları, mal rejimi düzenlemeleri ve çok uluslu miras dosyalarında derin uzmanlığa sahip bir uzmandır. Duygusal olarak hassas dosyalarda gösterdiği etik yaklaşım ve çözüm odaklı iletişim tarzıyla dikkat çeker.\n\nTürkiye'de yaşayan yabancı uyruklu bireyler ile yurtdışında yaşayan Türk kökenli vatandaşların ailevi ve miras işlemlerinde güvenle danıştığı bir isimdir. Varlık planlaması, vasiyetname düzenlemeleri ve kuşaklar arası geçişlerde sürdürülebilir yapılandırmalar geliştirmektedir.`,
+      about: t('team.members.melis.about'),
       expertise: [
-        "Boşanma ve Mal Paylaşımı",
-        "Evlilik Sözleşmeleri",
-        "Uluslararası Miras Planlaması",
-        "Aile Şirketi Hukuku"
+        t('team.members.melis.expertise.1'),
+        t('team.members.melis.expertise.2'),
+        t('team.members.melis.expertise.3'),
+        t('team.members.melis.expertise.4')
       ],
-      languages: "Türkçe, İngilizce, Fransızca"
+      languages: t('team.members.melis.languages')
     }
   },
   {
     name: "Av. Kerem Yıldız",
-    title: "İş Hukuku ve Kurumsal Uyum Danışmanı",
-    description: "Şirket içi insan kaynakları süreçleri, risk yönetimi ve etik uyum konularında uzmanlaşmıştır.",
+    title: t('team.members.kerem.title'),
+    description: t('team.members.kerem.description'),
     image: "/3.png",
     details: {
-      about: `Şirket içi insan kaynakları süreçlerinin hukuki boyutunu en ince ayrıntısına kadar planlayan Av. Kerem Yıldız, iş hukuku uygulamalarını sadece sözleşme temelli değil, aynı zamanda etik ve sürdürülebilir kurumsal yapı perspektifinden ele alır.\n\nÇok uluslu şirketlerdeki iç denetim sistemleri, KVKK/GDPR uyumu ve iş dünyası & insan hakları arasındaki ilişki konusunda da aktif rol üstlenmiştir. Proaktif danışmanlık anlayışı sayesinde, kurumların hukuki risklerini daha ortaya çıkmadan kontrol altına alır.`,
+      about: t('team.members.kerem.about'),
       expertise: [
-        "İş Hukuku ve Yönetici Sözleşmeleri",
-        "Kurumsal Etik & Risk Yönetimi",
-        "KVKK & GDPR Uyum Danışmanlığı",
-        "Çalışma Hayatı ve İnsan Hakları"
+        t('team.members.kerem.expertise.1'),
+        t('team.members.kerem.expertise.2'),
+        t('team.members.kerem.expertise.3'),
+        t('team.members.kerem.expertise.4')
       ],
-      languages: "Türkçe, İngilizce"
+      languages: t('team.members.kerem.languages')
     }
   },
 ]
 
-// Uzmanlık alanları verileri
-const expertiseData = [
+// Uzmanlık alanları verileri - çeviri anahtarları ile
+const getExpertiseData = (t: any) => [
   {
-    title: "Aile Hukuku & Uluslararası Miras",
-    subtitle: "Her aile biriciktir; hukuki ihtiyaçları da öyle.",
-    description: "AOREN, karmaşık ailevi yapılar ve çok uluslu miras işlemlerinde, duygusal hassasiyetleri gözeterek etkili ve sürdürülebilir çözümler sunar. Boşanma, mal paylaşımı, evlilik sözleşmeleri, velayet düzenlemeleri gibi konularda yalnızca hukuki değil, stratejik danışmanlık da sağlarız.\n\nUluslararası miras planlamasında, farklı hukuk sistemleri ve vatandaşlık durumlarını göz önünde bulundurarak, varlıklarınızın nesiller arası aktarımını hukuki güvence altına alırız.",
+    title: t('expertise.areas.international.title'),
+    subtitle: t('expertise.areas.international.subtitle'),
+    description: t('expertise.areas.international.description'),
     services: [
-      "Mal rejimi ve boşanma protokolleri",
-      "Varlık planlaması ve vasiyet düzenlemeleri", 
-      "Uluslararası miras davaları",
-      "Aile şirketi geçiş süreçleri"
+      t('expertise.areas.international.services.1'),
+      t('expertise.areas.international.services.2'),
+      t('expertise.areas.international.services.3'),
+      t('expertise.areas.international.services.4')
     ]
   },
   {
-    title: "Ticaret ve Şirketler Hukuku",
-    subtitle: "Modern iş dünyasında hukuki alt yapı, stratejik başarı için temel unsurdur.",
-    description: "AOREN, her ölçekten şirketin ticari yaşam döngüsüne eşlik eder. Kuruluş süreçlerinden birleşme ve devralmalara, pay sahipliği sözleşmelerinden yönetişim yapılarının yeniden tasarlanmasına kadar tüm aşamalarda yanınızdayız.\n\nYerli ve yabancı yatırımların hukuki yapılandırmalarında, sözleşme tasarımlarından rekabet hukukuna kadar geniş bir yelpazede destek sunarız.",
+    title: t('expertise.areas.commercial2.title'),
+    subtitle: t('expertise.areas.commercial2.subtitle'),
+    description: t('expertise.areas.commercial2.description'),
     services: [
-      "Şirket kuruluşu ve genel kurul süreçleri",
-      "Ortaklık sözleşmeleri ve hissedar yapıları",
-      "Birleşme, bölünme ve devralmalar",
-      "Ticaret sözleşmeleri ve uluslararası işlemler"
+      t('expertise.areas.commercial2.services.1'),
+      t('expertise.areas.commercial2.services.2'),
+      t('expertise.areas.commercial2.services.3'),
+      t('expertise.areas.commercial2.services.4')
     ]
   },
   {
-    title: "Gayrimenkul ve Yatırım Hukuku", 
-    subtitle: "Yatırımlarınızın değeri, sağlam bir hukuki zemine dayanır.",
-    description: "AOREN, prestijli gayrimenkul projeleri ve büyük ölçekli arsa yatırımları için kapsamlı hukuki destek sunar. Arsa geliştirme, tapu işlemleri, kentsel dönüşüm projeleri ve yatırım portföylerinin hukuki yönetimi konusunda uzmanız.\n\nPropTech alanındaki girişimlerden karma kullanım projelerine kadar, gayrimenkul alanında dijitalleşme ve sürdürülebilirlik eksenli çözümler geliştiriyoruz.",
+    title: t('expertise.areas.realEstate.title'),
+    subtitle: t('expertise.areas.realEstate.subtitle'),
+    description: t('expertise.areas.realEstate.description'),
     services: [
-      "Alım-satım, kira ve tapu işlemleri",
-      "İmar hukuku ve proje geliştirme danışmanlığı",
-      "Arsa ortaklık sözleşmeleri",
-      "Gayrimenkul yatırım fonları"
+      t('expertise.areas.realEstate.services.1'),
+      t('expertise.areas.realEstate.services.2'),
+      t('expertise.areas.realEstate.services.3'),
+      t('expertise.areas.realEstate.services.4')
     ]
   },
   {
-    title: "Ceza Hukuku ve Dijital Güvenlik",
-    subtitle: "Savunmanız sadece hukuki değil, stratejik da olmalı.",
-    description: "AOREN, ceza hukukunun en karmaşık alanlarında, özellikle beyaz yaka suçları, vergi kaçakçılığı, kara para aklama ve siber suçlar gibi konularda güçlü ve proaktif savunma stratejileri geliştirir.\n\nDijital güvenlik konularında, kişisel verilerin korunması, siber saldırı sonrası yasal müdahaleler ve itibar yönetimi süreçlerinde uzman desteği sağlıyoruz.",
+    title: t('expertise.areas.criminal2.title'),
+    subtitle: t('expertise.areas.criminal2.subtitle'),
+    description: t('expertise.areas.criminal2.description'),
     services: [
-      "Ekonomik ve mali suçlar",
-      "Siber suçlar ve veri güvenliği",
-      "Basın ve sosyal medya hukuku",
-      "Kişisel güvenlik ve tehdit yönetimi"
+      t('expertise.areas.criminal2.services.1'),
+      t('expertise.areas.criminal2.services.2'),
+      t('expertise.areas.criminal2.services.3'),
+      t('expertise.areas.criminal2.services.4')
     ]
   },
   {
-    title: "Uyum ve Risk Yönetimi",
-    subtitle: "Yasal uyum, yalnızca bir zorunluluk değil; rekabet avantajıdır.",
-    description: "AOREN, kurumsal yapılar için etik uyum politikaları, iç denetim sistemleri, KVKK ve GDPR süreçleri, harici bildirim mekanizmaları ve yolsuzlukla mücadele protokollerini içeren bütüncül çözümler geliştirir.\n\nRiskleri önceden tespit edip önleyici hukuki çerçeve sunarak, şirketinizin sürdürülebilirliğini destekliyoruz.",
+    title: t('expertise.areas.compliance.title'),
+    subtitle: t('expertise.areas.compliance.subtitle'),
+    description: t('expertise.areas.compliance.description'),
     services: [
-      "KVKK ve GDPR uyum denetimleri",
-      "Etik politika ve işyeri iç tüzükleri",
-      "Harici bildirim/whistleblower sistemleri",
-      "Regülasyon takibi ve kriz yönetimi"
+      t('expertise.areas.compliance.services.1'),
+      t('expertise.areas.compliance.services.2'),
+      t('expertise.areas.compliance.services.3'),
+      t('expertise.areas.compliance.services.4')
     ]
   },
   {
-    title: "Kurumsal Finansman ve Girişim Sermayesi",
-    subtitle: "Finansal kararların hukuki boyutu, yatırımınızın geleceğini belirler.",
-    description: "AOREN, özel sermaye yatırımları, girişim sermayesi fonları, halka arzlar ve uluslararası yatırım süreçlerinde kapsamlı hukuki danışmanlık sunar.\n\nYatırımcı sözleşmelerinden ortaklık yapılandırmalarına, banka teminat sistemlerinden sermaye piyasası regülasyonlarına kadar tüm süreçleri iş stratejinizle uyumlu hale getiririz.",
+    title: t('expertise.areas.finance.title'),
+    subtitle: t('expertise.areas.finance.subtitle'),
+    description: t('expertise.areas.finance.description'),
     services: [
-      "Girişim sermayesi ve yatırım turu danışmanlığı",
-      "Bankacılık sözleşmeleri ve teminat yapıları",
-      "Halka arz ve Borsa İstanbul işlemleri",
-      "Finansal yeniden yapılandırma"
+      t('expertise.areas.finance.services.1'),
+      t('expertise.areas.finance.services.2'),
+      t('expertise.areas.finance.services.3'),
+      t('expertise.areas.finance.services.4')
     ]
   }
 ]
@@ -407,6 +408,10 @@ export default function Home() {
   const [selectedMember, setSelectedMember] = useState<number | null>(null)
   const [selectedExpertise, setSelectedExpertise] = useState<number | null>(null)
   const { t } = useLanguage()
+  
+  // Çeviri fonksiyonunu kullanarak verileri al
+  const employeesData = getEmployeesData(t)
+  const expertiseData = getExpertiseData(t)
 
   // Scroll event handler
   useEffect(() => {
@@ -558,7 +563,7 @@ export default function Home() {
                 </div>
                 <div className="mt-6 text-center">
                   <button className="bg-gradient-to-r from-white/20 to-white/10 text-white px-6 py-2 rounded-[12px] font-semibold text-sm hover:from-white/30 hover:to-white/20 transition-all duration-300 hover:scale-105 border border-white/30 backdrop-blur-sm">
-                    Detayları Görün
+                    {t('common.viewDetails')}
                   </button>
                 </div>
               </div>
@@ -588,20 +593,20 @@ export default function Home() {
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <Building className="w-8 h-8 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">AOREN Legal Services</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('about.legalServices.title')}</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                AOREN Legal Services, klasik hukuk bürosu anlayışının ötesine geçerek, müvekkillerine yalnızca hukuki temsil değil, iş stratejileriyle entegre çözümler sunan bir danışmanlık ekosistemi olarak faaliyet gösterir. Her bir dava, yalnızca yasal bir süreç değil; iş hedeflerinize ve yaşam kalitenize doğrudan etki eden stratejik bir alandır.
+                {t('about.legalServices.description')}
               </p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <Globe className="w-8 h-8 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Uluslararası Varlık</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('about.international.title')}</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Kurucu ortaklarımızın vizyonuyla temelleri Ankara'da atılan AOREN, kısa sürede ulusal sınırları aşarak Stuttgart, İstanbul ve Ankara'daki ofisleriyle uluslararası ölçekte hizmet sunan güvenilir bir hukuk markası haline gelmiştir.
+                {t('about.international.description')}
               </p>
             </div>
           </div>
@@ -610,40 +615,40 @@ export default function Home() {
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <Handshake className="w-8 h-8 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Stratejik Ortaklık Yaklaşımımız</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('about.partnership.title')}</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                AOREN, her müvekkiliyle uzun vadeli, güvene dayalı ilişkiler kurmayı hedefler. Hukuki çözümleri, yalnızca mevzuata uygunluk düzeyinde değil; işinizin sürdürülebilir büyümesini destekleyecek şekilde tasarlarız. Karmaşık problemler karşısında, farklı disiplinleri bir araya getirerek uygulanabilir, riskleri azaltan ve zaman kazandıran çözümler üretiriz.
+                {t('about.partnership.description')}
               </p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <Network className="w-8 h-8 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Uluslararası Yetenek & Yerel Derinlik</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('about.talent.title')}</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Türkiye'deki güçlü hukuki ve akademik altyapımızı, Avrupa'daki stratejik ortaklıklarımızla tamamlıyoruz. Avrupa pazarındaki yatırımlardan Türkiye'deki aile şirketi yapılandırmalarına, çok dilli ve çok hukuklu sorunlara kadar, hem bireysel hem de kurumsal müvekkillerimize çok katmanlı bir temsil gücü sunuyoruz.
+                {t('about.talent.description')}
               </p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <Users className="w-8 h-8 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Disiplinlerarası Uzmanlık Ağı</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('about.interdisciplinary.title')}</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                AOREN çatısı altında yalnızca avukatlar değil; vergi uzmanları, siber güvenlik danışmanları, yeminli tercümanlar, finans analistleri ve akademik danışmanlar da görev alır. Böylece bir davaya yalnızca hukuki değil, ekonomik, teknolojik ve toplumsal perspektiflerle de bakarız.
+                {t('about.interdisciplinary.description')}
               </p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-white/15 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <Laptop className="w-8 h-8 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Dijital Dönüşüm ve Şeffaflık</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('about.digitalTransformation.title')}</h3>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Hizmetlerimizi teknolojiyle güçlendirerek, şeffaf ve erişilebilir hale getiriyoruz. AOREN'e özel geliştirilen dijital müvekkil portalı sayesinde belgelerinize, dava süreçlerine ve danışmanlık raporlarına 7/24 erişebilirsiniz. Bu sayede, sizinle açık iletişimi sadece sözde değil, sistemsel olarak da sürdürüyoruz.
+                {t('about.digitalTransformation.description')}
               </p>
             </div>
           </div>
@@ -678,23 +683,23 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold text-white">Stuttgart</h3>
               </div>
               <div className="mb-4">
-                <h4 className="text-lg font-semibold text-[#DEA582] mb-3">Avrupa Operasyon Merkezi</h4>
+                <h4 className="text-lg font-semibold text-[#DEA582] mb-3">{t('offices.locations.stuttgart.subtitle')}</h4>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  Stratejik konumu sayesinde, sınır ötesi ticari işlemlerinizde güçlü bir üs niteliğindedir. Almanya'daki Türk girişimciler, Avrupa'ya açılmak isteyen şirketler ve diaspora toplulukları için özel çözümler geliştiriyoruz.
+                  {t('offices.locations.stuttgart.description')}
                 </p>
               </div>
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-start">
                   <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1 flex-shrink-0" />
-                  <p>Neckarstraße 155, 70190 Stuttgart, Almanya</p>
+                  <p>{t('offices.locations.stuttgart.address')}</p>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>+49 (0)711 123 45 67</p>
+                  <p>{t('offices.locations.stuttgart.phone')}</p>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>stuttgart@aorenlegal.com</p>
+                  <p>{t('offices.locations.stuttgart.email')}</p>
                 </div>
               </div>
             </div>
@@ -706,23 +711,23 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold text-white">İstanbul</h3>
               </div>
               <div className="mb-4">
-                <h4 className="text-lg font-semibold text-[#DEA582] mb-3">Ticaret ve Finans Merkezi</h4>
+                <h4 className="text-lg font-semibold text-[#DEA582] mb-3">{t('offices.locations.istanbul.subtitle')}</h4>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  Türkiye'nin ekonomik merkezinde yer alan İstanbul ofisimiz, yatırım, finans ve gayrimenkul işlemleriniz için uzman kadrosuyla hizmet verir. Anadolu ve Avrupa yakalarında ayrı danışman ekipleri ile hızlı ve kapsamlı çözümler sunar.
+                  {t('offices.locations.istanbul.description')}
                 </p>
               </div>
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-start">
                   <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1 flex-shrink-0" />
-                  <p>Büyükdere Caddesi No:233, Nurol Plaza, Kat:11, Levent, 34394 Şişli / İstanbul</p>
+                  <p>{t('offices.locations.istanbul.address')}</p>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>+90 (212) 345 67 89</p>
+                  <p>{t('offices.locations.istanbul.phone')}</p>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>istanbul@aorenlegal.com</p>
+                  <p>{t('offices.locations.istanbul.email')}</p>
                 </div>
               </div>
             </div>
@@ -734,23 +739,23 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold text-white">Ankara</h3>
               </div>
               <div className="mb-4">
-                <h4 className="text-lg font-semibold text-[#DEA582] mb-3">Koordinasyon ve Kamu İlişkileri Merkezi</h4>
+                <h4 className="text-lg font-semibold text-[#DEA582] mb-3">{t('offices.locations.ankara.subtitle')}</h4>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  Başkentteki ofisimiz, kamu kurumlarıyla etkili iletişim gerektiren dosyalar ve ülke çapındaki operasyonlarımızın koordinasyonu için özel bir merkezdir. Ayrıca, akademik iş birlikleri ve mevzuat takibi konusunda da destek sağlamaktadır.
+                  {t('offices.locations.ankara.description')}
                 </p>
               </div>
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-start">
                   <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1 flex-shrink-0" />
-                  <p>Mustafa Kemal Mah. 2151. Cad. No:15, Kat:4, Çankaya / Ankara</p>
+                  <p>{t('offices.locations.ankara.address')}</p>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>+90 (312) 456 78 90</p>
+                  <p>{t('offices.locations.ankara.phone')}</p>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>ankara@aorenlegal.com</p>
+                  <p>{t('offices.locations.ankara.email')}</p>
                 </div>
               </div>
             </div>
