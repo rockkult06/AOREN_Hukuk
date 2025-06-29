@@ -212,13 +212,14 @@ export default function Header() {
             {/* Language Selector */}
             <div className="flex items-center">
               <Globe className={`h-4 w-4 mr-2 ${isScrolled ? 'text-gray-700' : 'text-white'}`} />
-              <Select value={language} onValueChange={(value: 'tr' | 'en') => setLanguage(value)}>
+              <Select value={language} onValueChange={(value: 'tr' | 'en' | 'de') => setLanguage(value)}>
                 <SelectTrigger className={`w-16 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="tr">TR</SelectItem>
                   <SelectItem value="en">EN</SelectItem>
+                  <SelectItem value="de">DE</SelectItem>
                 </SelectContent>
               </Select>
             </div>

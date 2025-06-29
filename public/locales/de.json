@@ -1,0 +1,423 @@
+{
+  "header": {
+    "home": "Startseite",
+    "team": "Unser Team",
+    "expertise": "Fachbereiche",
+    "about": "Über uns",
+    "offices": "Unsere Büros",
+    "digital": "AOREN Digitale Dienste",
+    "responsibility": "Unternehmensverantwortung",
+    "careers": "Karriere bei AOREN",
+    "contact": "Kontakt",
+    "search": "Website durchsuchen..."
+  },
+  "hero": {
+    "title": "AOREN Rechtsanwaltskanzlei",
+    "subtitle": "Professionelle Rechtsberatung",
+    "description": "Mit unserem erfahrenen Anwaltsteam bieten wir Ihnen die besten Lösungen für Ihre rechtlichen Bedürfnisse.",
+    "getStarted": "Jetzt beginnen",
+    "learnMore": "Mehr erfahren",
+    "team": {
+      "title": "LERNEN SIE UNSER HOCHEFFEKTIVES RECHTSTEAM KENNEN",
+      "subtitle": "\"Strategisch denkende Anwälte. Interdisziplinärer Ansatz\""
+    },
+    "offices": {
+      "title": "WIR BIETEN DIENSTLEISTUNGEN NICHT REGIONAL, SONDERN INTERNATIONAL",
+      "subtitle": "\"Gleiche Werte, verschiedene Städte\""
+    },
+    "expertise": {
+      "title": "ENTDECKEN SIE UNSERE UMFASSENDEN RECHTLICHEN LÖSUNGSBEREICHE",
+      "subtitle": "\"Kompetente Mitarbeiter in allen Rechtsbereichen, integrierter Ansatz\""
+    }
+  },
+  "team": {
+    "title": "Unser Team",
+    "subtitle": "Erfahrenes und spezialisiertes Anwaltsteam",
+    "description": "AOREN Legal Services arbeitet mit einem ausgewählten Team von Anwälten, die jeweils über tiefgreifendes Wissen und internationale Erfahrung in ihrem Fachgebiet verfügen.",
+    "viewProfile": "Profil anzeigen",
+    "teamHighlights": "Highlights aus unserem Team",
+    "members": {
+      "abdullah": {
+        "title": "Gründungspartner | Experte für Handels- und Internationales Investitionsrecht",
+        "description": "Mit seiner autorisierten Erfahrung unter BRAO 206 führt er an der Schnittstelle von strategischem Beratungsansatz und Recht.",
+        "about": "RA Abdullah ÖREN, Gründungspartner von AOREN, zeichnet sich durch seine anerkannte Kompetenz unter BRAO 206 aus, insbesondere in den Bereichen Handelsrecht, internationale Investitionsprozesse und Unternehmensfusionen. Dank seiner strategischen Vision bietet er nicht nur rechtliche Lösungen; er entwickelt Beratungsleistungen, die direkt zu den Geschäftszielen seiner Mandanten beitragen.\n\nWährend seiner Laufbahn hat er eine aktive Rolle bei der rechtlichen Strukturierung von Hunderten von in- und ausländischen Unternehmen gespielt und mit seiner Erfahrung bei grenzüberschreitenden Transaktionen eine starke Brücke auf der Europa-Türkei-Linie geschaffen.",
+        "expertise": {
+          "1": "Internationaler Handel und Verträge",
+          "2": "Gesellschaftsrecht und Unternehmensstrukturierung",
+          "3": "Investmentfonds und Risikokapital",
+          "4": "Fusionen und Übernahmen"
+        },
+        "languages": "Türkisch, Englisch, Deutsch"
+      },
+      "ekin": {
+        "title": "Experte für Strafrecht und Reputationsmanagement",
+        "description": "Bekannt für effektive Verteidigungsstrategien im Presserecht und bei Wirtschaftsstraftaten.",
+        "about": "RA Ekin Tuncel, ein zuverlässiger Führer in der komplexen Natur von Strafverfahren, vertritt seine Mandanten effektiv, insbesondere bei Wirtschaftsstraftaten, Verstößen gegen die Pressefreiheit und cybersicherheitsfokussierten Fällen.\n\nEr hat starke Strategien in der Medienkommunikation und Reputationsverteidigung während Krisenzeiten für Einzelpersonen und Unternehmen entwickelt, die in direktem Kontakt mit der Öffentlichkeit stehen. Sein Erfolg in der gerichtlichen und präventiven Beratung wird sowohl von Einzel- als auch von Unternehmensmandanten geschätzt.",
+        "expertise": {
+          "1": "Wirtschaftsstraftaten und Strafermittlungen",
+          "2": "Presse- und Social-Media-Recht",
+          "3": "Digitale Sicherheit und Datenschutz",
+          "4": "Reputationsmanagement und rechtliche Notfallintervention"
+        },
+        "languages": "Türkisch, Englisch"
+      },
+      "melis": {
+        "title": "Expertin für Familienrecht und Internationales Erbrecht",
+        "description": "Während sie komplexe persönliche Beziehungsfälle mit Empathie angeht, entwickelt sie Lösungen mit hoher Sensibilität.",
+        "about": "RA Melis Bayraktar ist eine Expertin mit tiefgreifender Expertise in komplexen Familienstrukturen, Güterrechtsregelungen und multinationalen Erbschaftsfällen. Sie fällt durch ihren ethischen Ansatz und ihren lösungsorientierten Kommunikationsstil in emotional sensiblen Fällen auf.\n\nSie ist eine Vertrauensperson, die ausländische Staatsangehörige, die in der Türkei leben, und türkische Staatsbürger, die im Ausland leben, in ihren familiären und erbrechtlichen Angelegenheiten vertrauensvoll konsultieren. Sie entwickelt nachhaltige Strukturen in der Vermögensplanung, Testamentserrichtung und generationenübergreifenden Übergängen.",
+        "expertise": {
+          "1": "Scheidung und Vermögensaufteilung",
+          "2": "Eheverträge",
+          "3": "Internationale Erbschaftsplanung",
+          "4": "Familienunternehmensrecht"
+        },
+        "languages": "Türkisch, Englisch, Französisch"
+      },
+      "kerem": {
+        "title": "Arbeitsrecht und Unternehmens-Compliance-Berater",
+        "description": "Er ist spezialisiert auf Personalwesen, Risikomanagement und ethische Compliance.",
+        "about": "RA Kerem Yıldız, der die rechtlichen Dimensionen der Personalwesen bis ins kleinste Detail plant, behandelt arbeitsrechtliche Praktiken nicht nur auf Vertragsbasis, sondern auch aus der Perspektive einer ethischen und nachhaltigen Unternehmensstruktur.\n\nEr hat auch eine aktive Rolle in internen Auditsystemen in multinationalen Unternehmen, KVKK/GDPR-Compliance und der Beziehung zwischen Geschäftswelt und Menschenrechten übernommen. Dank seines proaktiven Beratungsansatzes kontrolliert er die rechtlichen Risiken von Institutionen, bevor sie entstehen.",
+        "expertise": {
+          "1": "Arbeitsrecht und Führungskräfteverträge",
+          "2": "Unternehmensethik & Risikomanagement",
+          "3": "KVKK & GDPR Compliance-Beratung",
+          "4": "Arbeitsleben und Menschenrechte"
+        },
+        "languages": "Türkisch, Englisch"
+      }
+    }
+  },
+  "expertise": {
+    "title": "Unsere Fachbereiche",
+    "subtitle": "Einige unserer Spezialgebiete:",
+    "description": "AOREN bietet sowohl Privat- als auch Unternehmensmandanten eine breite Palette rechtlicher Unterstützung.",
+    "viewDetails": "Details anzeigen",
+    "areas": {
+      "commercial": {
+        "title": "Handelsrecht",
+        "description": "Beratungsdienstleistungen zu Unternehmensgründung, Fusionen, Übernahmen und Handelsstreitigkeiten.",
+        "subtitle": "Für jeden Familienverband rechtliche Bedürfnisse."
+      },
+      "labor": {
+        "title": "Arbeitsrecht",
+        "description": "Rechtliche Unterstützung bei Arbeitsverträgen, Arbeitnehmerrechten, Arbeitsunfällen und Arbeitgeberpflichten.",
+        "subtitle": "Rechtliche Unterstützung bei Arbeitsverträgen, Arbeitnehmerrechten, Arbeitsunfällen und Arbeitgeberpflichten."
+      },
+      "family": {
+        "title": "Familienrecht",
+        "description": "Professionelle Lösungen für Scheidung, Sorgerecht, Unterhalt und familiäre Rechtsprobleme.",
+        "subtitle": "Empathischer Ansatz bei komplexen persönlichen Beziehungsfällen, Lösungsentwicklung mit hoher Sensibilität."
+      },
+      "criminal": {
+        "title": "Strafrecht",
+        "description": "Erfahrene Anwaltsunterstützung bei Strafanzeigen, Verteidigung und Strafverfahren.",
+        "subtitle": "Erfahrene Anwaltsunterstützung bei Strafanzeigen, Verteidigung und Strafverfahren."
+      },
+      "execution": {
+        "title": "Vollstreckungs- und Insolvenzrecht",
+        "description": "Rechtsberatung bei Forderungseinzug, Vollstreckungsverfahren und Insolvenzfällen.",
+        "subtitle": "Rechtsberatung bei Forderungseinzug, Vollstreckungsverfahren und Insolvenzfällen."
+      },
+      "mediation": {
+        "title": "Mediation",
+        "description": "Professionelle Mediationsdienste für außergerichtliche Streitbeilegung.",
+        "subtitle": "Professionelle Mediationsdienste für außergerichtliche Streitbeilegung."
+      },
+      "realEstate": {
+        "title": "Immobilien- und Investitionsrecht",
+        "subtitle": "Der Wert Ihrer Investitionen beruht auf einem soliden rechtlichen Fundament."
+      },
+      "international": {
+        "title": "Familienrecht & Internationales Erbrecht",
+        "subtitle": "Für jeden Familienverband rechtliche Bedürfnisse."
+      },
+      "commercial2": {
+        "title": "Handels- und Gesellschaftsrecht",
+        "subtitle": "In der modernen Geschäftswelt ist die rechtliche Infrastruktur ein grundlegendes Element für strategischen Erfolg.",
+        "description": "AOREN begleitet Unternehmen aller Größen durch ihren gesamten Geschäftslebenszyklus. Wir stehen Ihnen in allen Phasen zur Seite, von Gründungsprozessen bis hin zu Fusionen und Übernahmen, von Gesellschafterverträgen bis zur Neugestaltung von Governance-Strukturen.\n\nWir bieten Unterstützung in einem breiten Spektrum, von der rechtlichen Strukturierung in- und ausländischer Investitionen über Vertragsgestaltung bis hin zum Wettbewerbsrecht.",
+        "services": {
+          "1": "Unternehmensgründung und Hauptversammlungsprozesse",
+          "2": "Gesellschaftsverträge und Gesellschafterstrukturen",
+          "3": "Fusionen, Spaltungen und Übernahmen",
+          "4": "Handelsverträge und internationale Transaktionen"
+        }
+      },
+      "international": {
+        "title": "Familienrecht & Internationales Erbrecht",
+        "subtitle": "Jede Familie ist einzigartig; so sind auch ihre rechtlichen Bedürfnisse.",
+        "description": "AOREN bietet effektive und nachhaltige Lösungen bei komplexen Familienstrukturen und multinationalen Erbschaftstransaktionen unter Berücksichtigung emotionaler Sensibilitäten. Wir bieten nicht nur rechtliche, sondern auch strategische Beratung in Angelegenheiten wie Scheidung, Vermögensaufteilung, Eheverträgen und Sorgerechtsregelungen.\n\nIn der internationalen Erbschaftsplanung stellen wir die generationenübergreifende Übertragung Ihres Vermögens unter rechtliche Garantie, unter Berücksichtigung verschiedener Rechtssysteme und Staatsangehörigkeitsverhältnisse.",
+        "services": {
+          "1": "Güterrechtsregime und Scheidungsprotokolle",
+          "2": "Vermögensplanung und Testamentserrichtung",
+          "3": "Internationale Erbschaftsfälle",
+          "4": "Familienunternehmen-Übergangsprozesse"
+        }
+      },
+      "realEstate": {
+        "title": "Immobilien- und Investitionsrecht",
+        "subtitle": "Der Wert Ihrer Investitionen beruht auf einem soliden rechtlichen Fundament.",
+        "description": "AOREN bietet umfassende rechtliche Unterstützung für prestigeträchtige Immobilienprojekte und großangelegte Grundstücksinvestitionen. Wir sind Experten in Grundstücksentwicklung, Grundbuchgeschäften, Stadterneuerungsprojekten und rechtlicher Verwaltung von Investmentportfolios.\n\nWir entwickeln auf Digitalisierung und Nachhaltigkeit fokussierte Lösungen im Immobilienbereich, von PropTech-Startups bis hin zu gemischt genutzten Projekten.",
+        "services": {
+          "1": "Kauf-Verkauf, Vermietung und Grundbuchgeschäfte",
+          "2": "Bauplanungsrecht und Projektentwicklungsberatung",
+          "3": "Grundstückspartnerschaftsverträge",
+          "4": "Immobilien-Investmentfonds"
+        }
+      },
+      "criminal2": {
+        "title": "Strafrecht und Digitale Sicherheit",
+        "subtitle": "Ihre Verteidigung sollte nicht nur rechtlich, sondern auch strategisch sein.",
+        "description": "AOREN entwickelt starke und proaktive Verteidigungsstrategien in den komplexesten Bereichen des Strafrechts, insbesondere bei Wirtschaftsstraftaten, Steuerhinterziehung, Geldwäsche und Cyberkriminalität.\n\nWir bieten Expertenunterstützung bei digitalen Sicherheitsfragen, Datenschutz, rechtlichen Interventionen nach Cyberangriffen und Reputationsmanagement-Prozessen.",
+        "services": {
+          "1": "Wirtschafts- und Finanzstraftaten",
+          "2": "Cyberkriminalität und Datensicherheit",
+          "3": "Presse- und Social-Media-Recht",
+          "4": "Persönliche Sicherheit und Bedrohungsmanagement"
+        }
+      },
+      "compliance": {
+        "title": "Compliance und Risikomanagement",
+        "subtitle": "Rechtliche Compliance ist nicht nur eine Verpflichtung; sie ist ein Wettbewerbsvorteil.",
+        "description": "AOREN entwickelt ganzheitliche Lösungen für Unternehmensstrukturen, einschließlich ethischer Compliance-Richtlinien, interne Auditsysteme, KVKK- und GDPR-Prozesse, externe Meldemechanismen und Anti-Korruptions-Protokolle.\n\nWir unterstützen die Nachhaltigkeit Ihres Unternehmens, indem wir Risiken im Voraus erkennen und präventive rechtliche Rahmen bereitstellen.",
+        "services": {
+          "1": "KVKK- und GDPR-Compliance-Audits",
+          "2": "Ethik-Richtlinien und Arbeitsplatz-Innenverordnungen",
+          "3": "Externe Melde-/Whistleblower-Systeme",
+          "4": "Regulierungsverfolgung und Krisenmanagement"
+        }
+      },
+      "finance": {
+        "title": "Unternehmensfinanzierung und Risikokapital",
+        "subtitle": "Die rechtliche Dimension finanzieller Entscheidungen bestimmt die Zukunft Ihrer Investition.",
+        "description": "AOREN bietet umfassende Rechtsberatung bei Private-Equity-Investitionen, Risikokapitalfonds, Börsengängen und internationalen Investitionsprozessen.\n\nWir machen alle Prozesse mit Ihrer Geschäftsstrategie kompatibel, von Investorenverträgen bis zur Partnerschaftsstrukturierung, von Bankengarantiesystemen bis zu Kapitalmarktregulierungen.",
+        "services": {
+          "1": "Risikokapital- und Investitionsrunden-Beratung",
+          "2": "Bankverträge und Sicherheitsstrukturen",
+          "3": "Börsengang und Borsa Istanbul-Transaktionen",
+          "4": "Finanzielle Umstrukturierung"
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Zuverlässige Rechtsberatung",
+    "description": "Als AOREN Rechtsanwaltskanzlei sind wir eine Kanzlei, die sich dem Grundsatz verschrieben hat, unseren Mandanten den höchsten Qualitätsstandard rechtlicher Dienstleistungen zu bieten und mit einem erfahrenen und spezialisierten Anwaltsteam arbeitet.",
+    "experience": "Jahre Erfahrung",
+    "cases": "Erfolgreiche Fälle",
+    "clients": "Zufriedene Mandanten",
+    "awards": "Auszeichnungen",
+    "legalServices": {
+      "title": "AOREN Rechtsdienstleistungen",
+      "description": "Wir bieten nicht nur Rechtsberatung, sondern auch strategische Partnerschaften. Unser Ansatz basiert darauf, die Geschäftsziele unserer Mandanten zu verstehen und rechtliche Lösungen zu entwickeln, die direkt zu diesen Zielen beitragen. Jeder Fall wird individuell bewertet und maßgeschneiderte Strategien entwickelt."
+    },
+    "international": {
+      "title": "Internationale Präsenz",
+      "description": "Wir ergänzen unsere starke rechtliche und akademische Infrastruktur in der Türkei mit unseren strategischen Partnerschaften in Europa. Von Investitionen im europäischen Markt bis hin zur Strukturierung von Familienunternehmen in der Türkei, von mehrsprachigen und multirechtlichen Problemen bieten wir sowohl Privat- als auch Unternehmensmandanten eine vielschichtige Vertretungsmacht."
+    },
+    "partnership": {
+      "title": "Strategischer Partnerschaftsansatz",
+      "description": "Wir betrachten unsere Mandanten nicht nur als Kunden, sondern als strategische Partner. Wir bauen langfristige Beziehungen auf, verstehen ihre Geschäftsziele und entwickeln rechtliche Lösungen, die direkt zu diesen Zielen beitragen. Dieser Ansatz ermöglicht es uns, über traditionelle Rechtsberatung hinauszugehen."
+    },
+    "talent": {
+      "title": "Internationale Talente & Lokale Tiefe",
+      "description": "Unser Team besteht aus Anwälten mit internationaler Erfahrung und lokaler Expertise. Diese Kombination ermöglicht es uns, sowohl in lokalen als auch in grenzüberschreitenden Angelegenheiten effektive Lösungen anzubieten. Wir sprechen die Sprache unserer Mandanten sowohl kulturell als auch rechtlich."
+    },
+    "interdisciplinary": {
+      "title": "Interdisziplinäres Expertennetzwerk",
+      "description": "Unter dem AOREN-Dach arbeiten nicht nur Anwälte; auch Steuerexperten, Cybersicherheitsberater, vereidigte Übersetzer, Finanzanalysten und akademische Berater sind tätig. So betrachten wir einen Fall nicht nur aus rechtlicher, sondern auch aus wirtschaftlicher, technologischer und gesellschaftlicher Perspektive."
+    },
+    "digitalTransformation": {
+      "title": "Digitale Transformation und Transparenz",
+      "description": "Wir stärken unsere Dienstleistungen mit Technologie und machen sie transparent und zugänglich. Dank des speziell für AOREN entwickelten digitalen Mandantenportals können Sie 24/7 auf Ihre Dokumente, Verfahrensprozesse und Beratungsberichte zugreifen. Auf diese Weise pflegen wir offene Kommunikation mit Ihnen nicht nur in Worten, sondern auch systematisch."
+    }
+  },
+  "offices": {
+    "title": "Unsere Büros",
+    "subtitle": "Erhalten Sie Service von unserem nächstgelegenen Büro",
+    "description": "Als AOREN Legal Services bieten wir unseren Mandanten durch unsere drei strategischen Hauptsitze in Deutschland und der Türkei Dienstleistungen mit globalen Standards und lokaler Nähe.",
+    "locations": {
+      "stuttgart": {
+        "title": "Büro Stuttgart",
+        "subtitle": "Europäisches Operationszentrum",
+        "description": "Dank seiner strategischen Lage dient es als starke Basis für Ihre grenzüberschreitenden Handelsgeschäfte. Wir entwickeln spezielle Lösungen für türkische Unternehmer in Deutschland, Unternehmen, die nach Europa expandieren möchten, und Diaspora-Gemeinschaften.",
+        "address": "Neckarstraße 155, 70190 Stuttgart, Deutschland",
+        "phone": "+49 (0)711 123 45 67",
+        "email": "stuttgart@aorenlegal.com"
+      },
+      "istanbul": {
+        "title": "Büro Istanbul",
+        "subtitle": "Handels- und Finanzzentrum",
+        "description": "Unser Büro in Istanbul, das sich im wirtschaftlichen Zentrum der Türkei befindet, dient mit seinem Expertenteam für Ihre Investitions-, Finanz- und Immobiliengeschäfte. Es bietet schnelle und umfassende Lösungen mit separaten Beratungsteams auf der anatolischen und europäischen Seite.",
+        "address": "Büyükdere Caddesi Nr:233, Nurol Plaza, Etage:11, Levent, 34394 Şişli / Istanbul",
+        "phone": "+90 (212) 345 67 89",
+        "email": "istanbul@aorenlegal.com"
+      },
+      "ankara": {
+        "title": "Büro Ankara",
+        "subtitle": "Koordinations- und Öffentlichkeitsarbeitszentrum",
+        "description": "Unser Büro in der Hauptstadt ist ein spezielles Zentrum für Fälle, die effektive Kommunikation mit öffentlichen Institutionen erfordern, und für die Koordination unserer landesweiten Operationen. Es bietet auch Unterstützung bei akademischen Kooperationen und Gesetzgebungsverfolgung.",
+        "address": "Mustafa Kemal Mah. 2151. Cad. Nr:15, Etage:4, Çankaya / Ankara",
+        "phone": "+90 (312) 456 78 90",
+        "email": "ankara@aorenlegal.com"
+      }
+    }
+  },
+  "digital": {
+    "title": "AOREN Digitale Dienste",
+    "subtitle": "Rechtliche Lösungen mit Technologie",
+    "description": "Technologie ist für uns nicht nur ein Werkzeug, sondern ein integraler Bestandteil unserer Dienstleistung.",
+    "quote": "Während wir Ihre rechtlichen Prozesse digitalisieren, verzichten wir nicht auf die menschliche Note.",
+    "services": {
+      "clientPortal": {
+        "title": "Mandantenportal",
+        "description": "Mit unserem speziellen Portal, das 24/7 Zugang zu Ihren Akten bietet, können Sie alle Ihre rechtlichen Prozesse von einer einzigen Plattform aus verfolgen.",
+        "features": [
+          "Echtzeit-Aktenstatus-Verfolgung",
+          "Einfacher Zugang zum Dokumentarchiv",
+          "Verhandlungskalender-Integration"
+        ]
+      },
+      "digitalSignature": {
+        "title": "Digitale Signatur und Dokumentenverfolgung",
+        "description": "Beschleunigen Sie Ihre Dokumentengenehmigungsprozesse mit sicherem elektronischem Signatursystem, vermeiden Sie Papierverschwendung.",
+        "features": [
+          "E-Signatur-Integration",
+          "Automatische Versionskontrolle",
+          "Erweiterte Dokumentensicherheit"
+        ]
+      },
+      "secureMessaging": {
+        "title": "Sicheres Messaging-System",
+        "description": "Gewährleisten Sie sichere Kommunikation mit End-to-End-verschlüsseltem Messaging-System.",
+        "features": [
+          "Sofortbenachrichtigungen",
+          "Dateiaustausch",
+          "Videoanruf-Unterstützung"
+        ]
+      },
+      "processManagement": {
+        "title": "Proaktives Prozessmanagement",
+        "description": "Erkennen Sie mögliche Risiken im Voraus mit KI-gestütztem Prozessmanagement.",
+        "features": [
+          "Automatische Risikoanalyse",
+          "Fälligkeitstermin-Verfolgungssystem",
+          "Intelligente Erinnerungen"
+        ]
+      }
+    }
+  },
+  "responsibility": {
+    "title": "Unternehmensverantwortung",
+    "subtitle": "Unsere Mission, der Gesellschaft Wert zu verleihen",
+    "description": "Gerechtigkeit wird nicht nur in Gerichtssälen, sondern in allen Bereichen der Gesellschaft aufgebaut.",
+    "quote": "Für die Gesellschaft, Transformation durch Recht.",
+    "areas": {
+      "education": {
+        "title": "Rechtserziehung",
+        "description": "Wir tragen zur Ausbildung junger Juristen bei, organisieren Mentorship-Programme an Universitäten und bieten Praktikumsmöglichkeiten."
+      },
+      "womensRights": {
+        "title": "Zugang von Frauen zur Justiz",
+        "description": "Wir bieten kostenlose Beratungsdienste, damit Frauen ihre Rechte kennenlernen und ihren Zugang zur Justiz erleichtern können."
+      },
+      "environment": {
+        "title": "Umweltbewusstsein",
+        "description": "Wir übernehmen Pro-Bono-Fälle im Umweltrecht und bieten rechtliche Unterstützung für Nachhaltigkeitsprojekte."
+      },
+      "sustainability": {
+        "title": "UN-Ziele für nachhaltige Entwicklung",
+        "description": "Als AOREN unterstützen wir Projekte zur Rechtserziehung, zum Zugang von Frauen zur Justiz und zum Umweltbewusstsein im Einklang mit den UN-Zielen für nachhaltige Entwicklung."
+      }
+    }
+  },
+  "careers": {
+    "title": "Karriere bei AOREN",
+    "subtitle": "Möchten Sie einen strategischen Schritt in Ihrer Karriere machen, nicht einen gewöhnlichen?",
+    "description": "AOREN ist nicht nur ein Arbeitsplatz; es ist ein Ökosystem, in dem Sie sich entwickeln, beitragen und gemeinsam produzieren können. Wir bieten ein Karrieremodell, das Sie auf diesem Weg von der Praktikantenstelle bis zur Partnerschaft unterstützt.",
+    "applyNow": "Jetzt bewerben",
+    "form": {
+      "title": "Karriere-Bewerbungsformular",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "position": "Beworbene Position",
+      "experience": "Erfahrung",
+      "cv": "Lebenslauf hochladen",
+      "coverLetter": "Anschreiben",
+      "submit": "Bewerbung senden"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie uns einfach.",
+    "description": "Ob es sich um eine erste Beratung oder umfassende Zusammenarbeit handelt... Wir sind hier für alle Ihre Fragen und Kooperationsanfragen.",
+    "availability": "Unsere Kommunikationskanäle über Telefon, E-Mail und Mandantenportal sind 24/7 geöffnet.",
+    "form": {
+      "title": "Kontaktformular",
+      "name": "Name",
+      "surname": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "send": "Senden"
+    },
+    "info": {
+      "phone": "Telefon",
+      "fax": "Fax",
+      "email": "E-Mail",
+      "hours": "Arbeitszeiten",
+      "weekdays": "Montag - Freitag: 09:00 - 18:00",
+      "saturday": "Samstag: 09:00 - 13:00"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "AOREN Rechtsanwaltskanzlei",
+      "description": "Mit unserem hocheffektiven Rechtsteam streben wir danach, unseren Mandanten den höchsten Qualitätsstandard rechtlicher Dienstleistungen zu bieten.",
+      "address": "Adresse",
+      "addressText": "Atatürk Bulvarı Nr: 123\nÇankaya/Ankara"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "phone": "Telefon",
+      "fax": "Fax",
+      "email": "E-Mail",
+      "hours": "Arbeitszeiten",
+      "weekdays": "Montag - Freitag: 09:00 - 18:00",
+      "saturday": "Samstag: 09:00 - 13:00"
+    },
+    "services": {
+      "title": "Unsere Dienstleistungen",
+      "commercial": "Handelsrecht",
+      "labor": "Arbeitsrecht",
+      "family": "Familienrecht",
+      "criminal": "Strafrecht",
+      "execution": "Vollstreckungs- und Insolvenzrecht",
+      "mediation": "Mediation"
+    },
+    "corporate": {
+      "title": "Unternehmen",
+      "team": "Unser Team",
+      "expertise": "Fachbereiche",
+      "about": "Über uns",
+      "offices": "Unsere Büros",
+      "digital": "AOREN Digitale Dienste",
+      "responsibility": "Unternehmensverantwortung",
+      "careers": "Karriere bei AOREN",
+      "contact": "Kontakt"
+    },
+    "copyright": "© 2024 AOREN Rechtsanwaltskanzlei. Alle Rechte vorbehalten. | Bei der Anwaltskammer Ankara registrierte Rechtsanwaltskanzlei"
+  },
+  "common": {
+    "readMore": "Mehr lesen",
+    "viewDetails": "Details anzeigen",
+    "apply": "Bewerben",
+    "send": "Senden",
+    "submit": "Senden",
+    "close": "Schließen",
+    "viewProfile": "Profil anzeigen"
+  }
+} 
