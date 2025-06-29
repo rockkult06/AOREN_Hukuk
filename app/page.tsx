@@ -788,10 +788,10 @@ export default function Home() {
             <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <GraduationCap className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Hukuk Eğitimi</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('responsibility.areas.education.title')}</h3>
               </div>
               <p className="text-gray-100 leading-relaxed">
-                Genç hukukçuların yetişmesine katkı sağlıyor, üniversitelerde mentorluk programları düzenliyor ve staj imkanları sunuyoruz.
+                {t('responsibility.areas.education.description')}
               </p>
             </div>
 
@@ -799,10 +799,10 @@ export default function Home() {
             <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <Scale className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Kadınların Adalete Erişimi</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('responsibility.areas.womensRights.title')}</h3>
               </div>
               <p className="text-gray-100 leading-relaxed">
-                Kadınların hukuki haklarını öğrenmeleri ve adalete erişimlerini kolaylaştırmak için ücretsiz danışmanlık hizmetleri sunuyoruz.
+                {t('responsibility.areas.womensRights.description')}
               </p>
             </div>
 
@@ -810,10 +810,10 @@ export default function Home() {
             <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <Leaf className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Çevresel Farkındalık</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('responsibility.areas.environment.title')}</h3>
               </div>
               <p className="text-gray-100 leading-relaxed">
-                Çevre hukuku alanında pro bono davalar üstleniyor ve sürdürülebilirlik projelerine hukuki destek sağlıyoruz.
+                {t('responsibility.areas.environment.description')}
               </p>
             </div>
           </div>
@@ -822,13 +822,13 @@ export default function Home() {
             <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/30 transition-all duration-300 max-w-3xl mx-auto">
               <div className="flex items-center justify-center mb-6">
                 <Target className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">BM Sürdürülebilir Kalkınma Hedefleri</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('responsibility.areas.sustainability.title')}</h3>
               </div>
               <p className="text-gray-100 leading-relaxed">
-                AOREN olarak, BM Sürdürülebilir Kalkınma Hedefleri doğrultusunda hukuk eğitimi, kadınların adalete erişimi ve çevresel farkındalık projelerine destek veriyoruz.
+                {t('responsibility.areas.sustainability.description')}
               </p>
               <p className="text-2xl font-semibold text-white mt-6 italic">
-                Toplum için, hukukla dönüşüm.
+                {t('responsibility.quote')}
               </p>
             </div>
           </div>
@@ -863,49 +863,49 @@ export default function Home() {
             <div className="bg-black/20 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8">
               <div className="flex items-center mb-8">
                 <Briefcase className="w-8 h-8 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Kariyer Başvuru Formu</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('careers.form.title')}</h3>
               </div>
               
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-white text-sm font-medium">Ad</label>
+                    <label className="text-white text-sm font-medium">{t('careers.form.firstName')}</label>
                     <input
                       type="text"
                       className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="Adınız"
+                      placeholder={t('careers.form.firstName')}
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-white text-sm font-medium">Soyad</label>
+                    <label className="text-white text-sm font-medium">{t('careers.form.lastName')}</label>
                     <input
                       type="text"
                       className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder="Soyadınız"
+                      placeholder={t('careers.form.lastName')}
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-white text-sm font-medium">E-posta</label>
+                  <label className="text-white text-sm font-medium">{t('careers.form.email')}</label>
                   <input
                     type="email"
                     className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="E-posta adresiniz"
+                    placeholder={t('careers.form.email')}
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-white text-sm font-medium">Telefon</label>
+                  <label className="text-white text-sm font-medium">{t('careers.form.phone')}</label>
                   <input
                     type="tel"
                     className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="Telefon numaranız"
+                    placeholder={t('careers.form.phone')}
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-white text-sm font-medium">Başvurmak İstediğiniz Pozisyon</label>
+                  <label className="text-white text-sm font-medium">{t('careers.form.position')}</label>
                   <select className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="" className="bg-[#2F2F31]">Seçiniz</option>
                     <option value="stajyer" className="bg-[#2F2F31]">Stajyer Avukat</option>
@@ -917,7 +917,7 @@ export default function Home() {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-white text-sm font-medium">Özgeçmiş (CV)</label>
+                  <label className="text-white text-sm font-medium">{t('careers.form.cv')}</label>
                   <div className="flex items-center justify-center w-full">
                     <label className="flex flex-col items-center justify-center w-full h-32 border-2 border-white/20 border-dashed rounded-lg cursor-pointer bg-white/5 hover:bg-white/10">
                       <div className="flex flex-col items-center justify-center pt-5 pb-6">
@@ -930,7 +930,7 @@ export default function Home() {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-white text-sm font-medium">Mesajınız</label>
+                  <label className="text-white text-sm font-medium">{t('careers.form.coverLetter')}</label>
                   <textarea
                     className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 h-32 resize-none"
                     placeholder="Kendinizi tanıtın ve neden AOREN'de çalışmak istediğinizi belirtin"
@@ -942,7 +942,7 @@ export default function Home() {
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   <Send className="w-5 h-5" />
-                  Başvuruyu Gönder
+                  {t('careers.form.submit')}
                 </button>
               </form>
             </div>
@@ -976,106 +976,106 @@ export default function Home() {
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <LayoutDashboard className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Müvekkil Portalı</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('digital.services.clientPortal.title')}</h3>
               </div>
               <p className="text-gray-200 leading-relaxed">
-                Dosyalarınıza 7/24 erişim imkanı sağlayan özel portalımız ile tüm hukuki süreçlerinizi tek bir platformdan takip edebilirsiniz.
+                {t('digital.services.clientPortal.description')}
               </p>
-                              <ul className="mt-4 space-y-2">
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    Anlık dosya durumu takibi
-                  </li>
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    Belge arşivine kolay erişim
-                  </li>
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    Duruşma takvimi entegrasyonu
-                  </li>
-                </ul>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.clientPortal.features.0')}
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.clientPortal.features.1')}
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.clientPortal.features.2')}
+                </li>
+              </ul>
             </div>
 
             {/* Dijital İmza ve Belge Takibi */}
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <FileSignature className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Dijital İmza ve Belge Takibi</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('digital.services.digitalSignature.title')}</h3>
               </div>
               <p className="text-gray-200 leading-relaxed">
-                Güvenli elektronik imza sistemi ile belge onay süreçlerinizi hızlandırın, kağıt israfını önleyin.
+                {t('digital.services.digitalSignature.description')}
               </p>
-                              <ul className="mt-4 space-y-2">
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    E-imza entegrasyonu
-                  </li>
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    Otomatik versiyon kontrolü
-                  </li>
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    Gelişmiş belge güvenliği
-                  </li>
-                </ul>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.digitalSignature.features.0')}
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.digitalSignature.features.1')}
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.digitalSignature.features.2')}
+                </li>
+              </ul>
             </div>
 
             {/* Güvenli Mesajlaşma Sistemi */}
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <MessageSquare className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Güvenli Mesajlaşma Sistemi</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('digital.services.secureMessaging.title')}</h3>
               </div>
               <p className="text-gray-200 leading-relaxed">
-                Uçtan uca şifrelenmiş mesajlaşma sistemi ile güvenli iletişim sağlayın.
+                {t('digital.services.secureMessaging.description')}
               </p>
-                              <ul className="mt-4 space-y-2">
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    Anlık bildirimler
-                  </li>
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    Dosya paylaşımı
-                  </li>
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    Görüntülü görüşme desteği
-                  </li>
-                </ul>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.secureMessaging.features.0')}
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.secureMessaging.features.1')}
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.secureMessaging.features.2')}
+                </li>
+              </ul>
             </div>
 
             {/* Proaktif Süreç Yönetimi */}
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <GitBranch className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">Proaktif Süreç Yönetimi</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('digital.services.processManagement.title')}</h3>
               </div>
               <p className="text-gray-200 leading-relaxed">
-                Yapay zeka destekli süreç yönetimi ile olası riskleri önceden tespit edin.
+                {t('digital.services.processManagement.description')}
               </p>
-                              <ul className="mt-4 space-y-2">
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    Otomatik risk analizi
-                  </li>
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    Vade takip sistemi
-                  </li>
-                  <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                    Akıllı hatırlatmalar
-                  </li>
-                </ul>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.processManagement.features.0')}
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.processManagement.features.1')}
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
+                  {t('digital.services.processManagement.features.2')}
+                </li>
+              </ul>
             </div>
           </div>
 
           <div className="text-center">
             <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed italic">
-              Hukuki süreçlerinizi dijitalleştirirken, insan dokunuşundan ödün vermiyoruz.
+              {t('digital.quote')}
             </p>
           </div>
         </div>

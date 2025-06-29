@@ -173,22 +173,22 @@ const HeroSection: React.FC = () => {
       <BoxContainer>
         <InfoBox>
           <div>
-            <SloganTitle>YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN</SloganTitle>
-            <SloganSubtitle>"Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım"</SloganSubtitle>
+            <SloganTitle>{t('hero.team.title')}</SloganTitle>
+            <SloganSubtitle>{t('hero.team.subtitle')}</SloganSubtitle>
           </div>
           <ActionButton onClick={() => handleNavigation('/employees')}>{t('header.team')}</ActionButton>
         </InfoBox>
         <InfoBox>
           <div>
-            <SloganTitle>BÖLGESEL DEĞİL, ULUSLARARASI DÜZEYDE HİZMET SUNUYORUZ</SloganTitle>
-            <SloganSubtitle>"Aynı Değerler, Farklı Şehirlerde"</SloganSubtitle>
+            <SloganTitle>{t('hero.offices.title')}</SloganTitle>
+            <SloganSubtitle>{t('hero.offices.subtitle')}</SloganSubtitle>
           </div>
           <ActionButton onClick={() => handleNavigation('/ofislerimiz')}>{t('header.offices')}</ActionButton>
         </InfoBox>
         <InfoBox>
           <div>
-            <SloganTitle>KAPSAMLI HUKUKİ ÇÖZÜM ALANLARIMIZI İNCELEYİN</SloganTitle>
-            <SloganSubtitle>"Hukukun Tüm Alanlarında Yetkin Kadro, Bütünleşik Yaklaşım"</SloganSubtitle>
+            <SloganTitle>{t('hero.expertise.title')}</SloganTitle>
+            <SloganSubtitle>{t('hero.expertise.subtitle')}</SloganSubtitle>
           </div>
           <ActionButton onClick={() => handleNavigation('/uzmanlik-alanlari')}>{t('header.expertise')}</ActionButton>
         </InfoBox>

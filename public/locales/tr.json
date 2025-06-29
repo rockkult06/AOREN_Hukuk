@@ -17,12 +17,18 @@
     "description": "Deneyimli avukat kadromuz ile hukuki ihtiyaçlarınıza en iyi çözümleri sunuyoruz. Ticaret, iş, aile ve ceza hukuku alanlarında uzman ekibimizle yanınızdayız.",
     "getStarted": "Hemen Başlayın",
     "learnMore": "Daha Fazla Bilgi",
-    "slogan1": "YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN",
-    "slogan1Sub": "Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım",
-    "slogan2": "BÖLGESEL DEĞİL, ULUSLARARASI DÜZEYDE HİZMET SUNUYORUZ",
-    "slogan2Sub": "Aynı Değerler, Farklı Şehirlerde",
-    "slogan3": "KAPSAMLI HUKUKİ ÇÖZÜM ALANLARIMIZI İNCELEYİN",
-    "slogan3Sub": "Hukukun Tüm Alanlarında Yetkin Kadro, Bütünleşik Yaklaşım"
+    "team": {
+      "title": "YÜKSEK ETKİ YARATAN HUKUK KADROMUZLA TANIŞIN",
+      "subtitle": "\"Stratejik Düşünen Avukatlar. Disiplinlerarası Yaklaşım\""
+    },
+    "offices": {
+      "title": "BÖLGESEL DEĞİL, ULUSLARARASI DÜZEYDE HİZMET SUNUYORUZ",
+      "subtitle": "\"Aynı Değerler, Farklı Şehirlerde\""
+    },
+    "expertise": {
+      "title": "KAPSAMLI HUKUKİ ÇÖZÜM ALANLARIMIZI İNCELEYİN",
+      "subtitle": "\"Hukukun Tüm Alanlarında Yetkin Kadro, Bütünleşik Yaklaşım\""
+    }
   },
   "team": {
     "title": "Ekibimiz",
@@ -261,7 +267,7 @@
     "title": "AOREN Dijital Hizmetleri",
     "subtitle": "Teknoloji ile hukuki çözümler",
     "description": "Teknoloji, bizim için sadece bir araç değil, hizmetimizin ayrılmaz bir parçasıdır.",
-    "bottomText": "Hukuki süreçlerinizi dijitalleştirirken, insan dokunuşundan ödün vermiyoruz.",
+    "quote": "Hukuki süreçlerinizi dijitalleştirirken, insan dokunuşundan ödün vermiyoruz.",
     "services": {
       "clientPortal": {
         "title": "Müvekkil Portalı",
@@ -281,7 +287,7 @@
           "Gelişmiş belge güvenliği"
         ]
       },
-      "messaging": {
+      "secureMessaging": {
         "title": "Güvenli Mesajlaşma Sistemi",
         "description": "Uçtan uca şifrelenmiş mesajlaşma sistemi ile güvenli iletişim sağlayın.",
         "features": [

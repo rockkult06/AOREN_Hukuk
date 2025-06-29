@@ -17,12 +17,18 @@
     "description": "With our experienced team of lawyers, we provide the best solutions to your legal needs. We are with you with our expert team in commercial, labor, family and criminal law.",
     "getStarted": "Get Started",
     "learnMore": "Learn More",
-    "slogan1": "MEET OUR HIGH-IMPACT LEGAL TEAM",
-    "slogan1Sub": "Strategic Thinking Lawyers. Interdisciplinary Approach",
-    "slogan2": "WE PROVIDE SERVICES NOT REGIONALLY, BUT INTERNATIONALLY",
-    "slogan2Sub": "Same Values, Different Cities",
-    "slogan3": "EXPLORE OUR COMPREHENSIVE LEGAL SOLUTION AREAS",
-    "slogan3Sub": "Competent Staff in All Areas of Law, Integrated Approach"
+    "team": {
+      "title": "MEET OUR HIGH-IMPACT LEGAL TEAM",
+      "subtitle": "\"Strategic Thinking Lawyers. Interdisciplinary Approach\""
+    },
+    "offices": {
+      "title": "WE PROVIDE SERVICES NOT REGIONALLY, BUT INTERNATIONALLY",
+      "subtitle": "\"Same Values, Different Cities\""
+    },
+    "expertise": {
+      "title": "EXPLORE OUR COMPREHENSIVE LEGAL SOLUTION AREAS",
+      "subtitle": "\"Competent Staff in All Areas of Law, Integrated Approach\""
+    }
   },
   "team": {
     "title": "Our Team",
@@ -261,7 +267,7 @@
     "title": "AOREN Digital Services",
     "subtitle": "Legal solutions with technology",
     "description": "Technology is not just a tool for us, it is an integral part of our service.",
-    "bottomText": "While digitalizing your legal processes, we do not compromise on the human touch.",
+    "quote": "While digitalizing your legal processes, we do not compromise on the human touch.",
     "services": {
       "clientPortal": {
         "title": "Client Portal",
@@ -281,7 +287,7 @@
           "Advanced document security"
         ]
       },
-      "messaging": {
+      "secureMessaging": {
         "title": "Secure Messaging System",
         "description": "Ensure secure communication with end-to-end encrypted messaging system.",
         "features": [
