@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, Search, User, Lock, Users, Scale, Info, Building, Newspaper, Computer, Heart, Briefcase, Mail, Globe } from "lucide-react"
+import { Menu, Search, User, Lock, Users, Scale, Info, Building, Newspaper, Computer, Heart, Briefcase, Mail, Globe, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Input } from "@/components/ui/input"
@@ -76,6 +76,9 @@ export default function Header() {
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: 'smooth' })
       }
+    } else if (href === '/impressum') {
+      // Impressum sayfasına git
+      window.location.href = href
     } else {
       // Diğer sayfalar için normal navigasyon
       window.location.href = href
@@ -91,6 +94,7 @@ export default function Header() {
     { name: t('header.responsibility'), href: "/sosyal-sorumluluk", icon: Heart },
     { name: t('header.careers'), href: "/kariyer", icon: Briefcase },
     { name: t('header.contact'), href: "/iletisim", icon: Mail },
+    ...(language === 'de' ? [{ name: 'Impressum', href: "/impressum", icon: FileText }] : []),
   ]
 
   return (
