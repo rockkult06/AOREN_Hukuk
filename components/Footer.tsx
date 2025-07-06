@@ -96,18 +96,26 @@ const Footer: React.FC = () => {
       <FooterContent>
         <FooterSection style={{gridColumn: '1/2'}}>
           <BarLogoRow>
-            <BarLogoBox>
-              <Image src="/f1.jpg" alt="RAK Stuttgart" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
-            </BarLogoBox>
-            <BarLogoBox>
-              <Image src="/f2.jpg" alt="CCBE" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
-            </BarLogoBox>
-            <BarLogoBox>
-              <Image src="/f3.jpg" alt="IBA" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
-            </BarLogoBox>
-            <BarLogoBox>
-              <Image src="/f4.jpg" alt="Ankara Barosu" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
-            </BarLogoBox>
+            <a href="https://rak-stuttgart.de/" target="_blank" rel="noopener noreferrer">
+              <BarLogoBox>
+                <Image src="/f1.jpg" alt="RAK Stuttgart" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+              </BarLogoBox>
+            </a>
+            <a href="https://www.ccbe.eu/" target="_blank" rel="noopener noreferrer">
+              <BarLogoBox>
+                <Image src="/f2.jpg" alt="CCBE" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+              </BarLogoBox>
+            </a>
+            <a href="https://www.ibanet.org/" target="_blank" rel="noopener noreferrer">
+              <BarLogoBox>
+                <Image src="/f3.jpg" alt="IBA" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+              </BarLogoBox>
+            </a>
+            <a href="https://www.ankarabarosu.org.tr/" target="_blank" rel="noopener noreferrer">
+              <BarLogoBox>
+                <Image src="/f4.jpg" alt="Ankara Barosu" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+              </BarLogoBox>
+            </a>
           </BarLogoRow>
           <h3>{t('footer.company.title')}</h3>
           <p>
