@@ -3,6 +3,7 @@
 import type React from "react"
 import styled from "styled-components"
 import { useLanguage } from "@/contexts/LanguageContext"
+import Image from "next/image"
 
 const FooterContainer = styled.footer`
   background-color: #222;
@@ -62,13 +63,52 @@ const Copyright = styled.div`
   font-size: 0.85em;
 `
 
+const BarLogoRow = styled.div`
+  display: flex;
+  gap: 18px;
+  margin-bottom: 32px;
+  align-items: center;
+`;
+
+const BarLogoBox = styled.div`
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid rgba(255,255,255,0.25);
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 0 4px 24px 0 rgba(222,165,130,0.18);
+  }
+`;
+
 const Footer: React.FC = () => {
   const { t } = useLanguage()
 
   return (
     <FooterContainer>
       <FooterContent>
-        <FooterSection>
+        <FooterSection style={{gridColumn: '1/2'}}>
+          <BarLogoRow>
+            <BarLogoBox>
+              <Image src="/f1.jpg" alt="RAK Stuttgart" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+            </BarLogoBox>
+            <BarLogoBox>
+              <Image src="/f2.jpg" alt="CCBE" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+            </BarLogoBox>
+            <BarLogoBox>
+              <Image src="/f3.jpg" alt="IBA" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+            </BarLogoBox>
+            <BarLogoBox>
+              <Image src="/f4.jpg" alt="Ankara Barosu" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+            </BarLogoBox>
+          </BarLogoRow>
           <h3>{t('footer.company.title')}</h3>
           <p>
             {t('footer.company.description')}
