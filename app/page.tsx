@@ -381,25 +381,25 @@ const getExpertiseData = (t: any) => [
     ]
   },
   {
-    title: t('expertise.areas.compliance.title'),
-    subtitle: t('expertise.areas.compliance.subtitle'),
-    description: t('expertise.areas.compliance.description'),
+    title: t('expertise.areas.health.title'),
+    subtitle: t('expertise.areas.health.subtitle'),
+    description: t('expertise.areas.health.description'),
     services: [
-      t('expertise.areas.compliance.services.1'),
-      t('expertise.areas.compliance.services.2'),
-      t('expertise.areas.compliance.services.3'),
-      t('expertise.areas.compliance.services.4')
+      t('expertise.areas.health.services.1'),
+      t('expertise.areas.health.services.2'),
+      t('expertise.areas.health.services.3'),
+      t('expertise.areas.health.services.4')
     ]
   },
   {
-    title: t('expertise.areas.finance.title'),
-    subtitle: t('expertise.areas.finance.subtitle'),
-    description: t('expertise.areas.finance.description'),
+    title: t('expertise.areas.documents.title'),
+    subtitle: t('expertise.areas.documents.subtitle'),
+    description: t('expertise.areas.documents.description'),
     services: [
-      t('expertise.areas.finance.services.1'),
-      t('expertise.areas.finance.services.2'),
-      t('expertise.areas.finance.services.3'),
-      t('expertise.areas.finance.services.4')
+      t('expertise.areas.documents.services.1'),
+      t('expertise.areas.documents.services.2'),
+      t('expertise.areas.documents.services.3'),
+      t('expertise.areas.documents.services.4')
     ]
   }
 ]

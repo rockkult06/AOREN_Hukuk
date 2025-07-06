@@ -175,26 +175,26 @@
            "4": "Personal security and threat management"
          }
        },
-       "compliance": {
-         "title": "Compliance and Risk Management",
-         "subtitle": "Legal compliance is not just an obligation; it is a competitive advantage.",
-         "description": "AOREN develops holistic solutions for corporate structures including ethical compliance policies, internal audit systems, KVKK and GDPR processes, external notification mechanisms and anti-corruption protocols.\n\nWe support the sustainability of your company by detecting risks in advance and providing preventive legal framework.",
+       "health": {
+         "title": "Health Law",
+         "subtitle": "The legal dimension of medical processes requires high expertise and sensitivity.",
+         "description": "As AOREN Legal Services, we provide comprehensive consultancy and representation services to our individual and corporate clients in the field of health law. We develop solution-oriented approaches in all kinds of disputes that may arise with private hospitals, medical centers, healthcare workers and patients.\n\nWe provide support especially in the following areas:\n\n• Medical malpractice cases\n• Patient rights violations and medical negligence claims\n• Compensation processes after aesthetic interventions\n• International health insurance and social security disputes\n• Contracts and legal responsibilities within the scope of health tourism\n\nThanks to our strategic defense system supported by medical expert opinions, we protect our clients' rights at the highest level.",
          "services": {
-           "1": "KVKK and GDPR compliance audits",
-           "2": "Ethics policies and workplace internal regulations",
-           "3": "External notification/whistleblower systems",
-           "4": "Regulation tracking and crisis management"
+           "1": "Medical malpractice cases",
+           "2": "Patient rights violations and medical negligence",
+           "3": "Compensation processes after aesthetic interventions",
+           "4": "International health insurance disputes"
          }
        },
-       "finance": {
-         "title": "Corporate Finance and Venture Capital",
-         "subtitle": "The legal dimension of financial decisions determines the future of your investment.",
-         "description": "AOREN provides comprehensive legal consultancy in private equity investments, venture capital funds, public offerings and international investment processes.\n\nWe make all processes compatible with your business strategy, from investor agreements to partnership structuring, from bank guarantee systems to capital market regulations.",
+       "documents": {
+         "title": "Official and Commercial Document Procurement & Apostille Services",
+         "subtitle": "The documents you need to ensure the legal validity of your international transactions are now more accessible.",
+         "description": "AOREN Legal Services accompanies you from start to finish in administrative processes such as official document procurement, notary approval, translation procedures and apostille certification. We develop time-saving solutions for both individual applications and commercial transactions.\n\nOur service scope:\n\n• Procurement of documents such as population registry records, court decisions, power of attorney\n• Notary certification and sworn translation procedures\n• Consular procedures and approval processes in foreign representations\n• Obtaining apostille within the scope of the Hague Convention\n• Multi-language document preparation (Turkish, German, English, French, etc.)\n\nWe serve with our digital-supported systems to provide the necessary documents for Turkish citizens living in Europe for their transactions in Turkey completely and quickly.\n\nTrust AOREN to prepare your documents legally valid, linguistically correct and in accordance with international standards.",
          "services": {
-           "1": "Venture capital and investment round consultancy",
-           "2": "Banking contracts and collateral structures",
-           "3": "IPO and Borsa Istanbul transactions",
-           "4": "Financial restructuring"
+           "1": "Official document procurement and notary approval",
+           "2": "Sworn translation and consular procedures",
+           "3": "Apostille certification",
+           "4": "Multi-language document preparation"
          }
        }
      }

@@ -175,26 +175,26 @@
           "4": "Persönliche Sicherheit und Bedrohungsmanagement"
         }
       },
-      "compliance": {
-        "title": "Compliance und Risikomanagement",
-        "subtitle": "Rechtliche Compliance ist nicht nur eine Verpflichtung; sie ist ein Wettbewerbsvorteil.",
-        "description": "AOREN entwickelt ganzheitliche Lösungen für Unternehmensstrukturen, einschließlich ethischer Compliance-Richtlinien, interne Auditsysteme, KVKK- und GDPR-Prozesse, externe Meldemechanismen und Anti-Korruptions-Protokolle.\n\nWir unterstützen die Nachhaltigkeit Ihres Unternehmens, indem wir Risiken im Voraus erkennen und präventive rechtliche Rahmen bereitstellen.",
+      "health": {
+        "title": "Gesundheitsrecht",
+        "subtitle": "Die rechtliche Dimension medizinischer Prozesse erfordert hohe Expertise und Sensibilität.",
+        "description": "Als AOREN Legal Services bieten wir unseren privaten und gewerblichen Mandanten umfassende Beratungs- und Vertretungsdienstleistungen im Bereich Gesundheitsrecht. Wir entwickeln lösungsorientierte Ansätze bei allen Arten von Streitigkeiten, die mit Privatkliniken, medizinischen Zentren, Gesundheitspersonal und Patienten entstehen können.\n\nWir bieten Unterstützung insbesondere in folgenden Bereichen:\n\n• Medizinische Behandlungsfehler-Fälle\n• Patientenrechtsverletzungen und medizinische Fahrlässigkeitsansprüche\n• Entschädigungsprozesse nach ästhetischen Eingriffen\n• Internationale Krankenversicherungs- und Sozialversicherungsstreitigkeiten\n• Verträge und rechtliche Verantwortlichkeiten im Rahmen des Gesundheitstourismus\n\nDank unseres strategischen Verteidigungssystems, das durch medizinische Expertenmeinungen unterstützt wird, schützen wir die Rechte unserer Mandanten auf höchstem Niveau.",
         "services": {
-          "1": "KVKK- und GDPR-Compliance-Audits",
-          "2": "Ethik-Richtlinien und Arbeitsplatz-Innenverordnungen",
-          "3": "Externe Melde-/Whistleblower-Systeme",
-          "4": "Regulierungsverfolgung und Krisenmanagement"
+          "1": "Medizinische Behandlungsfehler-Fälle",
+          "2": "Patientenrechtsverletzungen und medizinische Fahrlässigkeit",
+          "3": "Entschädigungsprozesse nach ästhetischen Eingriffen",
+          "4": "Internationale Krankenversicherungsstreitigkeiten"
         }
       },
-      "finance": {
-        "title": "Unternehmensfinanzierung und Risikokapital",
-        "subtitle": "Die rechtliche Dimension finanzieller Entscheidungen bestimmt die Zukunft Ihrer Investition.",
-        "description": "AOREN bietet umfassende Rechtsberatung bei Private-Equity-Investitionen, Risikokapitalfonds, Börsengängen und internationalen Investitionsprozessen.\n\nWir machen alle Prozesse mit Ihrer Geschäftsstrategie kompatibel, von Investorenverträgen bis zur Partnerschaftsstrukturierung, von Bankengarantiesystemen bis zu Kapitalmarktregulierungen.",
+      "documents": {
+        "title": "Amtliche und Handelsdokumenten-Beschaffung & Apostille-Dienste",
+        "subtitle": "Die Dokumente, die Sie für die rechtliche Gültigkeit Ihrer internationalen Transaktionen benötigen, sind jetzt zugänglicher.",
+        "description": "AOREN Legal Services begleitet Sie von Anfang bis Ende bei Verwaltungsprozessen wie amtliche Dokumentenbeschaffung, Notar-Genehmigung, Übersetzungsverfahren und Apostille-Zertifizierung. Wir entwickeln zeitsparende Lösungen für sowohl individuelle Anträge als auch gewerbliche Transaktionen.\n\nUnser Dienstleistungsumfang:\n\n• Beschaffung von Dokumenten wie Melderegisterauszüge, Gerichtsurteile, Vollmachten\n• Notar-Zertifizierung und vereidigte Übersetzungsverfahren\n• Konsularverfahren und Genehmigungsprozesse in ausländischen Vertretungen\n• Erhalt der Apostille im Rahmen der Haager Konvention\n• Mehrsprachige Dokumentenvorbereitung (Türkisch, Deutsch, Englisch, Französisch, etc.)\n\nWir dienen mit unseren digital unterstützten Systemen, um die notwendigen Dokumente für in Europa lebende türkische Staatsbürger für ihre Transaktionen in der Türkei vollständig und schnell bereitzustellen.\n\nVertrauen Sie AOREN, um Ihre Dokumente rechtlich gültig, sprachlich korrekt und in Übereinstimmung mit internationalen Standards vorzubereiten.",
         "services": {
-          "1": "Risikokapital- und Investitionsrunden-Beratung",
-          "2": "Bankverträge und Sicherheitsstrukturen",
-          "3": "Börsengang und Borsa Istanbul-Transaktionen",
-          "4": "Finanzielle Umstrukturierung"
+          "1": "Amtliche Dokumentenbeschaffung und Notar-Genehmigung",
+          "2": "Vereidigte Übersetzung und Konsularverfahren",
+          "3": "Apostille-Zertifizierung",
+          "4": "Mehrsprachige Dokumentenvorbereitung"
         }
       }
     }

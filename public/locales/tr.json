@@ -175,26 +175,26 @@
            "4": "Kişisel güvenlik ve tehdit yönetimi"
          }
        },
-       "compliance": {
-         "title": "Uyum ve Risk Yönetimi",
-         "subtitle": "Yasal uyum, yalnızca bir zorunluluk değil; rekabet avantajıdır.",
-         "description": "AOREN, kurumsal yapılar için etik uyum politikaları, iç denetim sistemleri, KVKK ve GDPR süreçleri, harici bildirim mekanizmaları ve yolsuzlukla mücadele protokollerini içeren bütüncül çözümler geliştirir.\n\nRiskleri önceden tespit edip önleyici hukuki çerçeve sunarak, şirketinizin sürdürülebilirliğini destekliyoruz.",
+       "health": {
+         "title": "Sağlık Hukuku",
+         "subtitle": "Tıbbi süreçlerin hukuki boyutu yüksek uzmanlık ve hassasiyet gerektirir.",
+         "description": "AOREN Legal Services olarak, bireysel ve kurumsal müvekkillerimize sağlık hukuku alanında kapsamlı danışmanlık ve temsil hizmetleri sunuyoruz. Özel hastaneler, tıp merkezleri, sağlık çalışanları ve hastalar nezdinde doğabilecek her türlü uyuşmazlıkta çözüm odaklı yaklaşımlar geliştiriyoruz.\n\nÖzellikle aşağıdaki konularda destek sağlıyoruz:\n\n• Medikal malpraktis davaları\n• Hasta hakları ihlalleri ve tıbbi ihmal iddiaları\n• Estetik müdahaleler sonrası tazminat süreçleri\n• Uluslararası sağlık sigortası ve sosyal güvenlik uyuşmazlıkları\n• Sağlık turizmi kapsamındaki sözleşmeler ve hukuki sorumluluklar\n\nTıbbi uzman görüşleriyle desteklenen stratejik savunma sistemimiz sayesinde, müvekkillerimizin haklarını en yüksek düzeyde koruyoruz.",
          "services": {
-           "1": "KVKK ve GDPR uyum denetimleri",
-           "2": "Etik politika ve işyeri iç tüzükleri",
-           "3": "Harici bildirim/whistleblower sistemleri",
-           "4": "Regülasyon takibi ve kriz yönetimi"
+           "1": "Medikal malpraktis davaları",
+           "2": "Hasta hakları ihlalleri ve tıbbi ihmal",
+           "3": "Estetik müdahaleler sonrası tazminat süreçleri",
+           "4": "Uluslararası sağlık sigortası uyuşmazlıkları"
          }
        },
-       "finance": {
-         "title": "Kurumsal Finansman ve Girişim Sermayesi",
-         "subtitle": "Finansal kararların hukuki boyutu, yatırımınızın geleceğini belirler.",
-         "description": "AOREN, özel sermaye yatırımları, girişim sermayesi fonları, halka arzlar ve uluslararası yatırım süreçlerinde kapsamlı hukuki danışmanlık sunar.\n\nYatırımcı sözleşmelerinden ortaklık yapılandırmalarına, banka teminat sistemlerinden sermaye piyasası regülasyonlarına kadar tüm süreçleri iş stratejinizle uyumlu hale getiririz.",
+       "documents": {
+         "title": "Resmi ve Ticari Belge Temini & Apostil Hizmetleri",
+         "subtitle": "Uluslararası işlemlerinizin yasal geçerliliğini sağlamak için ihtiyaç duyduğunuz belgeler artık daha erişilebilir.",
+         "description": "AOREN Legal Services, resmi belge temini, noter onayı, tercüme işlemleri ve apostil sertifikasyonu gibi idari süreçlerde size baştan sona eşlik eder. Hem bireysel başvurular hem de ticari işlemler için zaman kazandıran çözümler geliştiriyoruz.\n\nHizmet kapsamımız:\n\n• Nüfus kayıt örneği, mahkeme kararları, vekâletname gibi belgelerin temini\n• Noter tasdiki ve yeminli tercüme işlemleri\n• Konsolosluk işlemleri ve dış temsilciliklerde onay süreçleri\n• Lahey Konvansiyonu kapsamında apostil alınması\n• Çok dilli belge hazırlığı (Türkçe, Almanca, İngilizce, Fransızca vb.)\n\nAvrupa'da yaşayan Türk vatandaşlarının Türkiye'deki işlemleri için gerekli belgeleri eksiksiz ve hızlı bir şekilde ulaştırmak adına dijital destekli sistemlerimizle hizmet veriyoruz.\n\nBelgelerinizi hukuken geçerli, dil açısından doğru ve uluslararası standartlara uygun şekilde hazırlatmak için AOREN'e güvenin.",
          "services": {
-           "1": "Girişim sermayesi ve yatırım turu danışmanlığı",
-           "2": "Bankacılık sözleşmeleri ve teminat yapıları",
-           "3": "Halka arz ve Borsa İstanbul işlemleri",
-           "4": "Finansal yeniden yapılandırma"
+           "1": "Resmi belge temini ve noter onayı",
+           "2": "Yeminli tercüme ve konsolosluk işlemleri",
+           "3": "Apostil sertifikasyonu",
+           "4": "Çok dilli belge hazırlığı"
          }
        }
      }

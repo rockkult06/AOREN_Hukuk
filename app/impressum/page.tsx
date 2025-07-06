@@ -44,7 +44,7 @@ export default function ImpressumPage() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white">Anschrift der Hauptniederlassung:</h4>
-                  <p>Neckarstraße 155<br />70190 Stuttgart<br />Deutschland</p>
+                  <p>Friedrichstraße 15<br />70174 Stuttgart<br />Deutschland</p>
                 </div>
               </div>
             </div>
@@ -62,11 +62,11 @@ export default function ImpressumPage() {
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-[#DEA582] mr-3" />
-                  <span>E-Mail: info@aorenlegal.com</span>
+                  <span>E-Mail: info@aoren.eu</span>
                 </div>
                 <div className="flex items-center">
                   <Globe className="w-5 h-5 text-[#DEA582] mr-3" />
-                  <span>Website: www.aorenlegal.com</span>
+                  <span>Website: www.aoren.eu</span>
                 </div>
               </div>
             </div>
