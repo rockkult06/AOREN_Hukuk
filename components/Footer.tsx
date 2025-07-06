@@ -63,51 +63,30 @@ const Copyright = styled.div`
   font-size: 0.85em;
 `
 
-const BarLogoGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  justify-items: center;
+const BarLogoRow = styled.div`
+  display: flex;
+  gap: 18px;
+  margin-bottom: 32px;
   align-items: center;
-  margin-bottom: 40px;
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin-bottom: 24px;
-  }
-`
+`;
 
 const BarLogoBox = styled.div`
-  width: 80px;
-  height: 80px;
-  border-radius: 28px;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
   overflow: hidden;
   background: rgba(255,255,255,0.18);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.13);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgba(255,255,255,0.28);
+  border: 1.5px solid rgba(255,255,255,0.25);
   transition: box-shadow 0.2s;
   &:hover {
-    box-shadow: 0 6px 32px 0 rgba(222,165,130,0.22);
+    box-shadow: 0 4px 24px 0 rgba(222,165,130,0.18);
   }
-`
-
-const BarLogoColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-width: 200px;
-  @media (max-width: 900px) {
-    align-items: center;
-    min-width: unset;
-    width: 100%;
-    margin-bottom: 32px;
-  }
-`
+`;
 
 const Footer: React.FC = () => {
   const { t } = useLanguage()
@@ -115,24 +94,21 @@ const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <FooterContent>
-        <BarLogoColumn>
-          <BarLogoGrid>
-            <BarLogoBox>
-              <Image src="/f1.jpg" alt="RAK Stuttgart" width={64} height={64} style={{objectFit:'contain', borderRadius: '20px'}} />
-            </BarLogoBox>
-            <BarLogoBox>
-              <Image src="/f2.jpg" alt="CCBE" width={64} height={64} style={{objectFit:'contain', borderRadius: '20px'}} />
-            </BarLogoBox>
-            <BarLogoBox>
-              <Image src="/f3.jpg" alt="IBA" width={64} height={64} style={{objectFit:'contain', borderRadius: '20px'}} />
-            </BarLogoBox>
-            <BarLogoBox>
-              <Image src="/f4.jpg" alt="Ankara Barosu" width={64} height={64} style={{objectFit:'contain', borderRadius: '20px'}} />
-            </BarLogoBox>
-          </BarLogoGrid>
-        </BarLogoColumn>
-
         <FooterSection style={{gridColumn: '1/2'}}>
+          <BarLogoRow>
+            <BarLogoBox>
+              <Image src="/f1.jpg" alt="RAK Stuttgart" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+            </BarLogoBox>
+            <BarLogoBox>
+              <Image src="/f2.jpg" alt="CCBE" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+            </BarLogoBox>
+            <BarLogoBox>
+              <Image src="/f3.jpg" alt="IBA" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+            </BarLogoBox>
+            <BarLogoBox>
+              <Image src="/f4.jpg" alt="Ankara Barosu" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
+            </BarLogoBox>
+          </BarLogoRow>
           <h3>{t('footer.company.title')}</h3>
           <p>
             {t('footer.company.description')}
