@@ -438,7 +438,7 @@ export default function Home() {
       <HeroSection />
       
       {/* Ekibimiz Bölümü */}
-      <section id="team" className="min-h-screen py-20 px-2 md:px-0">
+      <section id="team" className="min-h-screen py-20 px-2 md:px-0 mt-16 md:mt-0">
         <div className="container mx-auto px-2 md:px-4">
           <div className="text-center mb-10 md:mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">{t('team.title')}</h2>
@@ -522,7 +522,7 @@ export default function Home() {
       </section>
 
       {/* Uzmanlık Alanlarımız Bölümü */}
-      <section id="expertise" className="min-h-screen relative py-20 px-2 md:px-0">
+      <section id="expertise" className="min-h-screen relative py-20 px-2 md:px-0 mt-16 md:mt-0">
         <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-10 md:mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">{t('expertise.title')}</h2>
@@ -561,7 +561,7 @@ export default function Home() {
       </section>
 
       {/* Hakkımızda Bölümü */}
-      <section id="about" className="min-h-screen relative py-20 px-2 md:px-0">
+      <section id="about" className="min-h-screen relative py-20 px-2 md:px-0 mt-16 md:mt-0">
         <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('about.title')}</h2>
@@ -634,7 +634,7 @@ export default function Home() {
       </section>
 
       {/* Ofislerimiz Bölümü */}
-      <section id="offices" className="min-h-screen relative py-20 px-2 md:px-0">
+      <section id="offices" className="min-h-screen relative py-20 px-2 md:px-0 mt-16 md:mt-0">
         <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('offices.title')}</h2>
@@ -732,7 +732,7 @@ export default function Home() {
       </section>
 
       {/* Kurumsal Sosyal Sorumluluk Bölümü */}
-      <section id="responsibility" className="min-h-screen relative py-20 px-2 md:px-0">
+      <section id="responsibility" className="min-h-screen relative py-20 px-2 md:px-0 mt-16 md:mt-0">
         <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('responsibility.title')}</h2>
@@ -794,7 +794,7 @@ export default function Home() {
       </section>
 
       {/* AOREN'de Kariyer Bölümü */}
-      <section id="careers" className="min-h-screen relative py-20 px-2 md:px-0">
+      <section id="careers" className="min-h-screen relative py-20 px-2 md:px-0 mt-16 md:mt-0">
         <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('careers.title')}</h2>
@@ -899,7 +899,7 @@ export default function Home() {
       </section>
 
       {/* AOREN Dijital Hizmetleri Bölümü */}
-      <section id="digital-services" className="min-h-screen relative py-20 px-2 md:px-0">
+      <section id="digital-services" className="min-h-screen relative py-20 px-2 md:px-0 mt-16 md:mt-0">
         <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('digital.title')}</h2>
@@ -1031,7 +1031,7 @@ export default function Home() {
       </section>
 
       {/* İletişim Bölümü */}
-      <section id="contact" className="min-h-screen relative py-20 px-2 md:px-0">
+      <section id="contact" className="min-h-screen relative py-20 px-2 md:px-0 mt-16 md:mt-0">
         <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('contact.title')}</h2>

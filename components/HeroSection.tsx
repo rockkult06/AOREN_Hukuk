@@ -28,114 +28,116 @@ const BoxContainer = styled.div`
   margin-top: 80px;
 
   @media (max-width: 1024px) {
-    gap: 30px;
+    gap: 24px;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 32px;
-    margin-top: 40px;
-    padding: 0 8px;
+    gap: 16px;
+    margin-top: 32px;
+    padding: 0 4px;
   }
 `
 
 const InfoBox = styled.div`
-  background-color: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(12px);
-  padding: 40px 24px;
-  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 18px 8px 20px 8px;
+  border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 360px;
-  min-height: 220px;
+  width: 340px;
+  max-width: 95vw;
+  min-height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.22);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+    border-radius: 14px;
   }
 
   @media (max-width: 768px) {
     width: 100%;
-    padding: 28px 10px 32px 10px;
-    min-height: auto;
-    border-radius: 16px;
+    max-width: 95vw;
+    padding: 12px 4px 14px 4px;
+    min-height: 80px;
+    border-radius: 10px;
     margin: 0 auto;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     &:hover {
-      border-radius: 18px;
+      border-radius: 12px;
     }
   }
 `
 
 const SloganTitle = styled.h2`
-  font-size: 1.3em;
-  margin-bottom: 16px;
+  font-size: 1.05em;
+  margin-bottom: 8px;
   color: white;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.2;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
 
   @media (max-width: 768px) {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    letter-spacing: 0.5px;
+    font-size: 0.98em;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
   }
 `
 
 const SloganSubtitle = styled.p`
-  font-size: 1em;
-  opacity: 0.95;
+  font-size: 0.92em;
+  opacity: 0.92;
   color: rgba(255, 255, 255, 0.9);
-  margin: 0 0 24px 0;
+  margin: 0 0 10px 0;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.4;
   font-style: italic;
 
   @media (max-width: 768px) {
-    font-size: 0.98em;
-    margin-bottom: 16px;
+    font-size: 0.89em;
+    margin-bottom: 8px;
   }
 `
 
 const ActionButton = styled.button`
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.12));
-  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.09));
+  border: 1px solid rgba(255, 255, 255, 0.22);
   color: white;
-  padding: 16px 0;
-  border-radius: 14px;
-  font-size: 1.05em;
-  font-weight: 700;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-size: 0.98em;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 6px;
 
   &:hover {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.13));
+    border-color: rgba(255, 255, 255, 0.32);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
   }
 
   @media (max-width: 768px) {
-    padding: 14px 0;
-    font-size: 1em;
-    border-radius: 12px;
-    margin-top: 8px;
+    padding: 7px 0;
+    font-size: 0.93em;
+    border-radius: 7px;
+    margin-top: 5px;
   }
 `
 

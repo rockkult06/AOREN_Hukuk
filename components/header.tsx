@@ -98,13 +98,13 @@ export default function Header() {
   ]
 
   return (
-    <header className={`fixed top-0 w-full transition-all duration-300 z-[100] ${
+    <header className={`fixed top-0 w-full transition-all duration-300 z-[9999] ${
       isScrolled 
         ? 'bg-white/90 backdrop-blur-md border-b border-gray-200' 
         : 'bg-transparent border-b border-white/20'
-    }`}>
+    }`} style={{position:'sticky'}}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-16 flex-col md:flex-row md:gap-0 gap-2 pt-2 md:pt-0">
+        <div className="flex items-center justify-between h-14 md:h-16 flex-col md:flex-row md:gap-0 gap-2 pt-2 md:pt-0">
           {/* Left - Logo */}
           <Link href="/" className="flex items-center hover:opacity-90 transition-opacity md:mb-0 mb-2">
             <div className="relative h-10 w-auto md:h-12">
