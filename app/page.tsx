@@ -1062,7 +1062,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>stuttgart@aorenlegal.com</p>
+                  <p>stuttgart@aoren.eu</p>
                 </div>
               </div>
             </div>
@@ -1084,7 +1084,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>istanbul@aorenlegal.com</p>
+                  <p>istanbul@aoren.eu</p>
                 </div>
               </div>
             </div>
@@ -1106,7 +1106,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>ankara@aorenlegal.com</p>
+                  <p>ankara@aoren.eu</p>
                 </div>
               </div>
             </div>
