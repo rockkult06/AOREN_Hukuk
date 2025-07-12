@@ -524,17 +524,7 @@ export default function Home() {
       </section>
 
       {/* Uzmanlık Alanlarımız Bölümü */}
-      <section id="expertise" className="min-h-screen relative py-20">
-        {/* Arkaplan Görseli */}
-        <div 
-          className="absolute inset-0 z-0" 
-          style={{
-            backgroundImage: 'url(/sp.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.3)',
-          }}
-        />
+      <section id="expertise" className="min-h-screen relative py-20 bg-[#2F2F31]">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('expertise.title')}</h2>
@@ -573,17 +563,7 @@ export default function Home() {
       </section>
 
       {/* Hakkımızda Bölümü */}
-      <section id="about" className="min-h-screen relative py-20">
-        {/* Arkaplan Görseli */}
-        <div 
-          className="absolute inset-0 z-0" 
-          style={{
-            backgroundImage: 'url(/ab.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.3)',
-          }}
-        />
+      <section id="about" className="min-h-screen relative py-20 bg-[#2F2F31]">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('about.title')}</h2>
@@ -656,17 +636,7 @@ export default function Home() {
       </section>
 
       {/* Ofislerimiz Bölümü */}
-      <section id="offices" className="min-h-screen relative py-20">
-        {/* Arkaplan Görseli */}
-        <div 
-          className="absolute inset-0 z-0" 
-          style={{
-            backgroundImage: 'url(/of.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.3)',
-          }}
-        />
+      <section id="offices" className="min-h-screen relative py-20 bg-[#2F2F31]">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('offices.title')}</h2>
@@ -764,17 +734,7 @@ export default function Home() {
       </section>
 
       {/* Kurumsal Sosyal Sorumluluk Bölümü */}
-      <section id="responsibility" className="min-h-screen relative py-20">
-        {/* Arkaplan Görseli */}
-        <div 
-          className="absolute inset-0 z-0" 
-          style={{
-            backgroundImage: 'url(/res.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.3)',
-          }}
-        />
+      <section id="responsibility" className="min-h-screen relative py-20 bg-[#2F2F31]">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('responsibility.title')}</h2>
@@ -836,17 +796,7 @@ export default function Home() {
       </section>
 
       {/* AOREN'de Kariyer Bölümü */}
-      <section id="careers" className="min-h-screen relative py-20">
-        {/* Arkaplan Görseli */}
-        <div 
-          className="absolute inset-0 z-0" 
-          style={{
-            backgroundImage: 'url(/kar.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.3)',
-          }}
-        />
+      <section id="careers" className="min-h-screen relative py-20 bg-[#2F2F31]">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('careers.title')}</h2>
@@ -951,18 +901,7 @@ export default function Home() {
       </section>
 
       {/* AOREN Dijital Hizmetleri Bölümü */}
-      <section id="digital-services" className="min-h-screen relative py-20">
-        {/* Arkaplan Görseli */}
-        <div 
-          className="absolute inset-0 z-0" 
-          style={{
-            backgroundImage: 'url(/digital.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.3)',
-          }}
-        />
-
+      <section id="digital-services" className="min-h-screen relative py-20 bg-[#2F2F31]">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('digital.title')}</h2>
@@ -976,124 +915,125 @@ export default function Home() {
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <LayoutDashboard className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">{t('digital.services.clientPortal.title')}</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('digital.services.portal.title')}</h3>
               </div>
-              <p className="text-gray-200 leading-relaxed">
-                {t('digital.services.clientPortal.description')}
+              <p className="text-gray-100 leading-relaxed mb-6">
+                {t('digital.services.portal.description')}
               </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.clientPortal.features.0')}
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.clientPortal.features.1')}
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.clientPortal.features.2')}
-                </li>
-              </ul>
+              <div className="space-y-3">
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.portal.features.caseTracking')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.portal.features.documentUpload')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.portal.features.communication')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.portal.features.payment')}</span>
+                </div>
+              </div>
             </div>
 
-            {/* Dijital İmza ve Belge Takibi */}
+            {/* E-İmza Hizmeti */}
             <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
               <div className="flex items-center mb-6">
                 <FileSignature className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">{t('digital.services.digitalSignature.title')}</h3>
+                <h3 className="text-2xl font-semibold text-white">{t('digital.services.eSignature.title')}</h3>
               </div>
-              <p className="text-gray-200 leading-relaxed">
-                {t('digital.services.digitalSignature.description')}
+              <p className="text-gray-100 leading-relaxed mb-6">
+                {t('digital.services.eSignature.description')}
               </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.digitalSignature.features.0')}
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.digitalSignature.features.1')}
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.digitalSignature.features.2')}
-                </li>
-              </ul>
-            </div>
-
-            {/* Güvenli Mesajlaşma Sistemi */}
-            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <MessageSquare className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">{t('digital.services.secureMessaging.title')}</h3>
+              <div className="space-y-3">
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.eSignature.features.legallyValid')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.eSignature.features.secure')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.eSignature.features.fast')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.eSignature.features.trackable')}</span>
+                </div>
               </div>
-              <p className="text-gray-200 leading-relaxed">
-                {t('digital.services.secureMessaging.description')}
-              </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.secureMessaging.features.0')}
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.secureMessaging.features.1')}
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.secureMessaging.features.2')}
-                </li>
-              </ul>
-            </div>
-
-            {/* Proaktif Süreç Yönetimi */}
-            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <GitBranch className="w-12 h-12 text-[#DEA582] mr-4" />
-                <h3 className="text-2xl font-semibold text-white">{t('digital.services.processManagement.title')}</h3>
-              </div>
-              <p className="text-gray-200 leading-relaxed">
-                {t('digital.services.processManagement.description')}
-              </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.processManagement.features.0')}
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.processManagement.features.1')}
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-2" />
-                  {t('digital.services.processManagement.features.2')}
-                </li>
-              </ul>
             </div>
           </div>
 
-          <div className="text-center">
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed italic">
-              {t('digital.quote')}
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Online Danışmanlık */}
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <MessageSquare className="w-12 h-12 text-[#DEA582] mr-4" />
+                <h3 className="text-2xl font-semibold text-white">{t('digital.services.consultation.title')}</h3>
+              </div>
+              <p className="text-gray-100 leading-relaxed mb-6">
+                {t('digital.services.consultation.description')}
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.consultation.features.videoCall')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.consultation.features.secure')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.consultation.features.flexible')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.consultation.features.recorded')}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Dijital Dönüşüm Danışmanlığı */}
+            <div className="bg-black/30 backdrop-blur-[10px] rounded-[20px] border border-white/20 p-8 hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <GitBranch className="w-12 h-12 text-[#DEA582] mr-4" />
+                <h3 className="text-2xl font-semibold text-white">{t('digital.services.transformation.title')}</h3>
+              </div>
+              <p className="text-gray-100 leading-relaxed mb-6">
+                {t('digital.services.transformation.description')}
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.transformation.features.strategy')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.transformation.features.implementation')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.transformation.features.training')}</span>
+                </div>
+                <div className="flex items-center text-gray-300">
+                  <CheckCircle className="w-5 h-5 text-[#DEA582] mr-3" />
+                  <span>{t('digital.services.transformation.features.support')}</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* İletişim Bölümü */}
-      <section id="contact" className="min-h-screen relative py-20">
-        {/* Arkaplan Görseli */}
-        <div 
-          className="absolute inset-0 z-0" 
-          style={{
-            backgroundImage: 'url(/contact.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.3)',
-          }}
-        />
-
+      <section id="contact" className="min-h-screen relative py-20 bg-[#2F2F31]">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('contact.title')}</h2>
