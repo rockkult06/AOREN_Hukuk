@@ -54,7 +54,7 @@ export default function Header() {
       }
     } else if (href === '/sosyal-sorumluluk') {
       // Ana sayfadaki kurumsal sosyal sorumluluk bölümüne scroll yap
-      const socialSection = document.getElementById('social-responsibility')
+      const socialSection = document.getElementById('responsibility')
       if (socialSection) {
         socialSection.scrollIntoView({ behavior: 'smooth' })
       }
