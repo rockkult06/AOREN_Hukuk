@@ -137,7 +137,7 @@ const Footer: React.FC = () => {
             <strong>{t('footer.contact.fax')}:</strong> +90 312 123 45 68
           </p>
           <p>
-            <strong>{t('footer.contact.email')}:</strong> info@aoren.com.tr
+            <strong>{t('footer.contact.email')}:</strong> info@aoren.eu
           </p>
           <p>
             <strong>{t('footer.contact.hours')}:</strong>
