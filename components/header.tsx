@@ -138,37 +138,42 @@ export default function Header() {
   ]
 
   return (
-    <header className={`fixed top-0 w-full transition-all duration-300 z-[9999] ${
-      isScrolled 
-        ? 'bg-white/90 backdrop-blur-md border-b border-gray-200' 
-        : 'bg-transparent border-b border-white/20'
-    }`} style={{position:'sticky'}}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14 md:h-16 flex-col md:flex-row md:gap-0 gap-2 pt-2 md:pt-0">
-          {/* Left - Logo */}
-          <Link href="/" className="flex items-center hover:opacity-90 transition-opacity md:mb-0 mb-2">
-            <div className="relative h-10 w-auto md:h-12">
+    <header
+      className={`fixed top-0 w-full transition-all duration-300 z-[9999] ${
+        isScrolled
+          ? 'bg-white/95 shadow-md border-b border-gray-200'
+          : 'bg-white/90 shadow-md border-b border-white/20'
+      }`}
+      style={{ position: 'sticky' }}
+    >
+      <div className="container mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-12 md:h-16 gap-2 md:gap-0">
+          {/* Sol: Logo */}
+          <Link href="/" className="flex items-center min-w-[90px]">
+            <div className="relative h-8 w-auto md:h-12">
               <Image
                 src={isScrolled ? "/aoren-logo1.png" : "/aoren-logo.png"}
                 alt="AOREN Logo"
-                width={120}
-                height={40}
-                className="h-10 w-auto object-contain transition-all duration-300 md:h-12"
+                width={90}
+                height={32}
+                className="h-8 w-auto object-contain transition-all duration-300 md:h-12"
                 priority
               />
             </div>
           </Link>
-
-          {/* Center - Menu Button (Büyük) */}
-          <div className="flex-1 flex justify-center md:justify-center w-full md:w-auto">
+          {/* Orta: Menü Butonu */}
+          <div className="flex-1 flex items-center justify-start md:justify-center">
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
-                <Button 
-                  variant="ghost" 
-                  className={`px-8 py-3 text-lg font-medium z-[110] relative ${isScrolled ? 'text-gray-700 hover:text-[#DEA582]' : 'text-white hover:text-[#D29F91]'} md:mt-0 mt-1`}
+                <Button
+                  variant="ghost"
+                  className={`px-3 py-2 text-base font-medium z-[110] relative ${
+                    isScrolled ? 'text-gray-700 hover:text-[#DEA582]' : 'text-gray-700 hover:text-[#D29F91]'
+                  } md:mt-0 mt-0`}
+                  style={{ minWidth: 44 }}
                 >
-                  <Menu className="h-6 w-6 mr-3" />
-                  Menu
+                  <Menu className="h-6 w-6 mr-1" />
+                  <span className="hidden xs:inline">Menu</span>
                 </Button>
               </SheetTrigger>
               <SheetContent 
@@ -230,41 +235,23 @@ export default function Header() {
               </SheetContent>
             </Sheet>
           </div>
-
-          {/* Right Side - Search, User, Language */}
-          <div className="flex items-center space-x-2 md:space-x-4 w-full md:w-auto justify-end md:justify-end mt-2 md:mt-0">
-            {/* Search Bar */}
-            <div className="hidden lg:flex items-center relative">
-              <Search className={`absolute left-3 h-4 w-4 ${isScrolled ? 'text-gray-400' : 'text-white/60'}`} />
-              <Input
-                type="search"
-                placeholder={t('header.search')}
-                className={`pl-10 w-64 ${
-                  isScrolled 
-                    ? 'bg-white border-gray-200 text-gray-900 placeholder:text-gray-500' 
-                    : 'bg-white/10 border-white/20 text-white placeholder:text-white/70'
-                }`}
-              />
-            </div>
-
-            {/* User Login - Kurumsal */}
-            <Button variant="ghost" className={`${isScrolled ? 'text-gray-700' : 'text-white'} md:mt-0 mt-1`}>
-              <Lock className="h-5 w-5 mr-2" />
-              <span className="font-medium">Kurumsal</span>
+          {/* Sağ: Kurumsal ve Dil Seçici */}
+          <div className="flex items-center space-x-1 md:space-x-4">
+            <Button variant="ghost" className={`${isScrolled ? 'text-gray-700' : 'text-gray-700'} px-2 py-2 text-base`} style={{ minWidth: 44 }}>
+              <Lock className="h-5 w-5 mr-1" />
+              <span className="hidden xs:inline font-medium">Kurumsal</span>
             </Button>
-
-            {/* Language Selector */}
-            <div className="flex items-center relative md:mt-0 mt-1">
-              <Globe className={`h-4 w-4 mr-2 ${isScrolled ? 'text-gray-700' : 'text-white'}`} />
+            <div className="flex items-center relative">
+              <Globe className={`h-4 w-4 mr-1 ${isScrolled ? 'text-gray-700' : 'text-gray-700'}`} />
               <Select value={language} onValueChange={(value: 'tr' | 'en' | 'de') => setLanguage(value)}>
-                <SelectTrigger className={`w-16 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
+                <SelectTrigger className={`w-12 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-gray-700'} text-base`}>
                   <SelectValue />
                 </SelectTrigger>
-                <SelectContent 
-                  position="popper" 
-                  side="bottom" 
+                <SelectContent
+                  position="popper"
+                  side="bottom"
                   align="end"
-                  className="min-w-[120px]"
+                  className="min-w-[90px]"
                 >
                   <SelectItem value="tr">TR</SelectItem>
                   <SelectItem value="en">EN</SelectItem>
