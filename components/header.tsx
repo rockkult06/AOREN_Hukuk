@@ -231,12 +231,16 @@ export default function Header() {
                               e.preventDefault();
                               return;
                             }
-                            // SPA scroll için hash güncelle
+                            // SPA scroll için: Sheet kapanınca scrollIntoView
                             if (sectionHash) {
-                              setTimeout(() => {
-                                window.location.hash = sectionHash;
-                              }, 250);
                               e.preventDefault();
+                              setTimeout(() => {
+                                const el = document.getElementById(sectionHash.replace('#',''));
+                                if (el) {
+                                  el.scrollIntoView({ behavior: 'smooth' });
+                                  window.location.hash = sectionHash;
+                                }
+                              }, 400);
                             }
                           }}
                           className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0 w-full text-left"
