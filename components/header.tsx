@@ -119,72 +119,80 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Hamburger Menu (Mobilde sağda) */}
-          <div className="flex lg:hidden">
+          {/* Center - Menu Button (Büyük) */}
+          <div className="flex-1 flex justify-center">
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
                 <Button 
                   variant="ghost" 
-                  className={`p-2 text-lg font-medium z-[110] relative ${isScrolled ? 'text-gray-700 hover:text-[#DEA582]' : 'text-white hover:text-[#D29F91]'}`}
+                  className={`px-8 py-3 text-lg font-medium z-[110] relative ${isScrolled ? 'text-gray-700 hover:text-[#DEA582]' : 'text-white hover:text-[#D29F91]'}`}
                 >
-                  <Menu className="h-7 w-7" />
+                  <Menu className="h-6 w-6 mr-3" />
+                  Menu
                 </Button>
               </SheetTrigger>
               <SheetContent 
                 side="left"
-                className="border-none bg-black/80 p-0 shadow-none fixed top-0 left-0 transition-all duration-500 ease-in-out z-[120] h-screen w-full flex flex-col"
+                className="border-none bg-transparent p-0 shadow-none fixed top-0 left-0 transition-all duration-500 ease-in-out opacity-0 data-[state=open]:opacity-100 data-[state=closed]:opacity-0 z-[120] h-screen w-full"
                 style={{ zIndex: 120 }}
               >
-                <div className="flex flex-col h-full justify-between">
-                  <div>
-                    {/* Menü başlığı ve kapat */}
-                    <div className="flex items-center justify-between px-6 pt-6 pb-2">
-                      <span className="text-2xl font-bold text-white">Menu</span>
-                      <button onClick={() => setIsMenuOpen(false)} className="text-white text-3xl">×</button>
-                    </div>
-                    {/* Menü öğeleri */}
-                    <div className="space-y-1 px-6 mt-4">
-                      {menuItems.map((item, index) => {
-                        const IconComponent = item.icon;
-                        return (
-                          <button
-                            key={item.name}
-                            onClick={() => handleMenuClick(item.href)}
-                            className="flex items-center gap-3 w-full py-3 px-2 rounded-lg text-white text-base font-medium hover:bg-white/20 transition-all"
-                          >
-                            <IconComponent className="w-5 h-5" />
-                            <span>{item.name}</span>
-                          </button>
-                        );
-                      })}
-                    </div>
+                {/* Buzlu Cam Menu Kartı */}
+                <div className="m-6 bg-white/15 backdrop-blur-[10px] rounded-[20px] border border-white/20 shadow-2xl p-6 w-80 transition-all duration-300 mt-20">
+                  {/* Menu Header */}
+                  <div className="mb-6">
+                    <h2 className="text-2xl font-bold text-white mb-2">Menu</h2>
+                    <div className="w-12 h-0.5 bg-blue-500"></div>
                   </div>
-                  {/* Alt kısım: Kurumsal ve Dil seçici */}
-                  <div className="px-6 pb-8 flex flex-col gap-4">
-                    <Button variant="outline" className="w-full text-white border-white/30 bg-white/10 hover:bg-white/20">
-                      <Lock className="h-5 w-5 mr-2" /> Kurumsal
-                    </Button>
-                    <div className="flex items-center justify-center gap-2">
-                      <Globe className="h-4 w-4 text-white" />
-                      <Select value={language} onValueChange={(value: 'tr' | 'en' | 'de') => setLanguage(value)}>
-                        <SelectTrigger className="w-16 border-none bg-transparent text-white">
-                          <SelectValue />
-                        </SelectTrigger>
-                        <SelectContent position="popper" side="bottom" align="end" className="min-w-[120px]">
-                          <SelectItem value="tr">TR</SelectItem>
-                          <SelectItem value="en">EN</SelectItem>
-                          <SelectItem value="de">DE</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
+
+                  {/* Menu Items */}
+                  <div className="space-y-1">
+                    {menuItems.map((item, index) => {
+                      const IconComponent = item.icon;
+                      return (
+                        <button
+                          key={item.name}
+                          onClick={() => handleMenuClick(item.href)}
+                          className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0 w-full text-left"
+                          style={{ 
+                            animationDelay: `${index * 50}ms`,
+                            animation: 'slideInLeft 0.6s ease-out forwards',
+                            textDecoration: 'none',
+                            borderBottom: 'none',
+                            border: 'none',
+                            background: 'transparent'
+                          }}
+                        >
+                          <div className="flex items-center gap-3">
+                            <IconComponent className="w-5 h-5 text-white group-hover:text-white transition-colors duration-200" />
+                            <span className="text-white text-base font-medium group-hover:text-white group-hover:text-lg transition-all duration-200" style={{textDecoration: 'none', borderBottom: 'none'}}>
+                              {item.name}
+                            </span>
+                          </div>
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
+
+                {/* Animation Keyframes */}
+                <style jsx>{`
+                  @keyframes slideInLeft {
+                    from {
+                      opacity: 0;
+                      transform: translateX(-20px);
+                    }
+                    to {
+                      opacity: 1;
+                      transform: translateX(0);
+                    }
+                  }
+                `}</style>
               </SheetContent>
             </Sheet>
           </div>
 
-          {/* Masaüstü Menü ve Aksiyonlar */}
-          <div className="hidden lg:flex items-center space-x-4 w-full justify-end">
+          {/* Right Side - Search, User, Language */}
+          <div className="flex items-center space-x-4">
             {/* Search Bar */}
             <div className="hidden lg:flex items-center relative">
               <Search className={`absolute left-3 h-4 w-4 ${isScrolled ? 'text-gray-400' : 'text-white/60'}`} />
@@ -198,8 +206,13 @@ export default function Header() {
                 }`}
               />
             </div>
+
             {/* User Login - Kurumsal */}
-            <Button variant="ghost" className={`${isScrolled ? 'text-gray-700' : 'text-white'}`}> <Lock className="h-5 w-5 mr-2" /> <span className="font-medium">Kurumsal</span> </Button>
+            <Button variant="ghost" className={`${isScrolled ? 'text-gray-700' : 'text-white'}`}>
+              <Lock className="h-5 w-5 mr-2" />
+              <span className="font-medium">Kurumsal</span>
+            </Button>
+
             {/* Language Selector */}
             <div className="flex items-center relative">
               <Globe className={`h-4 w-4 mr-2 ${isScrolled ? 'text-gray-700' : 'text-white'}`} />
@@ -207,7 +220,12 @@ export default function Header() {
                 <SelectTrigger className={`w-16 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
                   <SelectValue />
                 </SelectTrigger>
-                <SelectContent position="popper" side="bottom" align="end" className="min-w-[120px]">
+                <SelectContent 
+                  position="popper" 
+                  side="bottom" 
+                  align="end"
+                  className="min-w-[120px]"
+                >
                   <SelectItem value="tr">TR</SelectItem>
                   <SelectItem value="en">EN</SelectItem>
                   <SelectItem value="de">DE</SelectItem>

@@ -21,12 +21,6 @@ const FooterContent = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    padding: 0 6px;
-  }
 `
 
 const FooterSection = styled.div`
@@ -58,18 +52,6 @@ const FooterSection = styled.div`
       color: white;
     }
   }
-
-  @media (max-width: 768px) {
-    padding: 0 2px;
-    h3 {
-      font-size: 1.08em;
-      margin-bottom: 14px;
-    }
-    p, li {
-      font-size: 0.97em;
-      margin-bottom: 6px;
-    }
-  }
 `
 
 const Copyright = styled.div`
@@ -86,15 +68,7 @@ const BarLogoRow = styled.div`
   gap: 18px;
   margin-bottom: 32px;
   align-items: center;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 18px;
-  }
-`
+`;
 
 const BarLogoBox = styled.div`
   width: 60px;
