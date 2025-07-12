@@ -11,7 +11,7 @@ const FooterContainer = styled.footer`
   padding: 60px 40px 30px 40px;
 
   @media (max-width: 768px) {
-    padding: 40px 20px 20px 20px;
+    padding: 32px 8px 18px 8px;
   }
 `
 
@@ -21,6 +21,11 @@ const FooterContent = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 `
 
 const FooterSection = styled.div`
@@ -28,13 +33,22 @@ const FooterSection = styled.div`
     font-size: 1.2em;
     margin-bottom: 20px;
     color: white;
+    @media (max-width: 768px) {
+      font-size: 1.15em;
+      margin-bottom: 14px;
+    }
   }
 
   p, li {
-    font-size: 0.9em;
-    line-height: 1.6;
+    font-size: 0.98em;
+    line-height: 1.8;
     color: #ccc;
     margin-bottom: 8px;
+    @media (max-width: 768px) {
+      font-size: 1.08em;
+      line-height: 2.1;
+      margin-bottom: 6px;
+    }
   }
 
   ul {
@@ -47,10 +61,13 @@ const FooterSection = styled.div`
     color: #ccc;
     text-decoration: none;
     transition: color 0.3s ease;
-
     &:hover {
       color: white;
     }
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 10px;
   }
 `
 
@@ -61,6 +78,11 @@ const Copyright = styled.div`
   text-align: center;
   color: #999;
   font-size: 0.85em;
+  @media (max-width: 768px) {
+    font-size: 0.98em;
+    margin-top: 24px;
+    padding-top: 12px;
+  }
 `
 
 const BarLogoRow = styled.div`

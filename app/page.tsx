@@ -438,22 +438,22 @@ export default function Home() {
       <HeroSection />
       
       {/* Ekibimiz Bölümü */}
-      <section id="team" className="min-h-screen py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">{t('team.title')}</h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+      <section id="team" className="min-h-screen py-20 px-2 md:px-0">
+        <div className="container mx-auto px-2 md:px-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">{t('team.title')}</h2>
+            <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               {t('team.description')}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 max-w-6xl mx-auto">
             {/* İlk satır - 2 kişi */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:col-span-2">
               {employeesData.slice(0, 2).map((member, index) => (
                 <div 
                   key={index}
-                  className="bg-white/10 backdrop-blur-sm rounded-[20px] border border-white/20 shadow-lg p-8 hover:shadow-xl hover:bg-white/15 transition-all duration-300 cursor-pointer hover:scale-105"
+                  className="bg-white/10 backdrop-blur-sm rounded-2xl md:rounded-[20px] border border-white/20 shadow-lg p-5 md:p-8 hover:shadow-xl hover:bg-white/15 transition-all duration-300 cursor-pointer hover:scale-105"
                   onClick={() => setSelectedMember(index)}
                 >
                   <div className="flex flex-col items-center text-center">
@@ -488,7 +488,7 @@ export default function Home() {
               {employeesData.slice(2, 4).map((member, index) => (
                 <div 
                   key={index + 2}
-                  className="bg-white/10 backdrop-blur-sm rounded-[20px] border border-white/20 shadow-lg p-8 hover:shadow-xl hover:bg-white/15 transition-all duration-300 cursor-pointer hover:scale-105"
+                  className="bg-white/10 backdrop-blur-sm rounded-2xl md:rounded-[20px] border border-white/20 shadow-lg p-5 md:p-8 hover:shadow-xl hover:bg-white/15 transition-all duration-300 cursor-pointer hover:scale-105"
                   onClick={() => setSelectedMember(index + 2)}
                 >
                   <div className="flex flex-col items-center text-center">
@@ -522,23 +522,23 @@ export default function Home() {
       </section>
 
       {/* Uzmanlık Alanlarımız Bölümü */}
-      <section id="expertise" className="min-h-screen relative py-20">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">{t('expertise.title')}</h2>
-            <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed mb-8">
+      <section id="expertise" className="min-h-screen relative py-20 px-2 md:px-0">
+        <div className="container mx-auto px-2 md:px-4 relative z-10">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">{t('expertise.title')}</h2>
+            <p className="text-lg md:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed mb-4 md:mb-8">
               {t('expertise.description')}
             </p>
-            <p className="text-lg text-white/80 font-medium">
+            <p className="text-base md:text-lg text-white/80 font-medium">
               {t('expertise.subtitle')}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
             {expertiseData.map((expertise, index) => (
               <div 
                 key={index}
-                className="bg-white/15 backdrop-blur-[10px] rounded-[20px] border border-white/20 shadow-2xl p-8 hover:shadow-xl hover:bg-white/25 transition-all duration-300 hover:scale-105 cursor-pointer min-h-[220px] flex flex-col justify-between"
+                className="bg-white/15 backdrop-blur-[10px] rounded-2xl md:rounded-[20px] border border-white/20 shadow-2xl p-5 md:p-8 hover:shadow-xl hover:bg-white/25 transition-all duration-300 hover:scale-105 cursor-pointer min-h-[180px] md:min-h-[220px] flex flex-col justify-between"
                 onClick={() => setSelectedExpertise(index)}
               >
                 <div>
@@ -561,8 +561,8 @@ export default function Home() {
       </section>
 
       {/* Hakkımızda Bölümü */}
-      <section id="about" className="min-h-screen relative py-20">
-        <div className="container mx-auto px-4 relative z-10">
+      <section id="about" className="min-h-screen relative py-20 px-2 md:px-0">
+        <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('about.title')}</h2>
           </div>
@@ -634,8 +634,8 @@ export default function Home() {
       </section>
 
       {/* Ofislerimiz Bölümü */}
-      <section id="offices" className="min-h-screen relative py-20">
-        <div className="container mx-auto px-4 relative z-10">
+      <section id="offices" className="min-h-screen relative py-20 px-2 md:px-0">
+        <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('offices.title')}</h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
@@ -732,8 +732,8 @@ export default function Home() {
       </section>
 
       {/* Kurumsal Sosyal Sorumluluk Bölümü */}
-      <section id="responsibility" className="min-h-screen relative py-20">
-        <div className="container mx-auto px-4 relative z-10">
+      <section id="responsibility" className="min-h-screen relative py-20 px-2 md:px-0">
+        <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('responsibility.title')}</h2>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic">
@@ -794,8 +794,8 @@ export default function Home() {
       </section>
 
       {/* AOREN'de Kariyer Bölümü */}
-      <section id="careers" className="min-h-screen relative py-20">
-        <div className="container mx-auto px-4 relative z-10">
+      <section id="careers" className="min-h-screen relative py-20 px-2 md:px-0">
+        <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('careers.title')}</h2>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic mb-4">
@@ -899,8 +899,8 @@ export default function Home() {
       </section>
 
       {/* AOREN Dijital Hizmetleri Bölümü */}
-      <section id="digital-services" className="min-h-screen relative py-20">
-        <div className="container mx-auto px-4 relative z-10">
+      <section id="digital-services" className="min-h-screen relative py-20 px-2 md:px-0">
+        <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('digital.title')}</h2>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic">
@@ -1031,8 +1031,8 @@ export default function Home() {
       </section>
 
       {/* İletişim Bölümü */}
-      <section id="contact" className="min-h-screen relative py-20">
-        <div className="container mx-auto px-4 relative z-10">
+      <section id="contact" className="min-h-screen relative py-20 px-2 md:px-0">
+        <div className="container mx-auto px-2 md:px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">{t('contact.title')}</h2>
             <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed italic mb-2">

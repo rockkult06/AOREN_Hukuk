@@ -104,28 +104,28 @@ export default function Header() {
         : 'bg-transparent border-b border-white/20'
     }`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 md:h-16 flex-col md:flex-row md:gap-0 gap-2 pt-2 md:pt-0">
           {/* Left - Logo */}
-          <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
-            <div className="relative h-12 w-auto">
+          <Link href="/" className="flex items-center hover:opacity-90 transition-opacity md:mb-0 mb-2">
+            <div className="relative h-10 w-auto md:h-12">
               <Image
                 src={isScrolled ? "/aoren-logo1.png" : "/aoren-logo.png"}
                 alt="AOREN Logo"
-                width={150}
-                height={48}
-                className="h-12 w-auto object-contain transition-all duration-300"
+                width={120}
+                height={40}
+                className="h-10 w-auto object-contain transition-all duration-300 md:h-12"
                 priority
               />
             </div>
           </Link>
 
           {/* Center - Menu Button (Büyük) */}
-          <div className="flex-1 flex justify-center">
+          <div className="flex-1 flex justify-center md:justify-center w-full md:w-auto">
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
                 <Button 
                   variant="ghost" 
-                  className={`px-8 py-3 text-lg font-medium z-[110] relative ${isScrolled ? 'text-gray-700 hover:text-[#DEA582]' : 'text-white hover:text-[#D29F91]'}`}
+                  className={`px-8 py-3 text-lg font-medium z-[110] relative ${isScrolled ? 'text-gray-700 hover:text-[#DEA582]' : 'text-white hover:text-[#D29F91]'} md:mt-0 mt-1`}
                 >
                   <Menu className="h-6 w-6 mr-3" />
                   Menu
@@ -192,7 +192,7 @@ export default function Header() {
           </div>
 
           {/* Right Side - Search, User, Language */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 md:space-x-4 w-full md:w-auto justify-end md:justify-end mt-2 md:mt-0">
             {/* Search Bar */}
             <div className="hidden lg:flex items-center relative">
               <Search className={`absolute left-3 h-4 w-4 ${isScrolled ? 'text-gray-400' : 'text-white/60'}`} />
@@ -208,13 +208,13 @@ export default function Header() {
             </div>
 
             {/* User Login - Kurumsal */}
-            <Button variant="ghost" className={`${isScrolled ? 'text-gray-700' : 'text-white'}`}>
+            <Button variant="ghost" className={`${isScrolled ? 'text-gray-700' : 'text-white'} md:mt-0 mt-1`}>
               <Lock className="h-5 w-5 mr-2" />
               <span className="font-medium">Kurumsal</span>
             </Button>
 
             {/* Language Selector */}
-            <div className="flex items-center relative">
+            <div className="flex items-center relative md:mt-0 mt-1">
               <Globe className={`h-4 w-4 mr-2 ${isScrolled ? 'text-gray-700' : 'text-white'}`} />
               <Select value={language} onValueChange={(value: 'tr' | 'en' | 'de') => setLanguage(value)}>
                 <SelectTrigger className={`w-16 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
