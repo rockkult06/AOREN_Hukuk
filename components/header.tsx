@@ -9,11 +9,13 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import Link from "next/link"
 import Image from "next/image"
 import { useLanguage } from "@/contexts/LanguageContext"
+import { useRouter } from "next/navigation"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const { language, setLanguage, t } = useLanguage()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,96 +28,100 @@ export default function Header() {
   }, [])
 
   const handleMenuClick = (href: string) => {
-    setIsMenuOpen(false);
-
-    // Eğer Impressum sayfasındayken başka bir bölüme tıklanırsa ana sayfaya yönlendir
-    if (typeof window !== 'undefined' && window.location.pathname === '/impressum' && href.startsWith('/')) {
-      if (href === '/employees') window.location.href = '/#team';
-      else if (href === '/uzmanlik-alanlari') window.location.href = '/#expertise';
-      else if (href === '/hakkimizda') window.location.href = '/#about';
-      else if (href === '/ofislerimiz') window.location.href = '/#offices';
-      else if (href === '/dijital-hizmetler') window.location.href = '/#digital-services';
-      else if (href === '/sosyal-sorumluluk') window.location.href = '/#responsibility';
-      else if (href === '/kariyer') window.location.href = '/#careers';
-      else if (href === '/iletisim') window.location.href = '/#contact';
-      else window.location.href = '/';
-      return;
-    }
-
-    // Eğer ana sayfadaysa menüden bir bölüme tıklanınca Sheet kapandıktan sonra scroll yap
-    if (typeof window !== 'undefined' && window.location.pathname === '/') {
-      let sectionId = '';
-      if (href === '/employees') sectionId = 'team';
-      else if (href === '/uzmanlik-alanlari') sectionId = 'expertise';
-      else if (href === '/hakkimizda') sectionId = 'about';
-      else if (href === '/ofislerimiz') sectionId = 'offices';
-      else if (href === '/dijital-hizmetler') sectionId = 'digital-services';
-      else if (href === '/sosyal-sorumluluk') sectionId = 'responsibility';
-      else if (href === '/kariyer') sectionId = 'careers';
-      else if (href === '/iletisim') sectionId = 'contact';
-      if (sectionId) {
-        setTimeout(() => {
-          const el = document.getElementById(sectionId);
-          if (el) el.scrollIntoView({ behavior: 'smooth' });
-        }, 350); // Sheet kapanma animasyonu için gecikme
-        return;
-      }
-    }
-
+    setIsMenuOpen(false)
+    
     if (href === '/employees') {
-      // Ana sayfadaki ekibimiz bölümüne scroll yap
       const teamSection = document.getElementById('team')
       if (teamSection) {
         teamSection.scrollIntoView({ behavior: 'smooth' })
+      } else {
+        router.push('/')
+        setTimeout(() => {
+          const el = document.getElementById('team')
+          if (el) el.scrollIntoView({ behavior: 'smooth' })
+        }, 500)
       }
     } else if (href === '/uzmanlik-alanlari') {
-      // Ana sayfadaki uzmanlık alanları bölümüne scroll yap
       const expertiseSection = document.getElementById('expertise')
       if (expertiseSection) {
         expertiseSection.scrollIntoView({ behavior: 'smooth' })
+      } else {
+        router.push('/')
+        setTimeout(() => {
+          const el = document.getElementById('expertise')
+          if (el) el.scrollIntoView({ behavior: 'smooth' })
+        }, 500)
       }
     } else if (href === '/hakkimizda') {
-      // Ana sayfadaki hakkımızda bölümüne scroll yap
       const aboutSection = document.getElementById('about')
       if (aboutSection) {
         aboutSection.scrollIntoView({ behavior: 'smooth' })
+      } else {
+        router.push('/')
+        setTimeout(() => {
+          const el = document.getElementById('about')
+          if (el) el.scrollIntoView({ behavior: 'smooth' })
+        }, 500)
       }
     } else if (href === '/ofislerimiz') {
-      // Ana sayfadaki ofislerimiz bölümüne scroll yap
       const officesSection = document.getElementById('offices')
       if (officesSection) {
         officesSection.scrollIntoView({ behavior: 'smooth' })
+      } else {
+        router.push('/')
+        setTimeout(() => {
+          const el = document.getElementById('offices')
+          if (el) el.scrollIntoView({ behavior: 'smooth' })
+        }, 500)
       }
     } else if (href === '/sosyal-sorumluluk') {
-      // Ana sayfadaki kurumsal sosyal sorumluluk bölümüne scroll yap
       const socialSection = document.getElementById('responsibility')
       if (socialSection) {
         socialSection.scrollIntoView({ behavior: 'smooth' })
+      } else {
+        router.push('/')
+        setTimeout(() => {
+          const el = document.getElementById('responsibility')
+          if (el) el.scrollIntoView({ behavior: 'smooth' })
+        }, 500)
       }
     } else if (href === '/kariyer') {
-      // Ana sayfadaki kariyer bölümüne scroll yap
       const careerSection = document.getElementById('careers')
       if (careerSection) {
         careerSection.scrollIntoView({ behavior: 'smooth' })
+      } else {
+        router.push('/')
+        setTimeout(() => {
+          const el = document.getElementById('careers')
+          if (el) el.scrollIntoView({ behavior: 'smooth' })
+        }, 500)
       }
     } else if (href === '/dijital-hizmetler') {
-      // Ana sayfadaki dijital hizmetler bölümüne scroll yap
       const digitalSection = document.getElementById('digital-services')
       if (digitalSection) {
         digitalSection.scrollIntoView({ behavior: 'smooth' })
+      } else {
+        router.push('/')
+        setTimeout(() => {
+          const el = document.getElementById('digital-services')
+          if (el) el.scrollIntoView({ behavior: 'smooth' })
+        }, 500)
       }
     } else if (href === '/iletisim') {
-      // Ana sayfadaki iletişim bölümüne scroll yap
       const contactSection = document.getElementById('contact')
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: 'smooth' })
+      } else {
+        router.push('/')
+        setTimeout(() => {
+          const el = document.getElementById('contact')
+          if (el) el.scrollIntoView({ behavior: 'smooth' })
+        }, 500)
       }
     } else if (href === '/impressum') {
-      // Impressum sayfasına git
-      window.location.href = href
+      router.push('/impressum')
     } else {
-      // Diğer sayfalar için normal navigasyon
-      window.location.href = href
+      router.push(href)
     }
   }
 
@@ -182,67 +188,10 @@ export default function Header() {
                   <div className="space-y-1">
                     {menuItems.map((item, index) => {
                       const IconComponent = item.icon;
-                      let sectionHash = '';
-                      if (item.href === '/employees') sectionHash = '#team';
-                      else if (item.href === '/uzmanlik-alanlari') sectionHash = '#expertise';
-                      else if (item.href === '/hakkimizda') sectionHash = '#about';
-                      else if (item.href === '/ofislerimiz') sectionHash = '#offices';
-                      else if (item.href === '/dijital-hizmetler') sectionHash = '#digital-services';
-                      else if (item.href === '/sosyal-sorumluluk') sectionHash = '#responsibility';
-                      else if (item.href === '/kariyer') sectionHash = '#careers';
-                      else if (item.href === '/iletisim') sectionHash = '#contact';
-
-                      // Impressum ise normal buton, diğerleri anchor
-                      if (item.href === '/impressum') {
-                        return (
-                          <button
-                            key={item.name}
-                            onClick={() => handleMenuClick(item.href)}
-                            className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0 w-full text-left"
-                            style={{ 
-                              animationDelay: `${index * 50}ms`,
-                              animation: 'slideInLeft 0.6s ease-out forwards',
-                              textDecoration: 'none',
-                              borderBottom: 'none',
-                              border: 'none',
-                              background: 'transparent'
-                            }}
-                          >
-                            <div className="flex items-center gap-3">
-                              <IconComponent className="w-5 h-5 text-white group-hover:text-white transition-colors duration-200" />
-                              <span className="text-white text-base font-medium group-hover:text-white group-hover:text-lg transition-all duration-200" style={{textDecoration: 'none', borderBottom: 'none'}}>
-                                {item.name}
-                              </span>
-                            </div>
-                          </button>
-                        );
-                      }
-
-                      // Diğer menü item'ları anchor olarak
                       return (
-                        <a
+                        <button
                           key={item.name}
-                          href={sectionHash || item.href}
-                          onClick={e => {
-                            setIsMenuOpen(false);
-                            // Eğer Impressum'dan geliniyorsa tam sayfa yönlendirme
-                            if (typeof window !== 'undefined' && window.location.pathname === '/impressum' && sectionHash) {
-                              window.location.href = '/' + sectionHash;
-                              e.preventDefault();
-                              return;
-                            }
-                            // SPA scroll için: Sheet kapanınca scrollIntoView
-                            if (sectionHash) {
-                              e.preventDefault();
-                              setTimeout(() => {
-                                const el = document.getElementById(sectionHash.replace('#',''));
-                                if (el) {
-                                  el.scrollIntoView({ behavior: 'smooth' });
-                                  window.location.hash = sectionHash;
-                                }
-                              }, 400);
-                            }
-                          }}
+                          onClick={() => handleMenuClick(item.href)}
                           className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0 w-full text-left"
                           style={{ 
                             animationDelay: `${index * 50}ms`,
@@ -259,7 +208,7 @@ export default function Header() {
                               {item.name}
                             </span>
                           </div>
-                        </a>
+                        </button>
                       );
                     })}
                   </div>
