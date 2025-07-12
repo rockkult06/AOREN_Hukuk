@@ -26,8 +26,22 @@ export default function Header() {
   }, [])
 
   const handleMenuClick = (href: string) => {
-    setIsMenuOpen(false)
-    
+    setIsMenuOpen(false);
+
+    // Eğer Impressum sayfasındayken başka bir bölüme tıklanırsa ana sayfaya yönlendir
+    if (typeof window !== 'undefined' && window.location.pathname === '/impressum' && href.startsWith('/')) {
+      if (href === '/employees') window.location.href = '/#team';
+      else if (href === '/uzmanlik-alanlari') window.location.href = '/#expertise';
+      else if (href === '/hakkimizda') window.location.href = '/#about';
+      else if (href === '/ofislerimiz') window.location.href = '/#offices';
+      else if (href === '/dijital-hizmetler') window.location.href = '/#digital-services';
+      else if (href === '/sosyal-sorumluluk') window.location.href = '/#responsibility';
+      else if (href === '/kariyer') window.location.href = '/#careers';
+      else if (href === '/iletisim') window.location.href = '/#contact';
+      else window.location.href = '/';
+      return;
+    }
+
     if (href === '/employees') {
       // Ana sayfadaki ekibimiz bölümüne scroll yap
       const teamSection = document.getElementById('team')
