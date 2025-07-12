@@ -182,10 +182,63 @@ export default function Header() {
                   <div className="space-y-1">
                     {menuItems.map((item, index) => {
                       const IconComponent = item.icon;
+                      let sectionHash = '';
+                      if (item.href === '/employees') sectionHash = '#team';
+                      else if (item.href === '/uzmanlik-alanlari') sectionHash = '#expertise';
+                      else if (item.href === '/hakkimizda') sectionHash = '#about';
+                      else if (item.href === '/ofislerimiz') sectionHash = '#offices';
+                      else if (item.href === '/dijital-hizmetler') sectionHash = '#digital-services';
+                      else if (item.href === '/sosyal-sorumluluk') sectionHash = '#responsibility';
+                      else if (item.href === '/kariyer') sectionHash = '#careers';
+                      else if (item.href === '/iletisim') sectionHash = '#contact';
+
+                      // Impressum ise normal buton, diğerleri anchor
+                      if (item.href === '/impressum') {
+                        return (
+                          <button
+                            key={item.name}
+                            onClick={() => handleMenuClick(item.href)}
+                            className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0 w-full text-left"
+                            style={{ 
+                              animationDelay: `${index * 50}ms`,
+                              animation: 'slideInLeft 0.6s ease-out forwards',
+                              textDecoration: 'none',
+                              borderBottom: 'none',
+                              border: 'none',
+                              background: 'transparent'
+                            }}
+                          >
+                            <div className="flex items-center gap-3">
+                              <IconComponent className="w-5 h-5 text-white group-hover:text-white transition-colors duration-200" />
+                              <span className="text-white text-base font-medium group-hover:text-white group-hover:text-lg transition-all duration-200" style={{textDecoration: 'none', borderBottom: 'none'}}>
+                                {item.name}
+                              </span>
+                            </div>
+                          </button>
+                        );
+                      }
+
+                      // Diğer menü item'ları anchor olarak
                       return (
-                        <button
+                        <a
                           key={item.name}
-                          onClick={() => handleMenuClick(item.href)}
+                          href={sectionHash || item.href}
+                          onClick={e => {
+                            setIsMenuOpen(false);
+                            // Eğer Impressum'dan geliniyorsa tam sayfa yönlendirme
+                            if (typeof window !== 'undefined' && window.location.pathname === '/impressum' && sectionHash) {
+                              window.location.href = '/' + sectionHash;
+                              e.preventDefault();
+                              return;
+                            }
+                            // SPA scroll için hash güncelle
+                            if (sectionHash) {
+                              setTimeout(() => {
+                                window.location.hash = sectionHash;
+                              }, 250);
+                              e.preventDefault();
+                            }
+                          }}
                           className="group relative block py-3 px-4 rounded-[16px] transition-all duration-300 ease-in-out hover:bg-white/30 hover:backdrop-blur-[12px] hover:rounded-[24px] focus:outline-none focus:ring-0 w-full text-left"
                           style={{ 
                             animationDelay: `${index * 50}ms`,
@@ -202,7 +255,7 @@ export default function Header() {
                               {item.name}
                             </span>
                           </div>
-                        </button>
+                        </a>
                       );
                     })}
                   </div>
