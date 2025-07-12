@@ -61,7 +61,7 @@ const TeamGrid = styled.div`
   
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 20px;
     padding: 0 4px;
   }
 `
@@ -84,10 +84,10 @@ const TeamCard = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 28px 10px;
-    border-radius: 18px;
-    margin-bottom: 16px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    padding: 24px 10px;
+    border-radius: 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     &:hover {
       border-radius: 22px;
     }
