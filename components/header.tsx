@@ -9,13 +9,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import Link from "next/link"
 import Image from "next/image"
 import { useLanguage } from "@/contexts/LanguageContext"
-import { useRouter } from "next/navigation"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const { language, setLanguage, t } = useLanguage()
-  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,97 +29,59 @@ export default function Header() {
     setIsMenuOpen(false)
     
     if (href === '/employees') {
+      // Ana sayfadaki ekibimiz bölümüne scroll yap
       const teamSection = document.getElementById('team')
       if (teamSection) {
         teamSection.scrollIntoView({ behavior: 'smooth' })
-      } else {
-        router.push('/')
-        setTimeout(() => {
-          const el = document.getElementById('team')
-          if (el) el.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
       }
     } else if (href === '/uzmanlik-alanlari') {
+      // Ana sayfadaki uzmanlık alanları bölümüne scroll yap
       const expertiseSection = document.getElementById('expertise')
       if (expertiseSection) {
         expertiseSection.scrollIntoView({ behavior: 'smooth' })
-      } else {
-        router.push('/')
-        setTimeout(() => {
-          const el = document.getElementById('expertise')
-          if (el) el.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
       }
     } else if (href === '/hakkimizda') {
+      // Ana sayfadaki hakkımızda bölümüne scroll yap
       const aboutSection = document.getElementById('about')
       if (aboutSection) {
         aboutSection.scrollIntoView({ behavior: 'smooth' })
-      } else {
-        router.push('/')
-        setTimeout(() => {
-          const el = document.getElementById('about')
-          if (el) el.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
       }
     } else if (href === '/ofislerimiz') {
+      // Ana sayfadaki ofislerimiz bölümüne scroll yap
       const officesSection = document.getElementById('offices')
       if (officesSection) {
         officesSection.scrollIntoView({ behavior: 'smooth' })
-      } else {
-        router.push('/')
-        setTimeout(() => {
-          const el = document.getElementById('offices')
-          if (el) el.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
       }
     } else if (href === '/sosyal-sorumluluk') {
+      // Ana sayfadaki kurumsal sosyal sorumluluk bölümüne scroll yap
       const socialSection = document.getElementById('responsibility')
       if (socialSection) {
         socialSection.scrollIntoView({ behavior: 'smooth' })
-      } else {
-        router.push('/')
-        setTimeout(() => {
-          const el = document.getElementById('responsibility')
-          if (el) el.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
       }
     } else if (href === '/kariyer') {
+      // Ana sayfadaki kariyer bölümüne scroll yap
       const careerSection = document.getElementById('careers')
       if (careerSection) {
         careerSection.scrollIntoView({ behavior: 'smooth' })
-      } else {
-        router.push('/')
-        setTimeout(() => {
-          const el = document.getElementById('careers')
-          if (el) el.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
       }
     } else if (href === '/dijital-hizmetler') {
+      // Ana sayfadaki dijital hizmetler bölümüne scroll yap
       const digitalSection = document.getElementById('digital-services')
       if (digitalSection) {
         digitalSection.scrollIntoView({ behavior: 'smooth' })
-      } else {
-        router.push('/')
-        setTimeout(() => {
-          const el = document.getElementById('digital-services')
-          if (el) el.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
       }
     } else if (href === '/iletisim') {
+      // Ana sayfadaki iletişim bölümüne scroll yap
       const contactSection = document.getElementById('contact')
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: 'smooth' })
-      } else {
-        router.push('/')
-        setTimeout(() => {
-          const el = document.getElementById('contact')
-          if (el) el.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
       }
     } else if (href === '/impressum') {
-      router.push('/impressum')
+      // Impressum sayfasına git
+      window.location.href = href
     } else {
-      router.push(href)
+      // Diğer sayfalar için normal navigasyon
+      window.location.href = href
     }
   }
 
@@ -138,42 +98,37 @@ export default function Header() {
   ]
 
   return (
-    <header
-      className={`fixed top-0 w-full transition-all duration-300 z-[9999] ${
-        isScrolled
-          ? 'bg-white/95 shadow-md border-b border-gray-200'
-          : 'bg-white/90 shadow-md border-b border-white/20'
-      }`}
-      style={{ position: 'sticky' }}
-    >
-      <div className="container mx-auto px-2 md:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-12 md:h-16 gap-2 md:gap-0 flex-row">
-          {/* Sol: Logo */}
-          <Link href="/" className="flex items-center min-w-[90px] md:min-w-[150px]">
-            <div className="relative h-8 w-auto md:h-12">
+    <header className={`fixed top-0 w-full transition-all duration-300 z-[100] ${
+      isScrolled 
+        ? 'bg-white/90 backdrop-blur-md border-b border-gray-200' 
+        : 'bg-transparent border-b border-white/20'
+    }`}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Left - Logo */}
+          <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
+            <div className="relative h-12 w-auto">
               <Image
                 src={isScrolled ? "/aoren-logo1.png" : "/aoren-logo.png"}
                 alt="AOREN Logo"
-                width={90}
-                height={32}
-                className="h-8 w-auto object-contain transition-all duration-300 md:h-12"
+                width={150}
+                height={48}
+                className="h-12 w-auto object-contain transition-all duration-300"
                 priority
               />
             </div>
           </Link>
-          {/* Orta: Menü Butonu */}
-          <div className="flex-1 flex items-center justify-start md:justify-center">
+
+          {/* Center - Menu Button (Büyük) */}
+          <div className="flex-1 flex justify-center">
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
-                <Button
-                  variant="ghost"
-                  className={`px-3 py-2 text-base font-medium z-[110] relative ${
-                    isScrolled ? 'text-gray-700 hover:text-[#DEA582]' : 'text-gray-700 hover:text-[#D29F91]'
-                  } md:mt-0 mt-0`}
-                  style={{ minWidth: 44 }}
+                <Button 
+                  variant="ghost" 
+                  className={`px-8 py-3 text-lg font-medium z-[110] relative ${isScrolled ? 'text-gray-700 hover:text-[#DEA582]' : 'text-white hover:text-[#D29F91]'}`}
                 >
-                  <Menu className="h-6 w-6 mr-1" />
-                  <span className="hidden xs:inline">Menu</span>
+                  <Menu className="h-6 w-6 mr-3" />
+                  Menu
                 </Button>
               </SheetTrigger>
               <SheetContent 
@@ -235,23 +190,41 @@ export default function Header() {
               </SheetContent>
             </Sheet>
           </div>
-          {/* Sağ: Kurumsal ve Dil Seçici */}
-          <div className="flex items-center space-x-1 md:space-x-4">
-            <Button variant="ghost" className={`${isScrolled ? 'text-gray-700' : 'text-gray-700'} px-2 py-2 text-base`} style={{ minWidth: 44 }}>
-              <Lock className="h-5 w-5 mr-1" />
-              <span className="hidden xs:inline font-medium md:inline">Kurumsal</span>
+
+          {/* Right Side - Search, User, Language */}
+          <div className="flex items-center space-x-4">
+            {/* Search Bar */}
+            <div className="hidden lg:flex items-center relative">
+              <Search className={`absolute left-3 h-4 w-4 ${isScrolled ? 'text-gray-400' : 'text-white/60'}`} />
+              <Input
+                type="search"
+                placeholder={t('header.search')}
+                className={`pl-10 w-64 ${
+                  isScrolled 
+                    ? 'bg-white border-gray-200 text-gray-900 placeholder:text-gray-500' 
+                    : 'bg-white/10 border-white/20 text-white placeholder:text-white/70'
+                }`}
+              />
+            </div>
+
+            {/* User Login - Kurumsal */}
+            <Button variant="ghost" className={`${isScrolled ? 'text-gray-700' : 'text-white'}`}>
+              <Lock className="h-5 w-5 mr-2" />
+              <span className="font-medium">Kurumsal</span>
             </Button>
-            <div className="flex items-center relative md:mr-0 mr-1 pr-2 md:pr-0">
-              <Globe className={`h-4 w-4 mr-1 ${isScrolled ? 'text-gray-700' : 'text-gray-700'}`} />
+
+            {/* Language Selector */}
+            <div className="flex items-center relative">
+              <Globe className={`h-4 w-4 mr-2 ${isScrolled ? 'text-gray-700' : 'text-white'}`} />
               <Select value={language} onValueChange={(value: 'tr' | 'en' | 'de') => setLanguage(value)}>
-                <SelectTrigger className={`w-12 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-gray-700'} text-base`}>
+                <SelectTrigger className={`w-16 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
                   <SelectValue />
                 </SelectTrigger>
-                <SelectContent
-                  position="popper"
-                  side="bottom"
+                <SelectContent 
+                  position="popper" 
+                  side="bottom" 
                   align="end"
-                  className="min-w-[90px]"
+                  className="min-w-[120px]"
                 >
                   <SelectItem value="tr">TR</SelectItem>
                   <SelectItem value="en">EN</SelectItem>
