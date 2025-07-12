@@ -42,6 +42,26 @@ export default function Header() {
       return;
     }
 
+    // Eğer ana sayfadaysa menüden bir bölüme tıklanınca Sheet kapandıktan sonra scroll yap
+    if (typeof window !== 'undefined' && window.location.pathname === '/') {
+      let sectionId = '';
+      if (href === '/employees') sectionId = 'team';
+      else if (href === '/uzmanlik-alanlari') sectionId = 'expertise';
+      else if (href === '/hakkimizda') sectionId = 'about';
+      else if (href === '/ofislerimiz') sectionId = 'offices';
+      else if (href === '/dijital-hizmetler') sectionId = 'digital-services';
+      else if (href === '/sosyal-sorumluluk') sectionId = 'responsibility';
+      else if (href === '/kariyer') sectionId = 'careers';
+      else if (href === '/iletisim') sectionId = 'contact';
+      if (sectionId) {
+        setTimeout(() => {
+          const el = document.getElementById(sectionId);
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 350); // Sheet kapanma animasyonu için gecikme
+        return;
+      }
+    }
+
     if (href === '/employees') {
       // Ana sayfadaki ekibimiz bölümüne scroll yap
       const teamSection = document.getElementById('team')
