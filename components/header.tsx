@@ -146,10 +146,10 @@ export default function Header() {
       }`}
       style={{ position: 'sticky' }}
     >
-      <div className="container mx-auto px-2 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-12 md:h-16 gap-2 md:gap-0">
+      <div className="container mx-auto px-2 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-12 md:h-16 gap-2 md:gap-0 flex-row">
           {/* Sol: Logo */}
-          <Link href="/" className="flex items-center min-w-[90px]">
+          <Link href="/" className="flex items-center min-w-[90px] md:min-w-[150px]">
             <div className="relative h-8 w-auto md:h-12">
               <Image
                 src={isScrolled ? "/aoren-logo1.png" : "/aoren-logo.png"}
@@ -239,9 +239,9 @@ export default function Header() {
           <div className="flex items-center space-x-1 md:space-x-4">
             <Button variant="ghost" className={`${isScrolled ? 'text-gray-700' : 'text-gray-700'} px-2 py-2 text-base`} style={{ minWidth: 44 }}>
               <Lock className="h-5 w-5 mr-1" />
-              <span className="hidden xs:inline font-medium">Kurumsal</span>
+              <span className="hidden xs:inline font-medium md:inline">Kurumsal</span>
             </Button>
-            <div className="flex items-center relative">
+            <div className="flex items-center relative md:mr-0 mr-1 pr-2 md:pr-0">
               <Globe className={`h-4 w-4 mr-1 ${isScrolled ? 'text-gray-700' : 'text-gray-700'}`} />
               <Select value={language} onValueChange={(value: 'tr' | 'en' | 'de') => setLanguage(value)}>
                 <SelectTrigger className={`w-12 border-none bg-transparent ${isScrolled ? 'text-gray-700' : 'text-gray-700'} text-base`}>
