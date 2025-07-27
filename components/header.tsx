@@ -13,6 +13,9 @@ import { useLanguage } from "@/contexts/LanguageContext"
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [searchQuery, setSearchQuery] = useState("")
+  const [searchResults, setSearchResults] = useState<any[]>([])
+  const [isSearchOpen, setIsSearchOpen] = useState(false)
   const { language, setLanguage, t } = useLanguage()
 
   useEffect(() => {
@@ -97,6 +100,30 @@ export default function Header() {
     ...(language === 'de' ? [{ name: 'Impressum', href: "/impressum", icon: FileText }] : []),
   ]
 
+  // Arama fonksiyonu
+  const handleSearch = (query: string) => {
+    setSearchQuery(query)
+    
+    if (query.trim().length < 2) {
+      setSearchResults([])
+      setIsSearchOpen(false)
+      return
+    }
+
+    const results = menuItems.filter(item => 
+      item.name.toLowerCase().includes(query.toLowerCase())
+    )
+
+    setSearchResults(results)
+    setIsSearchOpen(results.length > 0)
+  }
+
+  const handleSearchResultClick = (href: string) => {
+    setIsSearchOpen(false)
+    setSearchQuery("")
+    handleMenuClick(href)
+  }
+
   return (
     <header className={`fixed top-0 w-full transition-all duration-300 z-[100] ${
       isScrolled 
@@ -142,6 +169,39 @@ export default function Header() {
                   <div className="mb-6">
                     <h2 className="text-2xl font-bold text-white mb-2">Menu</h2>
                     <div className="w-12 h-0.5 bg-blue-500"></div>
+                  </div>
+
+                  {/* Mobil Arama */}
+                  <div className="mb-6">
+                    <div className="relative">
+                      <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-white/60" />
+                      <Input
+                        type="search"
+                        placeholder={t('header.search')}
+                        value={searchQuery}
+                        onChange={(e) => handleSearch(e.target.value)}
+                        className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/70"
+                      />
+                    </div>
+                    
+                    {/* Mobil Arama Sonuçları */}
+                    {isSearchOpen && searchResults.length > 0 && (
+                      <div className="mt-2 bg-white/95 backdrop-blur-md rounded-lg border border-white/20 shadow-lg max-h-40 overflow-y-auto">
+                        {searchResults.map((result, index) => {
+                          const IconComponent = result.icon;
+                          return (
+                            <button
+                              key={index}
+                              onClick={() => handleSearchResultClick(result.href)}
+                              className="w-full px-4 py-2 text-left hover:bg-white/20 flex items-center gap-3 transition-colors duration-200"
+                            >
+                              <IconComponent className="w-4 h-4 text-white" />
+                              <span className="text-white font-medium">{result.name}</span>
+                            </button>
+                          );
+                        })}
+                      </div>
+                    )}
                   </div>
 
                   {/* Menu Items */}
@@ -199,12 +259,35 @@ export default function Header() {
               <Input
                 type="search"
                 placeholder={t('header.search')}
+                value={searchQuery}
+                onChange={(e) => handleSearch(e.target.value)}
+                onFocus={() => searchQuery.trim().length >= 2 && setIsSearchOpen(true)}
+                onBlur={() => setTimeout(() => setIsSearchOpen(false), 200)}
                 className={`pl-10 w-64 ${
                   isScrolled 
                     ? 'bg-white border-gray-200 text-gray-900 placeholder:text-gray-500' 
                     : 'bg-white/10 border-white/20 text-white placeholder:text-white/70'
                 }`}
               />
+              
+              {/* Arama Sonuçları */}
+              {isSearchOpen && searchResults.length > 0 && (
+                <div className="absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-md rounded-lg border border-gray-200 shadow-lg z-50 max-h-60 overflow-y-auto">
+                  {searchResults.map((result, index) => {
+                    const IconComponent = result.icon;
+                    return (
+                      <button
+                        key={index}
+                        onClick={() => handleSearchResultClick(result.href)}
+                        className="w-full px-4 py-3 text-left hover:bg-gray-50 flex items-center gap-3 transition-colors duration-200"
+                      >
+                        <IconComponent className="w-4 h-4 text-gray-600" />
+                        <span className="text-gray-800 font-medium">{result.name}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
             </div>
 
             {/* User Login - Kurumsal */}
