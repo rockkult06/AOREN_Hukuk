@@ -25,10 +25,23 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     const loadTranslations = async () => {
       try {
         const response = await fetch(`/locales/${language}.json`)
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`)
+        }
         const data = await response.json()
         setTranslations(data)
       } catch (error) {
         console.error('Error loading translations:', error)
+        // Fallback to Turkish if loading fails
+        if (language !== 'tr') {
+          try {
+            const fallbackResponse = await fetch('/locales/tr.json')
+            const fallbackData = await fallbackResponse.json()
+            setTranslations(fallbackData)
+          } catch (fallbackError) {
+            console.error('Error loading fallback translations:', fallbackError)
+          }
+        }
       }
     }
 
