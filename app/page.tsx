@@ -272,7 +272,7 @@ const getEmployeesData = (t: any) => [
     name: "Av. Abdullah ÖREN",
     title: t('team.members.abdullah.title'),
     description: t('team.members.abdullah.description'),
-    image: "/1.png",
+    image: undefined,
     details: {
       about: t('team.members.abdullah.about'),
       expertise: [
@@ -285,10 +285,10 @@ const getEmployeesData = (t: any) => [
     }
   },
   {
-    name: "Av. Ekin Tuncel",
+    name: "Av. Şükrü ŞAHAN",
     title: t('team.members.ekin.title'),
     description: t('team.members.ekin.description'),
-    image: "/2.png",
+    image: undefined,
     details: {
       about: t('team.members.ekin.about'),
       expertise: [
@@ -301,10 +301,10 @@ const getEmployeesData = (t: any) => [
     }
   },
   {
-    name: "Av. Melis Bayraktar",
+    name: "Av. Şahin DOĞAN",
     title: t('team.members.melis.title'),
     description: t('team.members.melis.description'),
-    image: "/4.png",
+    image: undefined,
     details: {
       about: t('team.members.melis.about'),
       expertise: [
@@ -317,10 +317,10 @@ const getEmployeesData = (t: any) => [
     }
   },
   {
-    name: "Av. Kerem Yıldız",
+    name: "Av. Kemal SÜLDÜR",
     title: t('team.members.kerem.title'),
     description: t('team.members.kerem.description'),
-    image: "/3.png",
+    image: undefined,
     details: {
       about: t('team.members.kerem.about'),
       expertise: [
@@ -457,16 +457,6 @@ export default function Home() {
                   onClick={() => setSelectedMember(index)}
                 >
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-[220px] h-[220px] rounded-[20px] overflow-hidden mb-6 bg-gray-200">
-                      <img 
-                        src={member.image || "/placeholder-user.jpg"} 
-                        alt={member.name}
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          e.currentTarget.src = "/placeholder-user.jpg"
-                        }}
-                      />
-                    </div>
                     <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
                     <p className="text-[#DEA582] font-semibold mb-4 text-center">{member.title}</p>
                     <p className="text-gray-300 text-sm leading-relaxed mb-6">{member.description}</p>
@@ -492,16 +482,6 @@ export default function Home() {
                   onClick={() => setSelectedMember(index + 2)}
                 >
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-[220px] h-[220px] rounded-[20px] overflow-hidden mb-6 bg-gray-200">
-                      <img 
-                        src={member.image || "/placeholder-user.jpg"} 
-                        alt={member.name}
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          e.currentTarget.src = "/placeholder-user.jpg"
-                        }}
-                      />
-                    </div>
                     <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
                     <p className="text-[#DEA582] font-semibold mb-4 text-center">{member.title}</p>
                     <p className="text-gray-300 text-sm leading-relaxed mb-6">{member.description}</p>
@@ -1215,9 +1195,6 @@ export default function Home() {
       {selectedMember !== null && (
         <ModalOverlay onClick={() => setSelectedMember(null)}>
           <ModalContent onClick={e => e.stopPropagation()}>
-            <ModalPhoto>
-              <img src={employeesData[selectedMember].image} alt={employeesData[selectedMember].name} />
-            </ModalPhoto>
             <ModalInfo>
               <ModalClose onClick={() => setSelectedMember(null)}><X size={28} /></ModalClose>
               <ModalTitle>{employeesData[selectedMember].name}</ModalTitle>
