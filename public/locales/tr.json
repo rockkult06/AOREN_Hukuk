@@ -265,45 +265,49 @@
   },
   "digital": {
     "title": "AOREN Dijital Hizmetleri",
-    "subtitle": "Teknoloji ile hukuki çözümler",
-    "description": "Teknoloji, bizim için sadece bir araç değil, hizmetimizin ayrılmaz bir parçasıdır.",
+    "subtitle": "Yapay Zeka Destekli Hukuki Çözümler",
+    "description": "Teknoloji, bizim için sadece bir araç değil, hizmetimizin ayrılmaz bir parçasıdır. Yapay zeka ve veri analizi ile hukuki süreçlerinizi optimize ediyoruz.",
     "quote": "Hukuki süreçlerinizi dijitalleştirirken, insan dokunuşundan ödün vermiyoruz.",
     "services": {
-      "clientPortal": {
-        "title": "Müvekkil Portalı",
-        "description": "Dosyalarınıza 7/24 erişim imkanı sağlayan özel portalımız ile tüm hukuki süreçlerinizi tek bir platformdan takip edebilirsiniz.",
-        "features": [
-          "Anlık dosya durumu takibi",
-          "Belge arşivine kolay erişim",
-          "Duruşma takvimi entegrasyonu"
-        ]
+      "portal": {
+        "title": "Yapay Zeka Destekli Müvekkil Portalı",
+        "description": "AI destekli dava takip sistemi ile dosyalarınızı akıllı algoritmalar sayesinde daha etkili şekilde yönetin. Veri analizi ile dava sonuçlarını tahmin edin.",
+        "features": {
+          "caseTracking": "AI Destekli Dava Takip ve Tahmin",
+          "documentUpload": "Otomatik Belge Analizi ve Sınıflandırma",
+          "communication": "Akıllı Bildirim ve Hatırlatma Sistemi",
+          "payment": "Otomatik Fatura ve Ödeme Takibi"
+        }
       },
-      "digitalSignature": {
-        "title": "Dijital İmza ve Belge Takibi",
-        "description": "Güvenli elektronik imza sistemi ile belge onay süreçlerinizi hızlandırın, kağıt israfını önleyin.",
-        "features": [
-          "E-imza entegrasyonu",
-          "Otomatik versiyon kontrolü",
-          "Gelişmiş belge güvenliği"
-        ]
+      "eSignature": {
+        "title": "Akıllı Belge Yönetimi ve E-İmza",
+        "description": "Yapay zeka destekli belge analizi ile otomatik dilekçe yazımı ve akıllı sözleşme oluşturma. E-imza ile güvenli ve hızlı işlemler.",
+        "features": {
+          "legallyValid": "AI Destekli Dilekçe Yazımı",
+          "secure": "Blokzincir Tabanlı E-İmza",
+          "fast": "Otomatik Belge Şablonları",
+          "trackable": "Akıllı Belge Versiyon Kontrolü"
+        }
       },
-      "secureMessaging": {
-        "title": "Güvenli Mesajlaşma Sistemi",
-        "description": "Uçtan uca şifrelenmiş mesajlaşma sistemi ile güvenli iletişim sağlayın.",
-        "features": [
-          "Anlık bildirimler",
-          "Dosya paylaşımı",
-          "Görüntülü görüşme desteği"
-        ]
+      "consultation": {
+        "title": "Sanal Danışmanlık ve AI Asistan",
+        "description": "Yapay zeka destekli hukuki danışmanlık sistemi ile 7/24 erişilebilir hizmet. Video görüşme ve AI chatbot ile anında destek.",
+        "features": {
+          "videoCall": "HD Video Görüşme ve Ekran Paylaşımı",
+          "secure": "Uçtan Uca Şifreli İletişim",
+          "flexible": "AI Destekli Ön Değerlendirme",
+          "recorded": "Otomatik Görüşme Kaydı ve Transkript"
+        }
       },
-      "processManagement": {
-        "title": "Proaktif Süreç Yönetimi",
-        "description": "Yapay zeka destekli süreç yönetimi ile olası riskleri önceden tespit edin.",
-        "features": [
-          "Otomatik risk analizi",
-          "Vade takip sistemi",
-          "Akıllı hatırlatmalar"
-        ]
+      "transformation": {
+        "title": "Veri Analizi ve Hukuki İstihbarat",
+        "description": "Büyük veri analizi ile hukuki trendleri analiz edin, risk değerlendirmesi yapın ve stratejik kararlar alın. Makine öğrenmesi ile süreç optimizasyonu.",
+        "features": {
+          "strategy": "Veri Tabanlı Risk Analizi",
+          "implementation": "Makine Öğrenmesi ile Süreç Optimizasyonu",
+          "training": "AI Destekli Hukuki Eğitim Platformu",
+          "support": "7/24 Teknik Destek ve Danışmanlık"
+        }
       }
     }
   },

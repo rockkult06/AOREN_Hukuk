@@ -265,46 +265,52 @@
   },
   "digital": {
     "title": "AOREN Digitale Dienste",
-    "subtitle": "Rechtliche Lösungen mit Technologie",
-    "description": "Technologie ist für uns nicht nur ein Werkzeug, sondern ein integraler Bestandteil unserer Dienstleistung.",
+    "subtitle": "KI-gestützte rechtliche Lösungen",
+    "description": "Technologie ist für uns nicht nur ein Werkzeug, sondern ein integraler Bestandteil unserer Dienstleistung. Wir optimieren Ihre rechtlichen Prozesse mit künstlicher Intelligenz und Datenanalyse.",
     "quote": "Während wir Ihre rechtlichen Prozesse digitalisieren, verzichten wir nicht auf die menschliche Note.",
     "services": {
-      "clientPortal": {
-        "title": "Mandantenportal",
-        "description": "Mit unserem speziellen Portal, das 24/7 Zugang zu Ihren Akten bietet, können Sie alle Ihre rechtlichen Prozesse von einer einzigen Plattform aus verfolgen.",
-        "features": [
-          "Echtzeit-Aktenstatus-Verfolgung",
-          "Einfacher Zugang zum Dokumentarchiv",
-          "Verhandlungskalender-Integration"
-        ]
+      "portal": {
+        "title": "KI-gestütztes Mandantenportal",
+        "description": "Verwalten Sie Ihre Akten effektiver mit KI-gestütztem Fallverfolgungssystem durch intelligente Algorithmen. Prognostizieren Sie Fallergebnisse mit Datenanalyse.",
+        "features": {
+          "caseTracking": "KI-gestützte Fallverfolgung und Prognose",
+          "documentUpload": "Automatisierte Dokumentenanalyse und -klassifizierung",
+          "communication": "Intelligentes Benachrichtigungs- und Erinnerungssystem",
+          "payment": "Automatisierte Rechnungs- und Zahlungsverfolgung"
+        }
       },
-      "digitalSignature": {
-        "title": "Digitale Signatur und Dokumentenverfolgung",
-        "description": "Beschleunigen Sie Ihre Dokumentengenehmigungsprozesse mit sicherem elektronischem Signatursystem, vermeiden Sie Papierverschwendung.",
-        "features": [
-          "E-Signatur-Integration",
-          "Automatische Versionskontrolle",
-          "Erweiterte Dokumentensicherheit"
-        ]
+      "eSignature": {
+        "title": "Intelligentes Dokumentenmanagement und E-Signatur",
+        "description": "Automatisierte Antragserstellung und intelligente Vertragserstellung mit KI-gestützter Dokumentenanalyse. Sichere und schnelle Transaktionen mit E-Signatur.",
+        "features": {
+          "legallyValid": "KI-gestützte Antragserstellung",
+          "secure": "Blockchain-basierte E-Signatur",
+          "fast": "Automatisierte Dokumentenvorlagen",
+          "trackable": "Intelligente Dokumentenversionskontrolle"
+        }
       },
-      "secureMessaging": {
-        "title": "Sicheres Messaging-System",
-        "description": "Gewährleisten Sie sichere Kommunikation mit End-to-End-verschlüsseltem Messaging-System.",
-        "features": [
-          "Sofortbenachrichtigungen",
-          "Dateiaustausch",
-          "Videoanruf-Unterstützung"
-        ]
+      "consultation": {
+        "title": "Virtuelle Beratung und KI-Assistent",
+        "description": "24/7 zugänglicher Service mit KI-gestütztem Rechtsberatungssystem. Sofortige Unterstützung mit Videoanrufen und KI-Chatbot.",
+        "features": {
+          "videoCall": "HD-Videoanrufe und Bildschirmfreigabe",
+          "secure": "End-to-End-verschlüsselte Kommunikation",
+          "flexible": "KI-gestützte Vorab-Bewertung",
+          "recorded": "Automatisierte Besprechungsaufzeichnung und Transkript"
+        }
       },
-      "processManagement": {
-        "title": "Proaktives Prozessmanagement",
-        "description": "Erkennen Sie mögliche Risiken im Voraus mit KI-gestütztem Prozessmanagement.",
-        "features": [
-          "Automatische Risikoanalyse",
-          "Fälligkeitstermin-Verfolgungssystem",
-          "Intelligente Erinnerungen"
-        ]
+      "transformation": {
+        "title": "Datenanalyse und rechtliche Intelligenz",
+        "description": "Analysieren Sie rechtliche Trends mit Big-Data-Analyse, führen Sie Risikobewertungen durch und treffen Sie strategische Entscheidungen. Prozessoptimierung mit maschinellem Lernen.",
+        "features": {
+          "strategy": "Datenbasierte Risikoanalyse",
+          "implementation": "Prozessoptimierung mit maschinellem Lernen",
+          "training": "KI-gestützte Rechtsbildungsplattform",
+          "support": "24/7 technischer Support und Beratung"
+        }
       }
+    }
+  },
     }
   },
   "responsibility": {

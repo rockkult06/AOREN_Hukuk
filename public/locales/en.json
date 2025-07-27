@@ -265,46 +265,52 @@
   },
   "digital": {
     "title": "AOREN Digital Services",
-    "subtitle": "Legal solutions with technology",
-    "description": "Technology is not just a tool for us, it is an integral part of our service.",
+    "subtitle": "AI-Powered Legal Solutions",
+    "description": "Technology is not just a tool for us, it is an integral part of our service. We optimize your legal processes with artificial intelligence and data analysis.",
     "quote": "While digitalizing your legal processes, we do not compromise on the human touch.",
     "services": {
-      "clientPortal": {
-        "title": "Client Portal",
-        "description": "With our special portal that provides 7/24 access to your files, you can follow all your legal processes from a single platform.",
-        "features": [
-          "Real-time file status tracking",
-          "Easy access to document archive",
-          "Hearing calendar integration"
-        ]
+      "portal": {
+        "title": "AI-Powered Client Portal",
+        "description": "Manage your files more effectively with AI-supported case tracking system through smart algorithms. Predict case outcomes with data analysis.",
+        "features": {
+          "caseTracking": "AI-Powered Case Tracking and Prediction",
+          "documentUpload": "Automated Document Analysis and Classification",
+          "communication": "Smart Notification and Reminder System",
+          "payment": "Automated Invoice and Payment Tracking"
+        }
       },
-      "digitalSignature": {
-        "title": "Digital Signature and Document Tracking",
-        "description": "Speed up your document approval processes with secure electronic signature system, prevent paper waste.",
-        "features": [
-          "E-signature integration",
-          "Automatic version control",
-          "Advanced document security"
-        ]
+      "eSignature": {
+        "title": "Smart Document Management and E-Signature",
+        "description": "Automated petition writing and smart contract creation with AI-powered document analysis. Secure and fast transactions with e-signature.",
+        "features": {
+          "legallyValid": "AI-Powered Petition Writing",
+          "secure": "Blockchain-Based E-Signature",
+          "fast": "Automated Document Templates",
+          "trackable": "Smart Document Version Control"
+        }
       },
-      "secureMessaging": {
-        "title": "Secure Messaging System",
-        "description": "Ensure secure communication with end-to-end encrypted messaging system.",
-        "features": [
-          "Instant notifications",
-          "File sharing",
-          "Video call support"
-        ]
+      "consultation": {
+        "title": "Virtual Consultation and AI Assistant",
+        "description": "24/7 accessible service with AI-powered legal consultation system. Instant support with video calls and AI chatbot.",
+        "features": {
+          "videoCall": "HD Video Calls and Screen Sharing",
+          "secure": "End-to-End Encrypted Communication",
+          "flexible": "AI-Powered Preliminary Assessment",
+          "recorded": "Automated Meeting Recording and Transcript"
+        }
       },
-      "processManagement": {
-        "title": "Proactive Process Management",
-        "description": "Detect possible risks in advance with AI-supported process management.",
-        "features": [
-          "Automatic risk analysis",
-          "Due date tracking system",
-          "Smart reminders"
-        ]
+      "transformation": {
+        "title": "Data Analysis and Legal Intelligence",
+        "description": "Analyze legal trends with big data analysis, conduct risk assessment and make strategic decisions. Process optimization with machine learning.",
+        "features": {
+          "strategy": "Data-Driven Risk Analysis",
+          "implementation": "Process Optimization with Machine Learning",
+          "training": "AI-Powered Legal Education Platform",
+          "support": "24/7 Technical Support and Consultation"
+        }
       }
+    }
+  },
     }
   },
   "responsibility": {
