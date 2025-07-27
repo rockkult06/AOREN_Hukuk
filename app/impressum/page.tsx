@@ -58,7 +58,7 @@ export default function ImpressumPage() {
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-[#DEA582] mr-3" />
-                  <span>Telefon: +49 (0)711 123 45 67</span>
+                  <span>Telefon: +49 1511 4467955</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-[#DEA582] mr-3" />
