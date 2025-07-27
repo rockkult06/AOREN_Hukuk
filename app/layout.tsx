@@ -14,12 +14,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Aoren - Yüksek Etki Yaratan Hukuk Bürosu",
   description: "Aoren Hukuk Bürosu - Hukuki danışmanlık, arabuluculuk ve yasal destek hizmetleri",
-  generator: 'v0.dev',
-  other: {
-    'Cache-Control': 'no-cache, no-store, must-revalidate',
-    'Pragma': 'no-cache',
-    'Expires': '0'
-  }
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({

@@ -44,7 +44,7 @@ export default function ImpressumPage() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white">Anschrift der Hauptniederlassung:</h4>
-                  <p>Friedrichstraße 15, 70174 Stuttgart, Almanya</p>
+                  <p>Friedrichstraße 15<br />70174 Stuttgart<br />Deutschland</p>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function ImpressumPage() {
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-[#DEA582] mr-3" />
-                  <span>Telefon: +49 1511</span>
+                  <span>Telefon: +49 (0)711 123 45 67</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-[#DEA582] mr-3" />
