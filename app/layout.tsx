@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="tr" className={`${plusJakartaSans.variable}`}>
+    <html lang="de" className={`${plusJakartaSans.variable}`}>
       <body className={`${plusJakartaSans.className} antialiased`}>
         <StyledComponentsRegistry>
           <GlobalStyle />

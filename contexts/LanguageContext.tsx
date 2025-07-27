@@ -17,7 +17,7 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('tr')
+  const [language, setLanguage] = useState<Language>('de')
   const [translations, setTranslations] = useState<any>({})
 
   useEffect(() => {
