@@ -643,7 +643,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>+49 1511</p>
+                  <p>+49 1511 4467955</p>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
@@ -1038,7 +1038,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>+49 1511</p>
+                  <p>+49 1511 4467955</p>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
