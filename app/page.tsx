@@ -639,11 +639,11 @@ export default function Home() {
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-start">
                   <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1 flex-shrink-0" />
-                  <p>{t('offices.locations.stuttgart.address')}</p>
+                  <p>Friedrichstraße 15, 70174 Stuttgart, Almanya</p>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>{t('offices.locations.stuttgart.phone')}</p>
+                  <p>+49 1511</p>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
@@ -695,11 +695,11 @@ export default function Home() {
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-start">
                   <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1 flex-shrink-0" />
-                  <p>{t('offices.locations.ankara.address')}</p>
+                  <p>İlkbahar mah. Güneypark Kümeevler N0:19/B Çankaya/Ankara</p>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>{t('offices.locations.ankara.phone')}</p>
+                  <p>+905065311063</p>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
@@ -1034,11 +1034,11 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex items-start text-gray-300">
                   <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1" />
-                  <p>Neckarstraße 155, 70190 Stuttgart, Almanya</p>
+                  <p>Friedrichstraße 15, 70174 Stuttgart, Almanya</p>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>+49 (0)711 123 45 67</p>
+                  <p>+49 1511</p>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
@@ -1078,11 +1078,11 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex items-start text-gray-300">
                   <MapPinned className="w-5 h-5 text-[#D29F91] mr-2 mt-1" />
-                  <p>Mustafa Kemal Mah. 2151. Cad. No:15, Kat:4, Çankaya / Ankara</p>
+                  <p>İlkbahar mah. Güneypark Kümeevler N0:19/B Çankaya/Ankara</p>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Phone className="w-5 h-5 text-[#D29F91] mr-2" />
-                  <p>+90 (312) 456 78 90</p>
+                  <p>+905065311063</p>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Mail className="w-5 h-5 text-[#D29F91] mr-2" />
