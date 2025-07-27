@@ -111,11 +111,7 @@ const Footer: React.FC = () => {
                 <Image src="/f3.jpg" alt="IBA" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
               </BarLogoBox>
             </a>
-            <a href="https://www.ankarabarosu.org.tr/" target="_blank" rel="noopener noreferrer">
-              <BarLogoBox>
-                <Image src="/f4.jpg" alt="Ankara Barosu" width={44} height={44} style={{objectFit:'contain', borderRadius: '16px'}} />
-              </BarLogoBox>
-            </a>
+
           </BarLogoRow>
           <h3>{t('footer.company.title')}</h3>
           <p>
